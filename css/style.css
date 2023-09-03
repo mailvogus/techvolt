@@ -3673,6 +3673,44 @@ body.admin-bar .header-menu-area.sticky_menu {
           -webkit-transition: all 0.5s ease-out;
           transition: all 0.5s ease-out; }
 
+.te-info-card.style-2 {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 40px 40px 27px 40px; }
+  .te-info-card.style-2:hover .image img {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+  .te-info-card.style-2:hover .content .te-read-more .te-theme-btn {
+    background-color: inherit;
+    color: #0E2BC5; }
+  .te-info-card.style-2 .image {
+    border-radius: 5px;
+    overflow: hidden; }
+    .te-info-card.style-2 .image img {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; }
+  .te-info-card.style-2 .te-title-wrapper {
+    padding-bottom: 15px; }
+  .te-info-card.style-2 .te-content-wrapper {
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .te-info-card.style-2 .content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 10px; }
+    .te-info-card.style-2 .content .te-read-more .te-theme-btn {
+      padding: 0;
+      border: 0; }
+
 .te-icon-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8470,4 +8508,5 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #335371; }
+
 /*# sourceMappingURL=style.css.map */
