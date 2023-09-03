@@ -119,7 +119,7 @@
         position: absolute;
         content: "";
         border-radius: 0 0 10px 10px;
-        background-color: $orange-color;
+        background-color: $blue-color;
         top: 0;
         left: 0;
         width: 100%;
@@ -319,7 +319,7 @@
           //   content: "";
           //   height: 3px;
           //   width: 18px;
-          //   background-color: $orange-color;
+          //   background-color: $blue-color;
           //   bottom: 40px;
           //   left: 20px;
           // }
@@ -431,7 +431,7 @@
       visibility: hidden;
       z-index: 99999;
       transition: all 300ms ease;
-      border-top: 2px solid $orange-color;
+      border-top: 2px solid $blue-color;
       box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
       transform-origin: top;
       transform: scaleY(0);
@@ -456,7 +456,7 @@
           font-size: 16px;
 
           &:hover {
-            background-color: $orange-color;
+            background-color: $blue-color;
             color: $white;
 
             &:before {
@@ -473,7 +473,7 @@
         transition: all 0.3s ease 0s;
         opacity: 0;
         border-top: 0px;
-        border-top: 2px solid $orange-color;
+        border-top: 2px solid $blue-color;
       }
     }
   }
@@ -538,7 +538,7 @@
     align-self: stretch;
     height: auto;
     align-items: center;
-    background: $orange-color;
+    background: $blue-color;
     padding: 10px 30px;
     color: $black;
     font-size: 16px;
