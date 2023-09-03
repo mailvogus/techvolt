@@ -1,0 +1,98 @@
+.slider-area {
+  &.style-2 {
+    position: relative;
+
+    .te-single-slider {
+      position: relative;
+      
+      .te-slider-overlay {
+        left: 0;
+        @include gradient-color;
+        
+        &::before {
+          display: none;
+        }
+      }
+      .te-slider-content-wrapper {
+        .te-slider-content {
+          .te-slider-btn-wrapper {
+            .te-theme-btn {
+              background-color: $blue-color;
+              color: $white;
+            }
+            .te-call-btn {
+              .te-icon {
+                color: $blue-color;
+              }
+            }
+          }
+          .te-slider-title {
+            font-size: 82px;
+            font-weight: 500;
+            line-height: 96.76px;
+            letter-spacing: -1px;
+          }
+        }
+      }
+    }
+    .te-slider-wrapper {
+      .container {
+        position: relative;
+      }
+      .slider-shape-top-triangle {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $sky-color;
+        top: 0;
+        left: -100%;
+        margin-left: -228px;
+        transform: skewX(-20deg);
+
+        @include md {
+          left: -80%;
+        }
+      }
+      .slider-shape-bottom-left {
+        position: absolute;
+        width: 215px;
+        height: 130px;
+        background: $sky-color;
+        bottom: 0;
+        left: -140px;
+        transform: skewX(-22deg);
+
+        @include md {
+          display: none;
+        }
+        @include sm {
+          display: none;
+        }
+      }
+      .te-slider-image {
+        position: relative;
+        z-index: 2;
+        float: right;
+        margin-top: inherit;
+        animation: MoveLeftRight 2s linear infinite alternate;
+        right: -100px;
+        img {
+          float: right;
+        }
+        &:before {
+          position: absolute;
+          content: "";
+          width: 500px;
+          height: 2000px;
+          background: linear-gradient(180deg, #F1F8FF 0%, #C9E4FF 100%);
+          border-radius: 0;
+          top: -1000px;
+          transform: skewX(-10deg);
+          z-index: -1;
+          right: 0;
+        }
+      }
+    }
+
+  }
+}

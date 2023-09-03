@@ -1,0 +1,21 @@
+.footer {
+  &.style-2 {
+    background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%);
+    .te-footer-sec {
+      border-bottom: 1px solid rgba(20, 32, 58, 0.1);
+      padding-top: 80px;
+      padding-bottom: 60px;
+    }
+    .te-footer-widget-title,
+    .footer-bottom-area .te-copyright-text p,
+    .te-footer-widget.te_widget_nav_menu li a,
+    .te-footer-widget .te_widget_latest_post ul li .te-latest-post-desc .te-latest-post-title a,
+    .te-footer-widget .te_widget_latest_post ul li .te-latest-post-desc .te-latest-post-title,
+    .te-footer-widget .te_widget_latest_post ul li .te-latest-post-desc .te-latest-post-meta,
+    .te-footer-widget .te-subscribe-form-wrapper,
+    .te-footer-bottom-menu ul li a,
+    .footer-bottom-area .te-copyright-text p a {
+      color: $gray-800;
+    }
+  }
+}

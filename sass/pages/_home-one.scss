@@ -1,0 +1,80 @@
+// About Us Area
+.about-us-area {
+    &.style-1 {
+        padding: 120px 0;
+        @include gradient-color
+    }
+}
+
+// Feature Area
+.feature-area {
+    &.style-1 {
+        padding-top: 120px;
+        padding-bottom: 96px;
+
+        @include sm {
+            padding-top: 80px;
+            padding-bottom: 56px;
+        }
+
+        @include md {
+            padding-top: 100px;
+            padding-bottom: 76px;
+        }
+
+        .te-info-card  {
+            &:hover {
+                .te-theme-btn {
+                    background-color: $blue-color;
+                    border-color: $blue-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+// Portfolio Area
+.portfolio-area {
+    &.style-1 {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+// Counter Up Area
+
+.counter-up-area {
+    &.style-1 {
+        padding-top: 710px;
+        padding-bottom: 120px;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        margin-top: -655px;
+    }
+}
+
+// Process Step Area
+.te-process-step-area {
+    &.style-1 {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+
+// Latest Post Area
+
+.latest-posts-area {
+    &.style-1 {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+// Team Slider Area
+.team-slider-area {
+    &.style-1 {
+        overflow: hidden;
+    }
+}
