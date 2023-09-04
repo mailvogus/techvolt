@@ -1,75 +1,36 @@
 .te-about-info-card {
-    &.style-two {
+    &.style-2 {
       .te-about-info-content {
-        gap: 16px;
+        gap: 10px;
+        
+          .te-list-item-wrapper {
+            padding-top: 6px;
+            gap: 0;
 
-        .te-icon-card-wrapper {
-          display: flex;
-          justify-content: space-between;
-          gap: 0 20px;
-          margin-bottom: 5px;
-
-          .te-icon-card {
-            width: 50%;
-            padding: 0;
-            gap: 20px;
-            margin-bottom: 0;
-
-            .icon {
-              width: 42px;
-              height: 42px;
-              margin-top: 13px;
-            }
-            .content {
-              gap: 4px;
-
-              .title {
-                font-size: 18px;
+            .te-list-item {
+              .icon {
+                width: 16px;
+                height: 16px;
+                background-color: $blue-color;
+                border-radius: 50%;
+                color: white;
+                font-size: 10px;
+              }
+              .text {
+                color: $gray-800;
               }
             }
           }
-        }
-        .te-btn-wrapper {
-          margin-top: 25px;
-        }
-        .skill-and-video-wrapper {
-          display: flex;
-          gap: 30px;
-          align-items: center;
+          .te-info-list {
+            border-top: 1px solid $gray-200;
+            padding-top: 40px;
 
-          @include sm {
-            flex-direction: column-reverse;
-          }
-
-          .video-popup-card {
-            width: 43%;
-            box-shadow: none;
-            padding: 0;
-
-            @include sm {
-              width: 100%;
-            }
-            &:before {
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              left: 0;
-              top: 0;
-              content: "";
-              background: rgb(0,91,172);
-              background: linear-gradient(135deg, rgba(0,91,172,0.6) 0%, rgba(30,174,152,0.6) 100%);
-            }
-
-            .video-popup-btn {
-              a {
-                  width: 60px;
-                  height: 60px;
-                  background-color: $orange-color;
-                  background-image: none;
-              }
+            .divider {
+              width: 1px;
+              background-color: $gray-200;
+              height: 127px;
             }
           }
-        }
       }
     }
 }
