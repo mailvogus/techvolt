@@ -1,5 +1,100 @@
-.te-about-info-card {
+.te-about-image-card {
   &.style-2 {
-    
+
+    .te-main-img-wrapper {
+      .te-main-img-inner {
+        border-radius: 5px;
+        padding-right: 80px;
+        margin-top: 23px;
+        > img {
+          margin: 0;
+          border-radius: 5px;
+        }
+        .te-img-card-shape {
+          right: -66px;
+          top: 60px;
+        }
+        .te-another-image {
+          position: absolute;
+          top: 55%;
+          right: -66px;
+
+          .te-another-image-inner {
+            border: 5px solid $gray-200;
+            border-radius: 5px;
+            overflow: hidden;
+            display: inline-block;
+
+            img {
+              border-radius: 5px;
+            }
+          }
+          .video-btn {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+
+              a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: $blue-color;
+                width: 76px;
+                height: 76px;
+                border-radius: 5px;
+                color: $white;
+                font-size: 17px;
+                flex-shrink: 0;
+              }
+          }
+          .te-badge-text {
+            display: inline-flex;
+            align-items: center;
+            background-color: $white;
+            box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.05);
+            padding: 14px 15px;
+            border-radius: 5px;
+            gap: 11px;
+            position: absolute;
+            left: -33%;
+            top: 46%;
+
+            .icon {
+              width: 52px;
+              height: 52px;
+              background-color: #F2E6FF;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-shrink: 0;
+              font-size: 30px;
+              color: $blue-color;
+            }
+            .text {
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+
+              .title {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0.5px;
+                color: $black;
+              }
+              span {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 12px;
+                color: $gray-800;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
