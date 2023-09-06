@@ -38,9 +38,22 @@
 .faq-area {
   &.style-1 {
     .te-faq-image {
+      margin-top: 82px;
+      position: relative;
+      right: -83px;
+      
       .te-image-wrapper { 
         position: relative;
-
+        
+        .te-main-img-inner {
+          clip-path: polygon(20% 0%, 100% 0%, 85% 100%, 0% 100%);
+        }
+        .te-image-shape {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: -1;
+        }
         .content {
           display: flex;
           align-items: center;
@@ -70,13 +83,21 @@
           background-color: $blue-color;
           border-radius: 100%;
           border: 16px solid $white;
-          
+          position: absolute;
+          left: -70px;
+          top: -95px;
         }
                 
         .bottom-content {
           border: 20px solid $white;
+          background-color: $white;
+          border-radius: 50%;
           width: 187px;
           height: 187px;
+          position: absolute;
+          right: -30px;
+          bottom: -110px;
+
           .bottom-content-inner {
             width: 100%;
             height: 100%;
@@ -84,6 +105,11 @@
             border-radius: 100%;
             border: 8px solid $white;
             outline: 2px dashed $black;
+
+            .title,
+            .number {
+              color: $black;
+            }
           }
         }
       }

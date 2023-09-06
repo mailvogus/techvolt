@@ -219,7 +219,7 @@ input:focus {
   background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%); }
 
 .page-bg {
-  background-color: #1F242C; }
+  background-color: #14203A; }
 
 .page-area {
   padding-top: 136px;
@@ -297,7 +297,7 @@ input.te-theme-btn {
   .wp-block-loginout a.yellow-btn,
   input.te-theme-btn.yellow-btn {
     background-color: #F9D414;
-    color: #1F242C; }
+    color: #14203A; }
   .te-theme-btn.simple-btn,
   .wp-block-loginout a.simple-btn,
   input.te-theme-btn.simple-btn {
@@ -1869,7 +1869,7 @@ blockquote {
   blockquote p {
     font-family: "Inter", sans-serif;
     font-size: 20px;
-    color: #1F242C;
+    color: #14203A;
     line-height: 32px;
     font-weight: 500;
     letter-spacing: 0.5px; }
@@ -2491,12 +2491,12 @@ body.admin-bar .header-menu-area.sticky_menu {
           -ms-flex-align: center;
               align-items: center;
       gap: 24px;
-      color: #1F242C;
+      color: #14203A;
       font-size: 16px;
       font-weight: 400;
       font-family: "DM Sans", sans-serif; }
       .header-top .te-header-contact-info span i {
-        color: #1F242C; }
+        color: #14203A; }
       .header-top .te-header-contact-info span.te-contact-info-item {
         gap: 0 10px !important; }
       .header-top .te-header-contact-info span a {
@@ -2507,7 +2507,7 @@ body.admin-bar .header-menu-area.sticky_menu {
             -ms-flex-align: center;
                 align-items: center;
         gap: 10px;
-        color: #1F242C;
+        color: #14203A;
         font-size: 16px;
         font-weight: 400;
         font-family: "DM Sans", sans-serif; }
@@ -2556,11 +2556,11 @@ body.admin-bar .header-menu-area.sticky_menu {
       font-size: 16px;
       font-weight: 400;
       line-height: 27.2px;
-      color: #1F242C;
+      color: #14203A;
       margin-right: 14px; }
     .header-top .te-te-social-profile a {
       font-size: 16px;
-      color: #1F242C;
+      color: #14203A;
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out;
       width: 42px;
@@ -2695,7 +2695,7 @@ body.admin-bar .header-menu-area.sticky_menu {
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out;
       position: relative;
-      color: #1F242C;
+      color: #14203A;
       font-family: "Spline Sans", sans-serif;
       font-size: 16px;
       font-weight: 600; }
@@ -2704,7 +2704,7 @@ body.admin-bar .header-menu-area.sticky_menu {
         content: "";
         -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
-        border: solid #1F242C;
+        border: solid #14203A;
         border-width: 0 1px 1px 0;
         display: inline-block;
         padding: 3px;
@@ -2839,7 +2839,7 @@ body.admin-bar .header-menu-area.sticky_menu {
             align-items: center;
     background: #0E2BC5;
     padding: 10px 30px;
-    color: #1F242C;
+    color: #14203A;
     font-size: 16px;
     font-weight: 600;
     gap: 10px; }
@@ -2859,7 +2859,7 @@ body.admin-bar .header-menu-area.sticky_menu {
     line-height: 17px;
     letter-spacing: 0.6px;
     text-transform: capitalize;
-    color: #1F242C;
+    color: #14203A;
     border: 2px solid #0E2BC5;
     border-radius: 5px;
     padding: 19px 27px;
@@ -3291,7 +3291,7 @@ body.admin-bar .header-menu-area.sticky_menu {
           .slider-area .te-single-slider .te-slider-content-wrapper .te-slider-content .te-slider-short-title {
             font-size: 16px; } }
       .slider-area .te-single-slider .te-slider-content-wrapper .te-slider-content .te-slider-title {
-        color: #1F242C;
+        color: #14203A;
         font-family: "Inter", sans-serif;
         font-size: 69px;
         font-weight: 500;
@@ -3345,7 +3345,7 @@ body.admin-bar .header-menu-area.sticky_menu {
             margin-top: 30px; } }
         .slider-area .te-single-slider .te-slider-content-wrapper .te-slider-content .te-slider-btn-wrapper .te-theme-btn {
           padding: 11px 30px;
-          color: #1F242C;
+          color: #14203A;
           background-color: #F9D414; }
         .slider-area .te-single-slider .te-slider-content-wrapper .te-slider-content .te-slider-btn-wrapper .te-call-btn {
           display: -webkit-box;
@@ -3364,7 +3364,7 @@ body.admin-bar .header-menu-area.sticky_menu {
             border: 5px solid #F9D414;
             font-size: 20px;
             font-weight: 900;
-            color: #1F242C;
+            color: #14203A;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -3392,7 +3392,7 @@ body.admin-bar .header-menu-area.sticky_menu {
               font-weight: 500;
               line-height: 24px;
               letter-spacing: 0.5px;
-              color: #1F242C; }
+              color: #14203A; }
     .slider-area .te-single-slider .te-slider-image {
       position: relative;
       z-index: 2;
@@ -3932,7 +3932,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   -webkit-clip-path: polygon(9% 0, 96% 0, 100% 100%, 0 100%);
           clip-path: polygon(9% 0, 96% 0, 100% 100%, 0 100%); }
   .te-about-image-card .te-company-foundation .te-counter-wrapper {
-    color: #1F242C;
+    color: #14203A;
     font-size: 45px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3945,14 +3945,14 @@ body.admin-bar .header-menu-area.sticky_menu {
     font-weight: 700;
     line-height: 54.9px;
     letter-spacing: -0.8px;
-    color: #1F242C;
+    color: #14203A;
     margin-bottom: 0; }
   .te-about-image-card .te-company-foundation .title {
     font-size: 14.35px;
     font-weight: 500;
     line-height: 140%;
     letter-spacing: 0.359px;
-    color: #1F242C;
+    color: #14203A;
     margin-bottom: 0; }
 
 .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner {
@@ -4053,7 +4053,7 @@ body.admin-bar .header-menu-area.sticky_menu {
           font-weight: 500;
           line-height: 20px;
           letter-spacing: 0.5px;
-          color: #1F242C; }
+          color: #14203A; }
         .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image .te-badge-text .text span {
           font-size: 12px;
           font-weight: 400;
@@ -4084,7 +4084,7 @@ body.admin-bar .header-menu-area.sticky_menu {
       width: unset;
       height: unset; }
     .te-about-info-card .te-about-info-content .te-list-item-wrapper .te-list-item .text {
-      color: #1F242C; }
+      color: #14203A; }
   .te-about-info-card .te-about-info-content .te-info-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4281,7 +4281,7 @@ body.admin-bar .header-menu-area.sticky_menu {
       font-size: 57px;
       line-height: 46px;
       text-align: center;
-      color: #1F242C;
+      color: #14203A;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -4560,13 +4560,13 @@ body.admin-bar .header-menu-area.sticky_menu {
           font-weight: 500;
           line-height: 39.84px;
           letter-spacing: 0.5px;
-          color: #1F242C;
+          color: #14203A;
           margin-bottom: 0; }
         .te-testimonial-card .te-content-wrapper .te-user-meta .te-user-info .designation {
           font-size: 18px;
           font-weight: 400;
           line-height: 36px;
-          color: #1F242C; }
+          color: #14203A; }
       .te-testimonial-card .te-content-wrapper .te-user-meta .icon {
         color: #E1E1E1;
         font-size: 55px;
@@ -5154,7 +5154,7 @@ body.admin-bar .header-menu-area.sticky_menu {
           -ms-flex-align: center;
               align-items: center;
       gap: 10px;
-      color: #1F242C; }
+      color: #14203A; }
       .te-post-card .content a.read-btn:hover {
         color: #0E2BC5; }
 
@@ -5507,8 +5507,9 @@ body.admin-bar .header-menu-area.sticky_menu {
     font-weight: 500;
     font-family: "Inter", sans-serif;
     letter-spacing: -1px;
-    color: #1F242C;
-    margin-bottom: 0; }
+    color: #14203A;
+    margin-bottom: 0;
+    text-transform: capitalize; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .te-section-title .title {
         font-size: 48px;
@@ -5537,7 +5538,7 @@ body.admin-bar .header-menu-area.sticky_menu {
     margin-bottom: 0; }
     .te-section-title .te-section-desc .te-theme-btn {
       background-color: transparent;
-      color: #1F242C; }
+      color: #14203A; }
       .te-section-title .te-section-desc .te-theme-btn:hover {
         background-color: #0E2BC5;
         color: #ffffff;
@@ -5628,9 +5629,9 @@ body.admin-bar .header-menu-area.sticky_menu {
               align-items: center;
       color: #14203A; }
       .te-breadcrumb-list ul li.active {
-        color: #F9D414; }
+        color: #0E2BC5; }
         .te-breadcrumb-list ul li.active a {
-          color: #F9D414; }
+          color: #0E2BC5; }
       .te-breadcrumb-list ul li a {
         font-family: "Inter", sans-serif;
         font-size: 20px;
@@ -5645,11 +5646,11 @@ body.admin-bar .header-menu-area.sticky_menu {
         .te-breadcrumb-list ul li a:hover {
           -webkit-transition: all 0.5s ease-out;
           transition: all 0.5s ease-out;
-          color: #F9D414; }
+          color: #0E2BC5; }
       .te-breadcrumb-list ul li:before {
         content: "\f054";
         font-size: 12px;
-        color: #1F242C;
+        color: #14203A;
         font-family: "Font Awesome 6 Pro";
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -6789,7 +6790,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
-  background-color: #1F242C; }
+  background-color: #14203A; }
   .widget_promotion .wp-block-heading {
     width: 100%;
     text-align: center;
@@ -7202,7 +7203,7 @@ ul.children {
       .te-team-card .te-content-wrapper .content .title {
         font-size: 24px;
         font-weight: 500;
-        line-height: 39.84px;
+        line-height: 24px;
         letter-spacing: 0.5px;
         color: #ffffff;
         font-family: "Inter", sans-serif;
@@ -7244,7 +7245,7 @@ ul.children {
             -ms-flex-pack: center;
                 justify-content: center;
         font-size: 14px;
-        color: #1F242C; }
+        color: #14203A; }
         .te-team-card .te-content-wrapper .social a:hover {
           background-color: #F9D414;
           -webkit-transition: all 0.5s ease-out;
@@ -7267,7 +7268,7 @@ ul.children {
       margin-bottom: 10px;
       position: unset; }
       .te-team-card.style-2 .te-content-wrapper .content .title {
-        color: #1F242C; }
+        color: #14203A; }
       .te-team-card.style-2 .te-content-wrapper .content .desc {
         color: #335371; }
     .te-team-card.style-2 .te-content-wrapper .social a {
@@ -7481,7 +7482,7 @@ ul.children {
           height: 73px;
           background-color: #F9D414;
           border-radius: 50px;
-          color: #1F242C;
+          color: #14203A;
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
@@ -7585,53 +7586,77 @@ ul.children {
   padding-top: 120px;
   padding-bottom: 120px; }
 
-.faq-area.style-1 .te-faq-image .te-image-wrapper {
-  position: relative; }
-  .faq-area.style-1 .te-faq-image .te-image-wrapper .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 10px; }
-    .faq-area.style-1 .te-faq-image .te-image-wrapper .content .title {
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 18px;
-      color: #ffffff;
-      margin-bottom: 0; }
-    .faq-area.style-1 .te-faq-image .te-image-wrapper .content .number {
-      font-size: 32px;
-      font-weight: 500;
-      line-height: 32px;
-      letter-spacing: 0.5px;
-      color: #ffffff;
-      margin-bottom: 0; }
-  .faq-area.style-1 .te-faq-image .te-image-wrapper .top-content {
-    width: 152px;
-    height: 152px;
-    background-color: #0E2BC5;
-    border-radius: 100%;
-    border: 16px solid #ffffff; }
-  .faq-area.style-1 .te-faq-image .te-image-wrapper .bottom-content {
-    border: 20px solid #ffffff;
-    width: 187px;
-    height: 187px; }
-    .faq-area.style-1 .te-faq-image .te-image-wrapper .bottom-content .bottom-content-inner {
-      width: 100%;
-      height: 100%;
-      background-color: #F9D414;
+.faq-area.style-1 .te-faq-image {
+  margin-top: 82px;
+  position: relative;
+  right: -83px; }
+  .faq-area.style-1 .te-faq-image .te-image-wrapper {
+    position: relative; }
+    .faq-area.style-1 .te-faq-image .te-image-wrapper .te-main-img-inner {
+      -webkit-clip-path: polygon(20% 0%, 100% 0%, 85% 100%, 0% 100%);
+              clip-path: polygon(20% 0%, 100% 0%, 85% 100%, 0% 100%); }
+    .faq-area.style-1 .te-faq-image .te-image-wrapper .te-image-shape {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      z-index: -1; }
+    .faq-area.style-1 .te-faq-image .te-image-wrapper .content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      gap: 10px; }
+      .faq-area.style-1 .te-faq-image .te-image-wrapper .content .title {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #ffffff;
+        margin-bottom: 0; }
+      .faq-area.style-1 .te-faq-image .te-image-wrapper .content .number {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0.5px;
+        color: #ffffff;
+        margin-bottom: 0; }
+    .faq-area.style-1 .te-faq-image .te-image-wrapper .top-content {
+      width: 152px;
+      height: 152px;
+      background-color: #0E2BC5;
       border-radius: 100%;
-      border: 8px solid #ffffff;
-      outline: 2px dashed #1F242C; }
+      border: 16px solid #ffffff;
+      position: absolute;
+      left: -70px;
+      top: -95px; }
+    .faq-area.style-1 .te-faq-image .te-image-wrapper .bottom-content {
+      border: 20px solid #ffffff;
+      background-color: #ffffff;
+      border-radius: 50%;
+      width: 187px;
+      height: 187px;
+      position: absolute;
+      right: -30px;
+      bottom: -110px; }
+      .faq-area.style-1 .te-faq-image .te-image-wrapper .bottom-content .bottom-content-inner {
+        width: 100%;
+        height: 100%;
+        background-color: #F9D414;
+        border-radius: 100%;
+        border: 8px solid #ffffff;
+        outline: 2px dashed #14203A; }
+        .faq-area.style-1 .te-faq-image .te-image-wrapper .bottom-content .bottom-content-inner .title,
+        .faq-area.style-1 .te-faq-image .te-image-wrapper .bottom-content .bottom-content-inner .number {
+          color: #14203A; }
 
 .testimonial-slider-area.style-2 {
   overflow: hidden;
@@ -7786,7 +7811,7 @@ ul.children {
     .contact-form-area .te-social-profile-link a {
       width: 50px;
       height: 50px;
-      color: #1F242C;
+      color: #14203A;
       background-color: #F7FBFE;
       border: 1px solid #F7FBFE;
       -ms-flex-negative: 0;
@@ -8407,7 +8432,7 @@ ul.children {
       color: #778196; }
   .te-subscribe-form-widget .submit-btn {
     background-color: #F9D414;
-    color: #1F242C;
+    color: #14203A;
     cursor: pointer;
     padding: 0 19px;
     display: -webkit-box;
@@ -8484,7 +8509,7 @@ ul.children {
       background-color: #F9D414;
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out;
-      color: #1F242C; }
+      color: #14203A; }
 
 .te-map-wodget iframe {
   width: 100%;

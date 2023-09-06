@@ -77,10 +77,10 @@
       align-items: center;
       color: $secondary-color;
       &.active {
-        color: $orange-color;
+        color: $blue-color;
 
         a {
-          color: $orange-color;
+          color: $blue-color;
         }
       }
       a {
@@ -97,7 +97,7 @@
 
         &:hover {
           @include transition;
-           color: $orange-color;
+           color: $blue-color;
         }
       }
 
