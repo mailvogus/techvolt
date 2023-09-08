@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: 30px;
+  gap: 23px;
 
   .image {
     overflow: hidden;
@@ -16,8 +16,8 @@
 
     .te-post-date {
       position: absolute;
-      right: 20px;
-      top: 20px;
+      right: 25px;
+      top: 23px;
       background-color: $blue-color;
       border-radius: 5px;
       padding: 13px 18px;
@@ -74,14 +74,14 @@
       line-height: 39.84px;
       letter-spacing: 0.5px;
       font-family: $heading-font;
-      margin-bottom: 20px;
+      margin-bottom: 7px;
       color: $secondary-color;
       @include transition;
     }
     a.read-btn {
       font-size: 17px;
       font-weight: 600;
-      line-height: 55px;
+      line-height: 42px;
       letter-spacing: 0.6px;
       text-transform: capitalize;
       display: flex;

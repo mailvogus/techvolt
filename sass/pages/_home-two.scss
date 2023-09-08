@@ -178,3 +178,98 @@
     padding: 120px 0;
   }
 }
+
+// Subscribe Area
+.subscribe-area {
+  &.style-2 {
+    position: relative;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    background-color: $blue-color;
+
+    // .te-subscribe-bg {
+    //   position: absolute;
+    //   width: 576px;
+    //   height: 100%;
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+    //   background-position: center center;
+    //   z-index: -1;
+    // }
+    .te-subscribe-form-wrapper {
+    padding-right: 0;
+    margin-top: 0;
+    }
+    .te-subscribe-inner-area {
+      .te-content-wrapper {
+        gap: 70px;
+        width: unset;
+        padding: 82px 0 89px 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        float: right;
+        position: relative;
+        z-index: 2;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-color: $blue-color;
+          top: 0;
+          right: -100%;
+          z-index: -1;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-color: $blue-color;
+          top: 0;
+          left: 45px;
+          z-index: -1;
+        }
+
+        .te-subscribe-title {
+          font-size: 38px;
+          font-weight: 500;
+          line-height: 52.527px;
+          letter-spacing: -0.676px;
+          text-transform: capitalize;
+          margin-bottom: 0;
+        }
+
+        .te-content-inner {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .icon {
+            width: 90px;
+            height: 90px;
+            background-color: $orange-color;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            padding: 15px;
+          }
+        }
+      }
+      .te-subscribe-form-widget {
+        background: #fff;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .mc4wp-form-fields {
+        gap: 0;
+      }
+    }
+  }
+}

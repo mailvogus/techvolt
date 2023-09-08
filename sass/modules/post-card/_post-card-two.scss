@@ -1,6 +1,9 @@
 .te-post-card {
     &.style-2 {
+        gap: 20px;
+
        .image {
+        border-radius: 5px 5px 5px 0;
         .te-post-date {
             top: unset;
             right: unset;
@@ -12,6 +15,9 @@
         }
        } 
        .content {
+        .title {
+            font-size: 20px;
+        }
         .te-post-meta-info {
             border-bottom: 1px solid $gray-200;
             padding-bottom: 10px;
