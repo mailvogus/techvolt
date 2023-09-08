@@ -4302,7 +4302,7 @@ body.admin-bar .header-menu-area.sticky_menu {
       font-family: "Inter", sans-serif;
       font-weight: 400;
       font-size: 18px;
-      line-height: 24px;
+      line-height: 18px;
       color: #335371; }
     .te-counter-card .te-counter-item .text {
       margin: 0;
@@ -4595,13 +4595,12 @@ body.admin-bar .header-menu-area.sticky_menu {
       line-height: 36px;
       color: #335371;
       margin-bottom: 0; }
+      .te-testimonial-card-two .te-content-wrapper .content p {
+        margin-bottom: 0; }
     .te-testimonial-card-two .te-content-wrapper .te-user-meta {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
@@ -7753,11 +7752,14 @@ ul.children {
             flex-direction: row;
     gap: 30px; }
     .counter-up-area.style-2 .te-counter-card .te-counter-item .te-counter-title .content {
-      gap: 15px;
+      gap: 8px;
       text-align: left; }
   .counter-up-area.style-2 .te-counter-card .te-counter-item .number,
   .counter-up-area.style-2 .te-counter-card .te-counter-item .title {
-    color: #ffffff; }
+    color: #ffffff;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
 
 .latest-posts-area.style-2 {
   padding: 120px 0; }
@@ -8609,4 +8611,5 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #335371; }
+
 /*# sourceMappingURL=style.css.map */

@@ -18,10 +18,12 @@
             line-height: 36px;
             color: $gray-800;
             margin-bottom: 0;
+            p {
+                margin-bottom: 0;
+            }
         }
         .te-user-meta {
             display: flex;
-            align-items: center;
             justify-content: space-between;
 
             .te-user-info {

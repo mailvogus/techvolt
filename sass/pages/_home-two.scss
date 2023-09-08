@@ -158,13 +158,14 @@
             gap: 30px;
 
             .content {
-              gap: 15px;
+              gap: 8px;
               text-align: left;
             }
           }
           .number,
           .title {
             color: $white;
+            justify-content: flex-start;
           }
         }
     }
