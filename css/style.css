@@ -7779,9 +7779,12 @@ ul.children {
   background-color: #0E2BC5; }
   .subscribe-area.style-2 .te-subscribe-form-wrapper {
     padding-right: 0;
-    margin-top: 0; }
+    margin-top: 0;
+    width: 576px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
   .subscribe-area.style-2 .te-subscribe-inner-area .te-content-wrapper {
-    gap: 70px;
+    gap: 84px;
     width: unset;
     padding: 82px 0 89px 0;
     -webkit-box-orient: horizontal;
@@ -8704,4 +8707,5 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #335371; }
+
 /*# sourceMappingURL=style.css.map */

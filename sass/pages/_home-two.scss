@@ -201,10 +201,12 @@
     .te-subscribe-form-wrapper {
     padding-right: 0;
     margin-top: 0;
+    width: 576px;
+    flex-shrink: 0;
     }
     .te-subscribe-inner-area {
       .te-content-wrapper {
-        gap: 70px;
+        gap: 84px;
         width: unset;
         padding: 82px 0 89px 0;
         flex-direction: row;
