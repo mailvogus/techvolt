@@ -21,13 +21,8 @@
 
           .te-another-image-inner {
             border: 5px solid $gray-200;
-            border-radius: 5px;
             overflow: hidden;
             display: inline-block;
-
-            img {
-              border-radius: 5px;
-            }
           }
           .video-btn {
             position: absolute;
