@@ -4572,6 +4572,72 @@ body.admin-bar .header-menu-area.sticky_menu {
         font-size: 55px;
         margin-top: 20px; }
 
+.te-testimonial-card-two {
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05); }
+  .te-testimonial-card-two .te-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px; }
+    .te-testimonial-card-two .te-content-wrapper .content {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 36px;
+      color: #335371;
+      margin-bottom: 0; }
+    .te-testimonial-card-two .te-content-wrapper .te-user-meta {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .te-testimonial-card-two .te-content-wrapper .te-user-meta .te-user-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 15px; }
+        .te-testimonial-card-two .te-content-wrapper .te-user-meta .te-user-info .icon {
+          color: #0E2BC5;
+          font-size: 40px; }
+        .te-testimonial-card-two .te-content-wrapper .te-user-meta .te-user-info .name {
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0.5px;
+          color: #14203A;
+          margin-bottom: 0; }
+        .te-testimonial-card-two .te-content-wrapper .te-user-meta .te-user-info .designation {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0.5px;
+          color: #0E2BC5; }
+      .te-testimonial-card-two .te-content-wrapper .te-user-meta .image {
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        overflow: hidden;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+
 .te-testimonial-slider-wrapper {
   position: relative; }
   .te-testimonial-slider-wrapper .slick-list {
@@ -7666,6 +7732,12 @@ ul.children {
   overflow: hidden;
   padding: 120px 0;
   background-color: #F7FBFE; }
+  .testimonial-slider-area.style-2 .slick-list {
+    margin: 0 -100px;
+    overflow: visible; }
+    .testimonial-slider-area.style-2 .slick-list .te-slick-item {
+      width: 520px;
+      margin: 0 15px; }
 
 .counter-up-area.style-2 {
   padding: 80px 0;
@@ -8537,5 +8609,4 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #335371; }
-
 /*# sourceMappingURL=style.css.map */

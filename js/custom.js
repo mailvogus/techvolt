@@ -246,7 +246,30 @@
             $('.slick-next').trigger('click');
         });
 
-
+        /*
+       Testimonial Slider Two
+       ============================*/
+       $("#testimonial_two").slick({
+        slidesToShow: 4,
+        infinite: true,
+        autoplay: false,
+        draggable: true,
+        arrows: true,
+        slidesToScroll: 2,
+        loop: true,
+        dots: true,
+        speed: 1500,
+        variableWidth:true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    autoplay: true,
+                    slidesToShow: 2,
+                },
+            }
+        ],
+    });
         /*
        Related Portfolio Slider
        ============================*/

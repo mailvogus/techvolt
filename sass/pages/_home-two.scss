@@ -127,6 +127,16 @@
     overflow: hidden;
     padding: 120px 0;
     background-color: $gray-100;
+
+    .slick-list {
+      margin: 0 -100px;
+      overflow: visible;
+
+      .te-slick-item {
+        width: 520px;
+        margin: 0 15px;
+      }
+    }
   }
 }
 
