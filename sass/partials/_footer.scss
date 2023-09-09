@@ -8,7 +8,7 @@
     .te-footer-sec {
       border-bottom: 1px solid rgba(225, 225, 225, 0.3);
       padding-top: 80px;
-      padding-bottom: 75px;
+      padding-bottom: 70px;
     }
   }
   //footer Background
@@ -18,6 +18,9 @@
     left: 0;
     z-index: -1;
   }
+  .footer-nav-widget {
+    padding: 0 90px;
+  }
 }
 .te-footer-widget-title {
   font-family: $heading-font;
@@ -25,7 +28,7 @@
   line-height: 39px;
   color: $white;
   position: relative;
-  margin-bottom: 26px;
+  margin-bottom: 10px;
   font-weight: 500;
 }
 .te-footer-widget {
@@ -117,7 +120,7 @@
       position: relative;
       display: inline-block;
       width: 100%;
-      padding-bottom: 10px;
+      padding-bottom: 2px;
 
       &:last-child {
         padding-top: 0;
@@ -130,7 +133,15 @@
         font-size: 18px;
         @include transition;
         position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
 
+        &::before {
+          content: "\f105";
+          font-family: $font-awesome;
+          font-size: 14px;
+        }
         &:hover {
           @include transition;
           color: $primary-color;
@@ -203,10 +214,11 @@
 
   // Footer Latest News
   .te_widget_latest_post {
-    padding-right: 75px;
 
     ul {
       li {
+        margin-bottom: 10px;
+
         .te-latest-post-thumb {
           width: 80px;
           height: 80px;
@@ -215,7 +227,7 @@
         }
         .te-latest-post-desc {
           .te-latest-post-title {
-            margin-bottom: 8px;
+            margin-bottom: 0;
             font-size: 18px;
             line-height: 29px;
             color: $white;
@@ -256,7 +268,7 @@
   ul {
     list-style: none;
     display: flex;
-    gap: 0 40px;
+    gap: 0 13px;
     align-items: center;
     justify-content: flex-end;
     margin-bottom: 0;
@@ -284,7 +296,7 @@
 }
 
 .footer-bottom-area {
-  padding: 20px 0;
+  padding: 16px 0;
 
   @include rmaxwd(991) {
     padding: 30px 0;
@@ -482,7 +494,7 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 30px;
-  margin-bottom: 80px;
+  margin-bottom: 66px;
   border-bottom: 1px solid rgba(225, 225, 225, 0.3);
 
   .te-social-widget {

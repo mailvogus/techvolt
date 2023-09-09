@@ -302,7 +302,9 @@ input.te-theme-btn {
   display: flex;
   align-items: center;
   gap: 20px;
-
+  position: relative;
+  top: -30px;
+  
   .te-slider-nav {
     width: 67px;
     height: 67px;
