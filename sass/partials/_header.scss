@@ -1,6 +1,10 @@
 .header-area {
   .container-fluid {
     padding: 0 70px;
+
+    @include rmaxwd (1399) {
+      padding: 0 24px;
+    }
   }
   &.style-1 {
     .header-top {
@@ -21,10 +25,12 @@
           }
         }
       }
-      .te-te-social-profile {
+      .te-social-profile {
         a {
           color: $blue-color;
           background-color: #E0E6F8;
+          width: 42px;
+          height: 42px;
           &:hover {
             @include transition;
             color: $white;
@@ -38,6 +44,10 @@
 
       .te-logo {
         border-right: 1px solid  rgba(20, 32, 58, 0.2);
+
+        @include rmaxwd (991) {
+          border: 0;
+        }
       }
     }
   }
@@ -130,13 +140,13 @@
     }
   }
 
-  .te-te-social-profile {
+  .te-social-profile {
     display: flex;
     align-items: center;
     gap: 7px;
     justify-content: flex-end;
 
-    .te-te-social-profile-label {
+    .te-social-profile-label {
       font-family:$dmsans-font;
       font-size: 16px;
       font-weight: 400;
@@ -149,13 +159,14 @@
       font-size: 16px;
       color: $black;
       @include transition;
-      width: 42px;
-      height: 42px;
+      width: 36px;
+      height: 36px;
       background-color: #1f242c1a;
       border-radius: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-shrink: 0;
 
       &:hover {
         @include transition;
@@ -381,6 +392,9 @@
         font-size: 16px;
         font-weight: 600;
 
+        @include lg {
+          padding: 32px 14px;
+        }
         &:before {
          position: absolute;
          content: "";
@@ -538,7 +552,7 @@
     align-self: stretch;
     height: auto;
     align-items: center;
-    background: $blue-color;
+    background: $orange-color;
     padding: 10px 30px;
     color: $black;
     font-size: 16px;

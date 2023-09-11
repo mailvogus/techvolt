@@ -32,24 +32,23 @@
     position: relative;
     padding: 40px;
   }
-  &.te-active {
+  &.active {
     right: 0;
   }
   .te-menu-sidebar-close {
     position: absolute;
-    top: 35px;
-    right: 45px;
+    top: 0;
+    right: 0;
 
     .te-menu-sidebar-close-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       font-size: 16px;
-      height: 45px;
-      width: 45px;
+      height: 55px;
+      width: 55px;
       background-color: $sky-color;
       color: $white;
-      border-radius: 50%;
       &:hover{
         background-color: $primary-color;
       }
@@ -102,7 +101,7 @@
         }
       }
       // Social Profile
-      .te-te-social-profile {
+      .te-social-profile {
         margin-top: 20px;
         border-top: 1px solid #dfe2e9;
         width: 100%;
@@ -133,7 +132,7 @@
   visibility: hidden;
   @include transition;
 
-  &.te-active {
+  &.active {
     opacity: 1;
     visibility: visible;
   }

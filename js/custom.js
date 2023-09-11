@@ -14,21 +14,21 @@
         /*
        Jquery sidebar Toggle
        ============================*/
-        $(".mobile-menu-toggle-btn").on("click", function () {
-            $(".menu-sidebar-area").addClass("active");
-            $(".body-overlay").addClass("active");
+        $(".te-mobile-menu-toggle-btn").on("click", function () {
+            $(".te-menu-sidebar-area").addClass("active");
+            $(".te-body-overlay").addClass("active");
         });
-        $(".menu-sidebar-close-btn").on("click", function () {
-            $(".menu-sidebar-area").removeClass("active");
-            $(".body-overlay").removeClass("active");
+        $(".te-menu-sidebar-close-btn").on("click", function () {
+            $(".te-menu-sidebar-area").removeClass("active");
+            $(".te-body-overlay").removeClass("active");
         });
 
         /*
        Jquery Body Overlay
        ============================*/
-        $(".body-overlay").on("click", function () {
-            $(".menu-sidebar-area").removeClass("active");
-            $(".body-overlay").removeClass("active");
+        $(".te-body-overlay").on("click", function () {
+            $(".te-menu-sidebar-area").removeClass("active");
+            $(".te-body-overlay").removeClass("active");
         });
         /*
         Stikey Js
