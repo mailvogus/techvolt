@@ -199,7 +199,7 @@
           height: 100%;
           left: -340px;
           width: 100%;
-          background-image: url('../images/shape/slider-shape.svg');
+          background-image: url('../images/shape/slider-shape.png');
           background-repeat: no-repeat;
         }
       }
@@ -282,13 +282,13 @@
             }
           }
           .te-slider-btn-wrapper {
-            margin-top: 40px;
+            padding-top: 52px;
             display: flex;
             align-items: center;
             gap: 27px;
 
             @include sm {
-              margin-top: 30px;
+              padding-top: 30px;
             }
 
             .te-theme-btn {
