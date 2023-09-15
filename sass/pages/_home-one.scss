@@ -2,7 +2,44 @@
 .about-us-area {
     &.style-1 {
         padding: 120px 0;
-        @include gradient-color
+        @include gradient-color;
+
+        @include sm {
+            padding: 80px 0;
+        }
+        
+        @include md {
+            padding: 100px 0;
+        }
+        .te-about-image-card {
+            @include rmaxwd(991) {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            .te-main-img-wrapper .te-main-img-inner {
+                @include rmaxwd(991) {
+                    width: 100%;
+                }
+            }
+            .te-company-foundation {
+                @include rmaxwd(1199) {
+                  left: 0;
+                }    
+            }
+        }
+        .te-about-info-card {
+            @include rmaxwd(1199) {
+            padding-left: 0;
+            }
+            @include lg {
+                padding-left: 60px;
+            }
+
+            @include xl {
+                padding-left: 80px;
+            }
+        }
     }
 }
 

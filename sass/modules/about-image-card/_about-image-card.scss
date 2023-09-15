@@ -19,6 +19,10 @@
         top: 35px;
         right: -35px;
         z-index: -1;
+
+        @include rmaxwd (575) {
+          right: 0;
+        }
       }
     }
   }
@@ -33,6 +37,7 @@
     background-color: $orange-color;
     padding: 36px 60px 40px 60px;
     clip-path: polygon(9% 0, 96% 0, 100% 100%, 0 100%);
+
     
     .te-counter-wrapper {
       color: $black;
@@ -55,6 +60,7 @@
       letter-spacing: 0.359px;
       color: $black;
       margin-bottom: 0;
+      text-align: left;
     }
   }
 }

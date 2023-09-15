@@ -175,13 +175,6 @@
     overflow: hidden;
     height: 800px;
 
-    @media only screen and (min-width: 768px) and (max-width: 1199px) {
-      height: 620px;
-      padding-bottom: 80px;
-    }
-    @include sm {
-      height: 800px;
-    }
 
       .te-slider-overlay { 
         background-color: $white;
@@ -208,14 +201,7 @@
         position: relative;
         z-index: 99;
 
-        @include sm {
-          padding-bottom: 30px;
-        }
         .te-slider-content {
-          @include sm {
-            text-align: center;
-          }
-
           .te-slider-short-title {
             font-family: $body-font;
             font-size: 13px;
@@ -286,7 +272,7 @@
             display: flex;
             align-items: center;
             gap: 27px;
-
+            flex-wrap: wrap-reverse;
             @include sm {
               padding-top: 30px;
             }
@@ -295,6 +281,7 @@
               padding: 11px 30px;
               color: $black;
               background-color: $orange-color;
+              flex-shrink: 0;
             }
             .te-call-btn {
               display: flex;
