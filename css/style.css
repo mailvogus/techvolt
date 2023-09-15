@@ -8268,6 +8268,15 @@ ul.children {
     z-index: -1; }
   .footer .footer-nav-widget {
     padding: 0 90px; }
+    @media (max-width: 991px) {
+      .footer .footer-nav-widget {
+        padding: 0 12px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .footer .footer-nav-widget {
+        padding: 0 20px; } }
+    @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+      .footer .footer-nav-widget {
+        padding: 0 30px; } }
 
 .te-footer-widget-title {
   font-family: "Inter", sans-serif;
@@ -8282,7 +8291,7 @@ ul.children {
   margin-bottom: 30px; }
   @media (max-width: 991px) {
     .te-footer-widget {
-      margin-bottom: 50px; } }
+      margin-bottom: 40px; } }
   .te-footer-widget ul {
     padding-left: 0; }
   .te-footer-widget.widget-latest-posts-footer {
@@ -8498,9 +8507,19 @@ ul.children {
   @media (max-width: 991px) {
     .footer-bottom-area {
       padding: 30px 0; } }
-  @media (max-width: 767px) {
-    .footer-bottom-area .te-copyright-text {
-      margin-bottom: 20px; } }
+  .footer-bottom-area .te-footer-bottom-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    gap: 10px 40px; }
   .footer-bottom-area .te-copyright-text p {
     color: #ffffff;
     margin-bottom: 0; }
@@ -8663,7 +8682,13 @@ ul.children {
           justify-content: space-between;
   padding-bottom: 30px;
   margin-bottom: 66px;
-  border-bottom: 1px solid rgba(225, 225, 225, 0.3); }
+  border-bottom: 1px solid rgba(225, 225, 225, 0.3);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px 60px; }
+  .te-footer-social-wrapper .te-footer-logo {
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
   .te-footer-social-wrapper .te-social-widget {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8671,7 +8696,9 @@ ul.children {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 20px; }
+    gap: 5px 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     .te-footer-social-wrapper .te-social-widget span {
       color: #ffffff;
       font-size: 20px;

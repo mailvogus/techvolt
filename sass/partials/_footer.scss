@@ -20,6 +20,16 @@
   }
   .footer-nav-widget {
     padding: 0 90px;
+
+    @include rmaxwd (991) {
+      padding: 0 12px;
+    }
+    @include lg {
+      padding: 0 20px;
+    }
+    @include xl {
+      padding: 0 30px;
+    }
   }
 }
 .te-footer-widget-title {
@@ -35,7 +45,7 @@
   margin-bottom: 30px;
 
   @include rmaxwd(991) {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   ul {
     padding-left: 0;
@@ -301,10 +311,15 @@
   @include rmaxwd(991) {
     padding: 30px 0;
   }
+
+  .te-footer-bottom-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    gap:10px 40px;
+  }
   .te-copyright-text {
-    @include rmaxwd(767) {
-      margin-bottom: 20px;
-    }
     p {
       color: $white;
       margin-bottom: 0;
@@ -496,11 +511,17 @@
   padding-bottom: 30px;
   margin-bottom: 66px;
   border-bottom: 1px solid rgba(225, 225, 225, 0.3);
-
+  flex-wrap: wrap;
+  gap: 20px 60px;
+  
+  .te-footer-logo {
+    flex-shrink: 0;
+  }
   .te-social-widget {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px 20px;
+    flex-wrap: wrap;
 
     span {
       color: $white;
