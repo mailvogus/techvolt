@@ -359,7 +359,15 @@
     gap: 30px;
     width: 800px;
     padding: 82px 0 89px 0;
-    
+
+    @media only screen and (min-width: 810px) and (max-width: 991px) {
+      padding: 100px 24px 100px 24px;
+      margin: 0 auto;
+    }
+    @include rmaxwd(809) {
+      padding: 80px 24px 80px 24px;
+      width: 100%;
+    }
     .short-title {
       font-size: 21px;
       font-weight: 500;
@@ -392,11 +400,19 @@
       color: $white;
       margin-bottom: 0;
       padding-right: 100px;
+
+      @include sm {
+        padding-right: 0;
+      }
     }
   }
   .te-subscribe-form-wrapper {
     padding-right: 224px;
     margin-top: 10px;
+
+    @include sm {
+      padding-right: 0;
+    }
   }
   .te-subscribe-inner-area {
     display: flex;
@@ -411,16 +427,26 @@
       flex-basis: 0;
       background-repeat: no-repeat;
       background-position: center center;
-      background-image: cover;
+      background-size: cover;
+
+      &.te-image-bg-collumn {
+        @include rmaxwd(991) {
+          display: none;
+        }
+      }
     }
 
     .mc4wp-form-fields {
       background-color: transparent;
       gap: 28px;
 
+      @include rmaxwd(575) {
+        flex-direction: column;
+      }
       .submit-btn {
         border-radius: 5px;
-        padding: 0 30px;
+        padding: 10px 30px;
+        justify-content: center;
       }
     }
   }
@@ -438,6 +464,7 @@
     background-color: $white;
     border-radius: 5px;
     overflow: hidden;
+
   }
 
   .single-field {

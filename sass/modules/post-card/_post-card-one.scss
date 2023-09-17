@@ -3,7 +3,8 @@
   flex-direction: column;
   position: relative;
   gap: 23px;
-
+  margin-bottom: 24px;
+  
   .image {
     overflow: hidden;
     border-radius: 5px;
@@ -12,6 +13,7 @@
     img {
       @include transition;
       transform: scale(1);
+      width: 100%;
     }
 
     .te-post-date {

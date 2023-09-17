@@ -305,6 +305,9 @@ input.te-theme-btn {
   position: relative;
   top: -30px;
   
+  @include sm {
+    top: unset;
+  }
   .te-slider-nav {
     width: 67px;
     height: 67px;

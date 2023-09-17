@@ -75,7 +75,17 @@
 .portfolio-area {
     &.style-1 {
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 96px;
+
+        @include sm {
+            padding-top: 80px;
+            padding-bottom: 56px;
+        }
+
+        @include md {
+            padding-top: 100px;
+            padding-bottom: 76px;
+        }
     }
 }
 
@@ -88,6 +98,13 @@
         background-repeat: no-repeat;
         background-position: center bottom;
         margin-top: -655px;
+
+        @include sm {
+            padding-bottom: 80px;
+        }
+        @include md {
+            padding-bottom: 100px;
+        }
     }
 }
 
@@ -95,7 +112,17 @@
 .te-process-step-area {
     &.style-1 {
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 96px;
+
+        @include sm {
+            padding-top: 80px;
+            padding-bottom: 56px;
+        }
+
+        @include md {
+            padding-top: 100px;
+            padding-bottom: 76px;
+        }
     }
 }
 
@@ -105,7 +132,16 @@
 .latest-posts-area {
     &.style-1 {
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 80px;
+
+        @include sm {
+            padding-top: 100px;
+            padding-bottom: 40px;
+        }
+        @include md {
+            padding-top: 100px;
+            padding-bottom: 60px;
+        }
     }
 }
 

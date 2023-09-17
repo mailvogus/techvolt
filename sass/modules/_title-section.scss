@@ -4,6 +4,13 @@
   align-items: end;
   margin-bottom: 60px;
 
+  @include sm {
+    flex-direction: column;
+    gap: 50px;
+    align-items: unset;
+    margin-bottom: 40px;
+  }
+
   .te-section-content {
     display: flex;
     gap: 16px;
