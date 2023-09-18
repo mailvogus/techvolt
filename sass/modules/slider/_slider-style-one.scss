@@ -198,16 +198,27 @@
       }
       .slider-shape {
         position: absolute;
-
-        &.shape-two {
-          top: 65px;
-          right: -100px;
-        }
-
-        &.shape-four {
-          bottom: 65px;
-          left: -100px;
-        }
+      }
+      .shape-one {
+        top: 143px;
+        left: -140px;
+      }
+      .shape-two {
+        top: 65px;
+        right: -100px;
+      }
+      .shape-three {
+        bottom: 64px;
+        left: -50px;
+      }
+      .shape-four {
+        bottom: 65px;
+        left: -90px;
+      }
+      .shape-five {
+        top: 120px;
+        right: -150px;
+        z-index: -2;
       }
       .te-slider-container {
         display: flex;
