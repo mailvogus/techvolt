@@ -1,5 +1,5 @@
 .slider-area {
-  &.style-2 {
+  &.style-1 {
     position: relative;
 
     .te-single-slider {
@@ -31,6 +31,15 @@
             font-weight: 500;
             line-height: 96.76px;
             letter-spacing: -1px;
+
+            @include md {
+              font-size: 42px;
+              line-height: 62px;
+            }
+            @include lg {
+              font-size: 62px;
+              line-height: 80px;
+            }
           }
         }
       }
@@ -69,27 +78,40 @@
           display: none;
         }
       }
-      .te-slider-image {
+      .slider-shape-bg {
         position: relative;
-        z-index: 2;
-        float: right;
-        margin-top: inherit;
-        animation: MoveLeftRight 2s linear infinite alternate;
-        right: -100px;
-        img {
-          float: right;
-        }
+        position: absolute;
+        height: 100%;
+        top: 0;
+        width: 500px;
+        z-index: 1;
+        right: 0;
+
+
         &:before {
           position: absolute;
           content: "";
-          width: 500px;
-          height: 2000px;
+          width: 100%;
+          height: 100%;
           background: linear-gradient(180deg, #F1F8FF 0%, #C9E4FF 100%);
           border-radius: 0;
-          top: -1000px;
           transform: skewX(-10deg);
           z-index: -1;
           right: 0;
+        }
+      }
+      .te-slider-image {
+        position: relative;
+        z-index: 2;
+        margin-top: inherit;
+        animation: MoveLeftRight 2s linear infinite alternate;
+        // right: -100px;
+        text-align: right;
+        margin-right: -70px;
+
+        .te-slider-image-inner {
+          display: inline-block;
+          text-align: right;
         }
       }
     }

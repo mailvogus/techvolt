@@ -106,66 +106,66 @@
 
 
   // Slick Nav Arrow Button
-  button.slider-arrow-btn {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    transition: 0.3s;
-    z-index: 99;
-    background-color: transparent;
-    border: 1px solid $gray-300;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-    overflow: hidden;
-    display: none !important;
+  // button.slider-arrow-btn {
+  //   position: absolute;
+  //   width: 60px;
+  //   height: 60px;
+  //   border-radius: 50%;
+  //   transition: 0.3s;
+  //   z-index: 99;
+  //   background-color: transparent;
+  //   border: 1px solid $gray-300;
+  //   cursor: pointer;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   overflow: hidden;
+  //   display: none !important;
 
-    &:before {
-      position: absolute;
-      width: 0;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background: linear-gradient(-45deg, rgb(227,0,8) 0%, rgb(250,174,0) 100%);
-      content: "";
-      @include transition;
-      z-index: -1;
-    }
-    @include rmaxwd(767) {
-      width: 40px;
-      height: 40px;
-    }
-    &.prev-btn {
-      left: 30px;
-    }
-    &.next-btn {
-      right: 30px;
-    }
-    i{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: $orange-color;
-      font-size: 21px;
-      @include transition;
-    }
-    &:hover{
-      @include transition;
-      border-color: $orange-color;
+  //   &:before {
+  //     position: absolute;
+  //     width: 0;
+  //     height: 100%;
+  //     left: 0;
+  //     top: 0;
+  //     background: linear-gradient(-45deg, rgb(227,0,8) 0%, rgb(250,174,0) 100%);
+  //     content: "";
+  //     @include transition;
+  //     z-index: -1;
+  //   }
+  //   @include rmaxwd(767) {
+  //     width: 40px;
+  //     height: 40px;
+  //   }
+  //   &.prev-btn {
+  //     left: 30px;
+  //   }
+  //   &.next-btn {
+  //     right: 30px;
+  //   }
+  //   i{
+  //     position: absolute;
+  //     top: 50%;
+  //     left: 50%;
+  //     transform: translate(-50%, -50%);
+  //     color: $orange-color;
+  //     font-size: 21px;
+  //     @include transition;
+  //   }
+  //   &:hover{
+  //     @include transition;
+  //     border-color: $orange-color;
 
-      &:before {
-        width: 100%;
-        @include transition;
-      }
+  //     &:before {
+  //       width: 100%;
+  //       @include transition;
+  //     }
 
-      i{
-        color: $white;
-        @include transition;
-      }
-    }
-  }
+  //     i{
+  //       color: $white;
+  //       @include transition;
+  //     }
+  //   }
+  // }
   .te-single-slider {
     background-size: cover;
     background-repeat: no-repeat;
@@ -196,7 +196,28 @@
           background-repeat: no-repeat;
         }
       }
+      .slider-shape {
+        position: absolute;
 
+        &.shape-two {
+          top: 65px;
+          right: -100px;
+        }
+
+        &.shape-four {
+          bottom: 65px;
+          left: -100px;
+        }
+      }
+      .te-slider-container {
+        display: flex;
+        padding-top: 120px;
+
+        .te-slider-column {
+          width: 50%;
+          flex-grow: 1;
+        }
+      }
       .te-slider-content-wrapper {
         position: relative;
         z-index: 99;
@@ -206,7 +227,7 @@
             font-family: $body-font;
             font-size: 13px;
             font-weight: 600;
-            line-height: 30px;
+            line-height: 26px;
             letter-spacing: 2px;
             text-transform: uppercase;
             color: $primary-color;
@@ -214,12 +235,7 @@
             width: 100%;
             margin-bottom: 15px;
 
-            @include lg {
-              font-size: 18px;
-            }
-            @include sm {
-              font-size: 16px;
-            }
+
           }
           .te-slider-title {
           color: $black;
@@ -324,31 +340,31 @@
         }
 
       }
-    .te-slider-image {
-      position: relative;
-      z-index: 2;
-      width: 860px;
-      animation: MoveUpDown 2s linear infinite alternate;
-      right: 47px;
-      top: 24px;
+    // .te-slider-image {
+    //   position: relative;
+    //   z-index: 2;
+    //   width: 860px;
+    //   animation: MoveUpDown 2s linear infinite alternate;
+    //   right: 47px;
+    //   top: 24px;
 
-      &.te-moblile-slider-img {
-        @include sm {
-          left: -30px;
-        }
-      }
+    //   &.te-moblile-slider-img {
+    //     @include sm {
+    //       left: -30px;
+    //     }
+    //   }
 
-      @include sm {
-        animation: none;
-        //margin-bottom: -150px;
-        right: unset;
-        text-align: center;
-      }
-      @include rmaxwd(1799) {
-        width: auto;
-        margin-top: inherit;
-      }
+    //   @include sm {
+    //     animation: none;
+    //     //margin-bottom: -150px;
+    //     right: unset;
+    //     text-align: center;
+    //   }
+    //   @include rmaxwd(1799) {
+    //     width: auto;
+    //     margin-top: inherit;
+    //   }
 
-    }
+    // }
   }
 }
