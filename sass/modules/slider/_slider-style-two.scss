@@ -4,7 +4,8 @@
 
     .te-single-slider {
       position: relative;
-      
+
+
       .te-slider-overlay {
         left: 0;
         @include gradient-color;
@@ -13,9 +14,66 @@
           display: none;
         }
       }
+      .slider-shape {
+        position: absolute;
+
+        @include sm {
+          display: none;
+        }
+        @include md {
+          display: none;
+        }
+      }
+      .shape-one {
+        top: 143px;
+        left: -140px;
+      }
+      .shape-two {
+        top: 65px;
+        right: -100px;
+      }
+      .shape-three {
+        bottom: 64px;
+        left: -50px;
+      }
+      .shape-four {
+        bottom: 65px;
+        left: -90px;
+      }
+      .shape-five {
+        top: 120px;
+        right: -150px;
+        z-index: -2;
+      }
+      .te-slider-container {
+        display: flex;
+        padding: 120px 0;
+        gap: 30px;
+
+        @include sm {
+          flex-direction: column-reverse;
+          padding: 80px 0;
+          text-align: center;
+        }
+        @include md {
+          padding: 100px 0;
+          align-items: center;
+        }
+        .te-slider-column {
+          width: 50%;
+          flex-grow: 1;
+
+          @include sm {
+            width: 100%;
+          }
+        }
+      }
       .te-slider-content-wrapper {
         .te-slider-content {
           .te-slider-btn-wrapper {
+            @include sm {
+              justify-content: center;
+            }
             .te-theme-btn {
               background-color: $blue-color;
               color: $white;
@@ -32,9 +90,15 @@
             line-height: 96.76px;
             letter-spacing: -1px;
 
+            @include sm {
+              font-size: 28px;
+              line-height: 42px;
+            }
+
+
             @include md {
-              font-size: 42px;
-              line-height: 62px;
+              font-size: 32px;
+              line-height: 52px;
             }
             @include lg {
               font-size: 62px;
@@ -57,6 +121,15 @@
         z-index: 1;
         right: 0;
 
+        @include sm {
+          display: none;
+        }
+        @include md {
+          width: 350px;
+        }
+        @include lg {
+          width: 410px;
+        }
 
         &:before {
           position: absolute;
@@ -75,10 +148,16 @@
         z-index: 2;
         margin-top: inherit;
         animation: MoveLeftRight 2s linear infinite alternate;
-        // right: -100px;
         text-align: right;
         margin-right: -70px;
 
+        @include sm {
+          width: 350px;
+          margin: 0 auto;
+        }
+        @include md {
+          margin-right: 0;
+        }
         .te-slider-image-inner {
           display: inline-block;
           text-align: right;
