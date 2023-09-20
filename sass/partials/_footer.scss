@@ -352,6 +352,7 @@
 // Footer Subscribe
 .subscribe-area {
   background-color: $blue-color;
+  overflow: hidden;
   
   .te-content-wrapper {
     display: flex;
@@ -447,6 +448,7 @@
         border-radius: 5px;
         padding: 10px 30px;
         justify-content: center;
+        flex-grow: 1;
       }
     }
   }

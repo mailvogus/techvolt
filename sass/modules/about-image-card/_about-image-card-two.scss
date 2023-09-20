@@ -17,6 +17,10 @@
         .te-img-card-shape {
           right: -66px;
           top: 60px;
+
+          @include sm {
+            display: none;
+          }
         }
         .te-another-image {
           position: absolute;

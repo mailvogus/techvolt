@@ -150,8 +150,9 @@
 
 // Testimonial Slider Area
 .testimonial-slider-area {
+  overflow: hidden;
+
   &.style-2 {
-    overflow: hidden;
     padding: 120px 0;
     background-color: $gray-100;
 
@@ -215,7 +216,10 @@
     background-size: cover;
     background-position: center left;
     background-color: $blue-color;
-
+    
+    @include rmaxwd(991) {
+      background-image: none !important;
+    }
     // .te-subscribe-bg {
     //   position: absolute;
     //   width: 576px;
@@ -230,6 +234,13 @@
     margin-top: 0;
     width: 576px;
     flex-shrink: 0;
+
+    @include sm {
+      width: 100%;
+    }
+    @include lg {
+      width: unset;
+    }
     }
     .te-subscribe-inner-area {
       .te-content-wrapper {
@@ -243,6 +254,23 @@
         position: relative;
         z-index: 2;
 
+        @include sm {
+          padding: 80px 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+        float: unset;
+        }
+        @include md {
+          padding: 100px 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+        float: unset;
+        }
+        @include lg {
+          gap: 60px;
+        }
         &::before {
           position: absolute;
           content: "";
@@ -267,7 +295,7 @@
         .te-subscribe-title {
           font-size: 38px;
           font-weight: 500;
-          line-height: 52.527px;
+          line-height: 46px;
           letter-spacing: -0.676px;
           text-transform: capitalize;
           margin-bottom: 0;
@@ -277,7 +305,9 @@
           display: flex;
           align-items: center;
           gap: 20px;
-
+          @include sm {
+            flex-wrap: wrap;
+          }
           .icon {
             width: 90px;
             height: 90px;
@@ -298,6 +328,11 @@
       }
       .mc4wp-form-fields {
         gap: 0;
+        flex-wrap: wrap;
+
+        @include lg {
+          flex-direction: column;
+        }
       }
     }
   }
