@@ -7845,7 +7845,7 @@ ul.children {
   padding-bottom: 80px; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .latest-posts-area.style-1 {
-      padding-top: 100px;
+      padding-top: 80px;
       padding-bottom: 40px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .latest-posts-area.style-1 {
@@ -8008,7 +8008,16 @@ ul.children {
             justify-content: flex-start; }
 
 .latest-posts-area.style-2 {
-  padding: 120px 0; }
+  padding-top: 120px;
+  padding-bottom: 80px; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .latest-posts-area.style-2 {
+      padding-top: 80px;
+      padding-bottom: 40px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .latest-posts-area.style-2 {
+      padding-top: 100px;
+      padding-bottom: 60px; } }
 
 .subscribe-area.style-2 {
   position: relative;
@@ -9067,4 +9076,5 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #335371; }
+
 /*# sourceMappingURL=style.css.map */

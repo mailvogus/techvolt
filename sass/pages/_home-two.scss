@@ -203,10 +203,19 @@
 // Latest Posts Area
 .latest-posts-area {
   &.style-2 {
-    padding: 120px 0;
+      padding-top: 120px;
+      padding-bottom: 80px;
+
+      @include sm {
+          padding-top: 80px;
+          padding-bottom: 40px;
+      }
+      @include md {
+          padding-top: 100px;
+          padding-bottom: 60px;
+      }
   }
 }
-
 // Subscribe Area
 .subscribe-area {
   &.style-2 {
