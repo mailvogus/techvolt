@@ -4609,6 +4609,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   border-radius: 5px;
   position: relative;
   z-index: 2; }
+  @media (max-width: 570px) {
+    .te-testimonial-card {
+      padding: 30px 30px 0 30px; } }
   .te-testimonial-card::before {
     position: absolute;
     content: "";
@@ -4619,6 +4622,9 @@ body.admin-bar .header-menu-area.sticky_menu {
     background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%);
     z-index: -1;
     width: 80%; }
+    @media (max-width: 570px) {
+      .te-testimonial-card::before {
+        width: 100%; } }
   .te-testimonial-card .te-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4644,6 +4650,11 @@ body.admin-bar .header-menu-area.sticky_menu {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+      @media (max-width: 570px) {
+        .te-testimonial-card .te-content-wrapper .te-user-meta {
+          -webkit-box-align: end;
+              -ms-flex-align: end;
+                  align-items: flex-end; } }
       .te-testimonial-card .te-content-wrapper .te-user-meta .te-user-info {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -4674,6 +4685,10 @@ body.admin-bar .header-menu-area.sticky_menu {
           letter-spacing: 0.5px;
           color: #14203A;
           margin-bottom: 0; }
+          @media only screen and (min-width: 0px) and (max-width: 767px) {
+            .te-testimonial-card .te-content-wrapper .te-user-meta .te-user-info .name {
+              font-size: 18px;
+              line-height: 28px; } }
         .te-testimonial-card .te-content-wrapper .te-user-meta .te-user-info .designation {
           font-size: 18px;
           font-weight: 400;
@@ -4683,6 +4698,13 @@ body.admin-bar .header-menu-area.sticky_menu {
         color: #E1E1E1;
         font-size: 55px;
         margin-top: 20px; }
+        @media (max-width: 570px) {
+          .te-testimonial-card .te-content-wrapper .te-user-meta .icon {
+            position: absolute;
+            right: 30px;
+            top: 0;
+            z-index: -1;
+            font-size: 35px; } }
 
 .te-testimonial-card-two {
   padding: 40px;
@@ -8988,5 +9010,4 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #335371; }
-
 /*# sourceMappingURL=style.css.map */

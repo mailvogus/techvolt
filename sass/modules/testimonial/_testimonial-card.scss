@@ -5,6 +5,9 @@
     position: relative;
     z-index: 2;
 
+    @include rmaxwd(570) {
+        padding: 30px 30px 0 30px;
+    }
     &::before {
         position: absolute;
         content: "";
@@ -14,6 +17,10 @@
         @include gradient-color;
         z-index: -1;
         width: 80%;
+
+        @include rmaxwd(570) {
+            width: 100%;
+        }
     }
     .te-content-wrapper {
         display: flex;
@@ -32,9 +39,13 @@
             align-items: center;
             justify-content: space-between;
 
+            @include rmaxwd(570) {
+                align-items: flex-end;
+            }
             .te-user-info {
                 display: flex;
                 gap: 20px;
+                
 
                 .image {
                     width: 74px;
@@ -58,6 +69,11 @@
                     letter-spacing: 0.5px;
                     color: $black;
                     margin-bottom: 0;
+
+                    @include sm {
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
                 }
                 .designation {
                     font-size: 18px;
@@ -70,6 +86,14 @@
                 color: $gray-200;
                 font-size: 55px;
                 margin-top: 20px;
+
+                @include rmaxwd(570) {
+                    position: absolute;
+                    right: 30px;
+                    top: 0;
+                    z-index: -1;
+                    font-size: 35px;
+                }
             }
         }
     }
