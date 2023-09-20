@@ -4,6 +4,9 @@
     position: relative;
     margin-bottom: 24px;
     
+    @include xl {
+        padding: 45px 35px 60px 35px;
+    }
     &:hover {
         .icon {
             img {
