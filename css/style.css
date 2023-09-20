@@ -3717,6 +3717,12 @@ body.admin-bar .header-menu-area.sticky_menu {
           box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   padding: 40px 40px 27px 40px; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .te-info-card.style-2 {
+      padding: 35px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .te-info-card.style-2 {
+      padding: 35px; } }
   .te-info-card.style-2:hover .image img {
     -webkit-transform: scale(1.03);
             transform: scale(1.03);

@@ -5,6 +5,12 @@
         border-radius: 5px;
         padding: 40px 40px 27px 40px;
 
+        @include sm {
+            padding: 35px;
+        }
+        @include lg {
+            padding: 35px;
+        }
         &:hover {
             .image {
                 img {
