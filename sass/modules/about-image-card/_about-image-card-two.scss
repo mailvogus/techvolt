@@ -6,6 +6,10 @@
         border-radius: 5px;
         padding-right: 80px;
         margin-top: 23px;
+        @include sm {
+          padding-right: 0;
+          margin-top: 0;
+        }
         > img {
           margin: 0;
           border-radius: 5px;
@@ -18,11 +22,28 @@
           position: absolute;
           top: 55%;
           right: -66px;
+          @include sm {
+            position: relative;
+            right: unset;
+            top: unset;
+          }
+
+          @include xl {
+            position: relative;
+          }
 
           .te-another-image-inner {
             border: 5px solid $gray-200;
             overflow: hidden;
             display: inline-block;
+
+            @include sm {
+              width: 100%;
+
+              img {
+                width: 100%;
+              }
+            }
           }
           .video-btn {
             position: absolute;
@@ -30,6 +51,10 @@
             left: 0;
             transform: translate(-50%, -50%);
 
+            @include sm {
+              left: 0;
+              transform: translate(0%, -50%);
+            }
               a {
                 display: flex;
                 flex-direction: column;
@@ -56,6 +81,12 @@
             left: -33%;
             top: 46%;
 
+            @include sm {
+              left: unset;
+              top: 0;
+              transform: translate(-0%, -50%);
+              right: 0;
+            }
             .icon {
               width: 52px;
               height: 52px;

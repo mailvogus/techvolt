@@ -29,6 +29,11 @@
               width: 1px;
               background-color: $gray-200;
               height: 127px;
+
+              @include sm {
+                height: 1px;
+                width: 100%;
+              }
             }
           }
       }

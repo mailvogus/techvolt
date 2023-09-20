@@ -3489,7 +3489,7 @@ body.admin-bar .header-menu-area.sticky_menu {
         display: none; } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .slider-area.style-1 .te-slider-wrapper .slider-shape-bg {
-        width: 350px; } }
+        display: none; } }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .slider-area.style-1 .te-slider-wrapper .slider-shape-bg {
         width: 410px; } }
@@ -4001,6 +4001,10 @@ body.admin-bar .header-menu-area.sticky_menu {
   border-radius: 5px;
   padding-right: 80px;
   margin-top: 23px; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner {
+      padding-right: 0;
+      margin-top: 0; } }
   .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner > img {
     margin: 0;
     border-radius: 5px; }
@@ -4011,16 +4015,34 @@ body.admin-bar .header-menu-area.sticky_menu {
     position: absolute;
     top: 55%;
     right: -66px; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image {
+        position: relative;
+        right: unset;
+        top: unset; } }
+    @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+      .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image {
+        position: relative; } }
     .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image .te-another-image-inner {
       border: 5px solid #E1E1E1;
       overflow: hidden;
       display: inline-block; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image .te-another-image-inner {
+          width: 100%; }
+          .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image .te-another-image-inner img {
+            width: 100%; } }
     .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image .video-btn {
       position: absolute;
       top: 0;
       left: 0;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image .video-btn {
+          left: 0;
+          -webkit-transform: translate(0%, -50%);
+                  transform: translate(0%, -50%); } }
       .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image .video-btn a {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -4059,6 +4081,13 @@ body.admin-bar .header-menu-area.sticky_menu {
       position: absolute;
       left: -33%;
       top: 46%; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image .te-badge-text {
+          left: unset;
+          top: 0;
+          -webkit-transform: translate(0%, -50%);
+                  transform: translate(0%, -50%);
+          right: 0; } }
       .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image .te-badge-text .icon {
         width: 52px;
         height: 52px;
@@ -4132,6 +4161,13 @@ body.admin-bar .header-menu-area.sticky_menu {
     display: -ms-flexbox;
     display: flex;
     gap: 30px; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .te-about-info-card .te-about-info-content .te-info-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 20px; } }
     .te-about-info-card .te-about-info-content .te-info-list .te-single-info-list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -4186,6 +4222,10 @@ body.admin-bar .header-menu-area.sticky_menu {
       width: 1px;
       background-color: #E1E1E1;
       height: 127px; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .te-about-info-card.style-2 .te-about-info-content .te-info-list .divider {
+          height: 1px;
+          width: 100%; } }
 
 .te-about-info-card.style-three .te-section-title {
   margin-bottom: 40px; }
@@ -7677,34 +7717,29 @@ ul.children {
     right: unset; }
 
 .about-us-area.style-1 {
-  padding: 120px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#E0F0FE), to(#F8FCFF));
-  background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%); }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .about-us-area.style-1 {
-      padding: 80px 0; } }
+  padding-top: 120px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .about-us-area.style-1 {
-      padding: 100px 0; } }
-  @media (max-width: 991px) {
-    .about-us-area.style-1 .te-about-image-card {
-      text-align: center;
-      margin-bottom: 50px; } }
-  @media (max-width: 991px) {
-    .about-us-area.style-1 .te-about-image-card .te-main-img-wrapper .te-main-img-inner {
-      width: 100%; } }
-  @media (max-width: 1199px) {
-    .about-us-area.style-1 .te-about-image-card .te-company-foundation {
-      left: 0; } }
-  @media (max-width: 1199px) {
-    .about-us-area.style-1 .te-about-info-card {
-      padding-left: 0; } }
+      padding-top: 80px; } }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .about-us-area.style-1 .te-about-info-card {
-      padding-left: 60px; } }
-  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    .about-us-area.style-1 .te-about-info-card {
-      padding-left: 80px; } }
+    .about-us-area.style-1 {
+      padding-top: 100px; } }
+  .about-us-area.style-1 .te-about-info-card.style-2 {
+    padding-right: 30px; }
+  .about-us-area.style-1 .te-about-image-card.style-2 {
+    padding-left: 30px; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .about-us-area.style-1 .te-about-image-card.style-2 {
+        padding-left: 0;
+        margin-bottom: 50px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .about-us-area.style-1 .te-about-image-card.style-2 {
+        margin-bottom: 200px;
+        padding-left: 0; } }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .about-us-area.style-1 .te-about-image-card.style-2 {
+        margin-bottom: 200px;
+        padding-left: 0; } }
 
 .feature-area.style-1 {
   padding-top: 120px;
@@ -7775,11 +7810,34 @@ ul.children {
   overflow: hidden; }
 
 .about-us-area.style-2 {
-  padding-top: 120px; }
-  .about-us-area.style-2 .te-about-info-card.style-2 {
-    padding-right: 30px; }
-  .about-us-area.style-2 .te-about-image-card.style-2 {
-    padding-left: 30px; }
+  padding: 120px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E0F0FE), to(#F8FCFF));
+  background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%); }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .about-us-area.style-2 {
+      padding: 80px 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about-us-area.style-2 {
+      padding: 100px 0; } }
+  @media (max-width: 991px) {
+    .about-us-area.style-2 .te-about-image-card {
+      text-align: center;
+      margin-bottom: 50px; } }
+  @media (max-width: 991px) {
+    .about-us-area.style-2 .te-about-image-card .te-main-img-wrapper .te-main-img-inner {
+      width: 100%; } }
+  @media (max-width: 1199px) {
+    .about-us-area.style-2 .te-about-image-card .te-company-foundation {
+      left: 0; } }
+  @media (max-width: 1199px) {
+    .about-us-area.style-2 .te-about-info-card {
+      padding-left: 0; } }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .about-us-area.style-2 .te-about-info-card {
+      padding-left: 60px; } }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .about-us-area.style-2 .te-about-info-card {
+      padding-left: 80px; } }
 
 .portfolio-area.style-2 {
   padding-top: 120px;
