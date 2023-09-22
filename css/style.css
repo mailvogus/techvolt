@@ -2483,41 +2483,41 @@ body.admin-bar .header-menu-area.sticky_menu {
   @media (max-width: 1550px) {
     .header-area .container-fluid {
       padding: 0 24px; } }
-.header-area.style-1 .header-top {
+.header-area.style-2 .header-top {
   padding: 9px 0;
   background-color: #F7FBFE;
   border-bottom: 1px solid rgba(20, 32, 58, 0.2); }
-  .header-area.style-1 .header-top .te-header-contact-info span {
+  .header-area.style-2 .header-top .te-header-contact-info span {
     color: #677471; }
-    .header-area.style-1 .header-top .te-header-contact-info span i {
+    .header-area.style-2 .header-top .te-header-contact-info span i {
       color: #0E2BC5; }
-    .header-area.style-1 .header-top .te-header-contact-info span a {
+    .header-area.style-2 .header-top .te-header-contact-info span a {
       color: #677471; }
-  .header-area.style-1 .header-top .te-social-profile a {
+  .header-area.style-2 .header-top .te-social-profile a {
     color: #0E2BC5;
     background-color: #E0E6F8;
     width: 42px;
     height: 42px; }
-    .header-area.style-1 .header-top .te-social-profile a:hover {
+    .header-area.style-2 .header-top .te-social-profile a:hover {
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out;
       color: #ffffff;
       background-color: #0E2BC5; }
-.header-area.style-1 .te-header-menu-area {
+.header-area.style-2 .te-header-menu-area {
   background-color: #F7FBFE; }
-  .header-area.style-1 .te-header-menu-area .te-logo {
+  .header-area.style-2 .te-header-menu-area .te-logo {
     border-right: 1px solid rgba(20, 32, 58, 0.2);
     width: 355px;
     -ms-flex-negative: 0;
         flex-shrink: 0; }
     @media only screen and (min-width: 1060px) and (max-width: 1460px) {
-      .header-area.style-1 .te-header-menu-area .te-logo {
+      .header-area.style-2 .te-header-menu-area .te-logo {
         width: 290px; } }
     @media only screen and (min-width: 992px) and (max-width: 1059px) {
-      .header-area.style-1 .te-header-menu-area .te-logo {
+      .header-area.style-2 .te-header-menu-area .te-logo {
         width: 225px; } }
     @media (max-width: 991px) {
-      .header-area.style-1 .te-header-menu-area .te-logo {
+      .header-area.style-2 .te-header-menu-area .te-logo {
         border: 0;
         width: 235px; } }
 
@@ -5891,7 +5891,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   background: -webkit-gradient(linear, left top, left bottom, from(#E0F0FE), to(#F8FCFF));
   background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%);
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: left center;
+  background-size: contain; }
   @media (max-width: 991px) {
     .page-breadcrumb-area {
       padding: 100px 0; } }

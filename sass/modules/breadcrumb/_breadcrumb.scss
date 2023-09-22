@@ -5,7 +5,8 @@
   background-size: cover;
   background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: left center;
+  background-size: contain;
 
   @include rmaxwd(991) {
     padding: 100px 0;
