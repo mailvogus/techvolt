@@ -27,18 +27,22 @@
       .shape-one {
         top: 143px;
         left: -140px;
+        animation: zoom-in-zoom-out 5s ease infinite;
       }
       .shape-two {
         top: 65px;
         right: -100px;
+        animation: spin 6s linear infinite;
       }
       .shape-three {
         bottom: 64px;
         left: -50px;
+        animation: MoveLeftRight 2s linear infinite alternate;
       }
       .shape-four {
         bottom: 65px;
         left: -90px;
+        animation: MoveUpDown 2s linear infinite alternate;
       }
       .shape-five {
         top: 120px;
@@ -77,6 +81,11 @@
             .te-theme-btn {
               background-color: $blue-color;
               color: $white;
+
+              &:hover {
+                background-color: $orange-color;
+                color: $black;
+              }
             }
             .te-call-btn {
               .te-icon {

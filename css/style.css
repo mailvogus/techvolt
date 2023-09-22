@@ -2339,6 +2339,34 @@ body.admin-bar .header-menu-area.sticky_menu {
     transform: translateY(-100%); }
   51% {
     opacity: 1; } }
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+@-webkit-keyframes zoom-in-zoom-out {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
+  50% {
+    -webkit-transform: scale(0.7, 0.7);
+            transform: scale(0.7, 0.7); }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }
+@keyframes zoom-in-zoom-out {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
+  50% {
+    -webkit-transform: scale(0.7, 0.7);
+            transform: scale(0.7, 0.7); }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }
 #preloader {
   position: fixed;
   top: 0;
@@ -3379,7 +3407,11 @@ body.admin-bar .header-menu-area.sticky_menu {
                     align-items: center;
             -webkit-box-pack: center;
                 -ms-flex-pack: center;
-                    justify-content: center; }
+                    justify-content: center;
+            -webkit-animation: ripple 4s infinite;
+                    animation: ripple 4s infinite;
+            -webkit-box-shadow: 0 0 0 0 rgba(249, 212, 20, 0.8);
+                    box-shadow: 0 0 0 0 rgba(249, 212, 20, 0.8); }
           .slider-area .te-single-slider .te-slider-content-wrapper .te-slider-content .te-slider-btn-wrapper .te-call-btn .te-content {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -3420,16 +3452,24 @@ body.admin-bar .header-menu-area.sticky_menu {
           display: none; } }
     .slider-area.style-1 .te-single-slider .shape-one {
       top: 143px;
-      left: -140px; }
+      left: -140px;
+      -webkit-animation: zoom-in-zoom-out 5s ease infinite;
+              animation: zoom-in-zoom-out 5s ease infinite; }
     .slider-area.style-1 .te-single-slider .shape-two {
       top: 65px;
-      right: -100px; }
+      right: -100px;
+      -webkit-animation: spin 6s linear infinite;
+              animation: spin 6s linear infinite; }
     .slider-area.style-1 .te-single-slider .shape-three {
       bottom: 64px;
-      left: -50px; }
+      left: -50px;
+      -webkit-animation: MoveLeftRight 2s linear infinite alternate;
+              animation: MoveLeftRight 2s linear infinite alternate; }
     .slider-area.style-1 .te-single-slider .shape-four {
       bottom: 65px;
-      left: -90px; }
+      left: -90px;
+      -webkit-animation: MoveUpDown 2s linear infinite alternate;
+              animation: MoveUpDown 2s linear infinite alternate; }
     .slider-area.style-1 .te-single-slider .shape-five {
       top: 120px;
       right: -150px;
@@ -3470,6 +3510,9 @@ body.admin-bar .header-menu-area.sticky_menu {
     .slider-area.style-1 .te-single-slider .te-slider-content-wrapper .te-slider-content .te-slider-btn-wrapper .te-theme-btn {
       background-color: #0E2BC5;
       color: #ffffff; }
+      .slider-area.style-1 .te-single-slider .te-slider-content-wrapper .te-slider-content .te-slider-btn-wrapper .te-theme-btn:hover {
+        background-color: #F9D414;
+        color: #14203A; }
     .slider-area.style-1 .te-single-slider .te-slider-content-wrapper .te-slider-content .te-slider-btn-wrapper .te-call-btn .te-icon {
       color: #0E2BC5; }
     .slider-area.style-1 .te-single-slider .te-slider-content-wrapper .te-slider-content .te-slider-title {
@@ -4031,7 +4074,9 @@ body.admin-bar .header-menu-area.sticky_menu {
     border-radius: 5px; }
   .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-img-card-shape {
     right: -66px;
-    top: 60px; }
+    top: 60px;
+    -webkit-animation: Animated3 3s linear infinite alternate;
+            animation: Animated3 3s linear infinite alternate; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-img-card-shape {
         display: none; } }
@@ -4088,7 +4133,11 @@ body.admin-bar .header-menu-area.sticky_menu {
         color: #ffffff;
         font-size: 17px;
         -ms-flex-negative: 0;
-            flex-shrink: 0; }
+            flex-shrink: 0;
+        -webkit-animation: ripple 4s infinite;
+                animation: ripple 4s infinite;
+        -webkit-box-shadow: 0 0 0 0 rgba(14, 43, 197, 0.8);
+                box-shadow: 0 0 0 0 rgba(14, 43, 197, 0.8); }
     .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image .te-badge-text {
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
@@ -4104,7 +4153,9 @@ body.admin-bar .header-menu-area.sticky_menu {
       gap: 11px;
       position: absolute;
       left: -33%;
-      top: 46%; }
+      top: 46%;
+      -webkit-animation: MoveLeftRight 2s linear infinite alternate;
+              animation: MoveLeftRight 2s linear infinite alternate; }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image .te-badge-text {
           left: unset;
@@ -7819,6 +7870,9 @@ ul.children {
     border-color: #0E2BC5;
     color: #ffffff; }
 
+.testimonial-slider-area.style-1 {
+  padding-bottom: 5px; }
+
 .portfolio-area.style-1 {
   padding-top: 120px;
   padding-bottom: 96px; }
@@ -8683,7 +8737,7 @@ ul.children {
       .te-footer-widget .te-footer-widget-info {
         padding-right: 0; } }
     .te-footer-widget .te-footer-widget-info p {
-      color: #ffffff;
+      color: #335371;
       margin-bottom: 30px; }
     .te-footer-widget .te-footer-widget-info .te-footer-logo {
       margin-bottom: 30px;
@@ -9161,4 +9215,5 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #335371; }
+
 /*# sourceMappingURL=style.css.map */
