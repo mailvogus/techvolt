@@ -14,6 +14,10 @@
                 @include transition;
             }
         }
+        .counter-number { 
+            color: $primary-color;
+            @include transition;
+        }
       .te-counter-wrapper {
         .shape {
             &::before {
@@ -66,6 +70,7 @@
         letter-spacing: -1px;
         text-transform: capitalize;
         color: rgba(1, 13, 76, 0.20);
+        @include transition;
     }
     .te-title-wrapper {
         display: flex;

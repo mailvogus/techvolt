@@ -11,6 +11,11 @@
     margin-bottom: 40px;
   }
 
+  &.left-align-title {
+    .te-section-content {
+      margin-top: -15px;
+    }
+  }
   .te-section-content {
     display: flex;
     gap: 16px;

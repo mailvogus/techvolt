@@ -9,12 +9,10 @@
           align-items: flex-start;
           padding: 48px 30px 43px 30px;
         }
-        .btn {
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          right: unset;
-
+        .btn-wrapper {
+          top: 30px;
+          right: 0;
+          transform: translate(-50%);
         }
       }
     }

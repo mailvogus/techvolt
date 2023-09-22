@@ -17,6 +17,7 @@
     visibility: visible;
     opacity: 1;
     @include transition;
+    transform: scale(1);
    }
   }
   .image {
@@ -56,6 +57,7 @@
     visibility: hidden;
     opacity: 0;
     @include transition;
+    transform: scaleY(0.3);
 
     .content {
       width: 100%;

@@ -160,7 +160,7 @@ button {
   transition: all 0.5s ease-out; }
   a:hover,
   button:hover {
-    color: #ff6731;
+    color: #0E2BC5;
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
 
@@ -4015,7 +4015,9 @@ body.admin-bar .header-menu-area.sticky_menu {
     position: absolute;
     top: 35px;
     right: -35px;
-    z-index: -1; }
+    z-index: -1;
+    -webkit-animation: spin 6s linear infinite;
+            animation: spin 6s linear infinite; }
     @media (max-width: 575px) {
       .te-about-image-card .te-main-img-wrapper .te-main-img-inner .te-img-card-shape {
         right: 0; } }
@@ -4035,7 +4037,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #F9D414;
   padding: 36px 60px 40px 60px;
   -webkit-clip-path: polygon(9% 0, 96% 0, 100% 100%, 0 100%);
-          clip-path: polygon(9% 0, 96% 0, 100% 100%, 0 100%); }
+          clip-path: polygon(9% 0, 96% 0, 100% 100%, 0 100%);
+  -webkit-animation: MoveUpDown 2s linear infinite alternate;
+          animation: MoveUpDown 2s linear infinite alternate; }
   .te-about-image-card .te-company-foundation .te-counter-wrapper {
     color: #14203A;
     font-size: 45px;
@@ -4561,6 +4565,10 @@ body.admin-bar .header-menu-area.sticky_menu {
             transform: rotateY(360deg);
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
+  .te-process-step:hover .counter-number {
+    color: #0E2BC5;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
   .te-process-step:hover .te-counter-wrapper .shape::before {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -4617,7 +4625,9 @@ body.admin-bar .header-menu-area.sticky_menu {
     line-height: 77.72px;
     letter-spacing: -1px;
     text-transform: capitalize;
-    color: rgba(1, 13, 76, 0.2); }
+    color: rgba(1, 13, 76, 0.2);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
   .te-process-step .te-title-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5757,6 +5767,8 @@ body.admin-bar .header-menu-area.sticky_menu {
           -ms-flex-align: unset;
               align-items: unset;
       margin-bottom: 40px; } }
+  .te-section-title.left-align-title .te-section-content {
+    margin-top: -15px; }
   .te-section-title .te-section-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7427,7 +7439,9 @@ ul.children {
     visibility: visible;
     opacity: 1;
     -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
   .te-team-card .image {
     overflow: hidden;
     position: relative; }
@@ -7474,7 +7488,9 @@ ul.children {
     visibility: hidden;
     opacity: 0;
     -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    -webkit-transform: scaleY(0.3);
+            transform: scaleY(0.3); }
     .te-team-card .te-content-wrapper .content {
       width: 100%;
       display: -webkit-box;
@@ -7559,7 +7575,9 @@ ul.children {
     position: unset;
     visibility: visible;
     opacity: 1;
-    background: transparent; }
+    background: transparent;
+    -webkit-transform: unset;
+            transform: unset; }
     .te-team-card.style-2 .te-content-wrapper .content {
       padding: 0;
       margin-top: 20px;
@@ -7686,13 +7704,14 @@ ul.children {
     visibility: visible;
     opacity: 1;
     -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
     .te-portfolio-card:hover .image .te-content-wrapper .content .content-inner {
       margin-bottom: 0;
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }
-    .te-portfolio-card:hover .image .te-content-wrapper .content .btn {
-      right: 0;
+    .te-portfolio-card:hover .image .te-content-wrapper .content .btn-wrapper {
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }
   .te-portfolio-card:hover .image img {
@@ -7719,7 +7738,9 @@ ul.children {
     visibility: hidden;
     opacity: 0;
     -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5); }
     .te-portfolio-card .te-content-wrapper .content {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -7769,16 +7790,15 @@ ul.children {
         font-size: 24px;
         line-height: 39px;
         font-weight: 500; }
-      .te-portfolio-card .te-content-wrapper .content .btn {
+      .te-portfolio-card .te-content-wrapper .content .btn-wrapper {
         position: absolute;
         top: 0;
-        right: -100%;
         -ms-flex-negative: 0;
             flex-shrink: 0;
         padding: 0;
         -webkit-transition: all 0.5s ease-out;
         transition: all 0.5s ease-out; }
-        .te-portfolio-card .te-content-wrapper .content .btn a {
+        .te-portfolio-card .te-content-wrapper .content .btn-wrapper a {
           display: -webkit-inline-box;
           display: -ms-inline-flexbox;
           display: inline-flex;
@@ -7796,7 +7816,7 @@ ul.children {
           -webkit-transition: all 0.5s ease-out;
           transition: all 0.5s ease-out;
           font-size: 24px; }
-          .te-portfolio-card .te-content-wrapper .content .btn a:hover {
+          .te-portfolio-card .te-content-wrapper .content .btn-wrapper a:hover {
             -webkit-transition: all 0.5s ease-out;
             transition: all 0.5s ease-out;
             background-color: #0E2BC5;
@@ -7805,12 +7825,12 @@ ul.children {
 .te-portfolio-card.style-2 .te-content-wrapper .content {
   background-color: rgba(14, 43, 197, 0.8);
   padding: 20px; }
-  .te-portfolio-card.style-2 .te-content-wrapper .content .btn {
+  .te-portfolio-card.style-2 .te-content-wrapper .content .btn-wrapper {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
-    .te-portfolio-card.style-2 .te-content-wrapper .content .btn a {
+    .te-portfolio-card.style-2 .te-content-wrapper .content .btn-wrapper a {
       background-color: transparent;
       color: #ffffff; }
 
@@ -7822,12 +7842,11 @@ ul.children {
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 48px 30px 43px 30px; }
-  .te-portfolio-card.style-3 .te-content-wrapper .content .btn {
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    right: unset; }
+  .te-portfolio-card.style-3 .te-content-wrapper .content .btn-wrapper {
+    top: 30px;
+    right: 0;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%); }
 
 .about-us-area.style-1 {
   padding-top: 120px; }
@@ -9215,5 +9234,4 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #335371; }
-
 /*# sourceMappingURL=style.css.map */

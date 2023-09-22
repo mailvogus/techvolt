@@ -19,7 +19,8 @@
         top: 35px;
         right: -35px;
         z-index: -1;
-
+        animation: spin 6s linear infinite;
+        
         @include rmaxwd (575) {
           right: 0;
         }
@@ -37,7 +38,7 @@
     background-color: $orange-color;
     padding: 36px 60px 40px 60px;
     clip-path: polygon(9% 0, 96% 0, 100% 100%, 0 100%);
-
+    animation: MoveUpDown 2s linear infinite alternate;
     
     .te-counter-wrapper {
       color: $black;

@@ -12,7 +12,8 @@
       visibility: visible;
       opacity: 1;
       background: transparent;
-
+      transform: unset;
+      
       .content {
         padding: 0;
         margin-top: 20px;

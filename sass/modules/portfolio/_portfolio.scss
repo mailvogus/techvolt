@@ -50,14 +50,13 @@
         visibility: visible;
         opacity: 1;
         @include transition;
-
+        transform: scale(1);
         .content {
             .content-inner {
               margin-bottom: 0;
               @include transition;
             }
-          .btn {
-            right: 0;
+          .btn-wrapper {
             @include transition;
           }
         }
@@ -88,6 +87,7 @@
     visibility: hidden;
     opacity: 0;
     @include transition;
+    transform: scale(1.5);
 
     .content {
       display: flex;
@@ -124,10 +124,9 @@
         font-weight: 500;
       }
 
-      .btn {
+      .btn-wrapper {
         position: absolute;
         top: 0;
-        right: -100%;
         flex-shrink: 0;
         padding: 0;
         @include transition;
