@@ -4,8 +4,9 @@
   overflow: hidden;
 
   &.style-1 {
-   
+
     background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%);
+    
     .te-footer-sec {
       border-bottom: 1px solid rgba(20, 32, 58, 0.1);
       padding-top: 80px;
@@ -51,6 +52,13 @@
   ul {
     padding-left: 0;
   }
+  .te-subscribe-form-widget{
+    .single-field {
+      input {
+        border-radius: 0;
+      }
+    }
+  }
   // Footer Latest Post
   &.widget-latest-posts-footer {
     margin-top: -5px;
@@ -93,15 +101,6 @@
       display: flex;
       align-items: center;
       gap: 50px;
-
-      .te-subscribe-form-widget {
-        border-radius: 6px;
-        .single-field {
-          input {
-            height: 60px;
-          }
-        }
-      }
       .te-social-profile {
         margin-top: 0;
       }
@@ -399,7 +398,7 @@
     }
     .text {
       font-size: 18px;
-      color: $gray-800;
+      color: $white;
       margin-bottom: 0;
       padding-right: 100px;
 
@@ -441,7 +440,7 @@
     .mc4wp-form-fields {
       background-color: transparent;
       gap: 28px;
-
+      
       @include rmaxwd(575) {
         flex-direction: column;
       }
@@ -465,9 +464,9 @@
 
   .mc4wp-form-fields {
     display: flex;
-    background-color: $gray-800;
+    background-color: transparent;
     overflow: hidden;
-
+    border-radius: 5px;
   }
 
   .single-field {
@@ -479,6 +478,7 @@
       padding: 0 30px;
       font-size: 18px;
       width: 100%;
+      border-radius: 5px;
     }
     *::-webkit-input-placeholder {
       color: $black-300;
