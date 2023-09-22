@@ -1,13 +1,13 @@
 .footer {
   &.style-2 {
-    background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%);
+    background-color: $primary-color;
     .te-footer-sec {
-      border-bottom: 1px solid rgba(20, 32, 58, 0.1);
+      border-bottom: 1px solid rgba(225, 225, 225, 0.3);
       padding-top: 80px;
-      padding-bottom: 60px;
+      padding-bottom: 70px;
     }
     .te-footer-widget-title {
-      color: $gray-900;
+      color: $white;
       font-size: 24px;
     }
     .footer-bottom-area .te-copyright-text p,
@@ -18,7 +18,7 @@
     .te-footer-widget .te-subscribe-form-wrapper,
     .te-footer-bottom-menu ul li a,
     .footer-bottom-area .te-copyright-text p a {
-      color: $gray-800;
+      color: $white;
     }
   }
 }

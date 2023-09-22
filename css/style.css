@@ -8810,11 +8810,12 @@ ul.children {
   z-index: 2;
   overflow: hidden; }
   .footer.style-1 {
-    background-color: #0E2BC5; }
+    background: -webkit-gradient(linear, left top, left bottom, from(#E0F0FE), to(#F8FCFF));
+    background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%); }
     .footer.style-1 .te-footer-sec {
-      border-bottom: 1px solid rgba(225, 225, 225, 0.3);
+      border-bottom: 1px solid rgba(20, 32, 58, 0.1);
       padding-top: 80px;
-      padding-bottom: 70px; }
+      padding-bottom: 60px; }
   .footer .te-footer-bg {
     position: absolute;
     bottom: 30px;
@@ -8834,9 +8835,9 @@ ul.children {
 
 .te-footer-widget-title {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 39px;
-  color: #ffffff;
+  color: #14203A;
   position: relative;
   margin-bottom: 10px;
   font-weight: 500; }
@@ -8911,7 +8912,7 @@ ul.children {
       padding-top: 0;
       padding-bottom: 0; }
     .te-footer-widget.te_widget_nav_menu li a {
-      color: #ffffff;
+      color: #335371;
       text-transform: capitalize;
       font-size: 18px;
       -webkit-transition: all 0.5s ease-out;
@@ -8933,7 +8934,7 @@ ul.children {
         transition: all 0.5s ease-out;
         color: #0E2BC5; }
   .te-footer-widget .te-footer-widget-contact p {
-    color: #ffffff; }
+    color: #335371; }
   .te-footer-widget .te-footer-widget-contact .footer-contact ul {
     list-style: none; }
     .te-footer-widget .te-footer-widget-contact .footer-contact ul li {
@@ -8955,7 +8956,7 @@ ul.children {
       .te-footer-widget .te-footer-widget-contact .footer-contact ul li:last-child {
         margin-bottom: 0; }
       .te-footer-widget .te-footer-widget-contact .footer-contact ul li .contact-icon {
-        color: #ffffff;
+        color: #335371;
         border-radius: 50px;
         float: left;
         display: -webkit-box;
@@ -8967,7 +8968,7 @@ ul.children {
         -ms-flex-negative: 0;
             flex-shrink: 0; }
       .te-footer-widget .te-footer-widget-contact .footer-contact ul li .contact-text {
-        color: #ffffff;
+        color: #335371;
         font-size: 18px;
         line-height: 24px;
         overflow: hidden; }
@@ -8978,7 +8979,7 @@ ul.children {
         .te-footer-widget .te-footer-widget-contact .footer-contact ul li .contact-text span,
         .te-footer-widget .te-footer-widget-contact .footer-contact ul li .contact-text p,
         .te-footer-widget .te-footer-widget-contact .footer-contact ul li .contact-text a {
-          color: #ffffff;
+          color: #335371;
           font-size: 18px;
           line-height: 24px;
           display: inline-block;
@@ -8997,12 +8998,12 @@ ul.children {
       margin-bottom: 0;
       font-size: 18px;
       line-height: 29px;
-      color: #ffffff;
+      color: #335371;
       font-weight: 400; }
       .te-footer-widget .te_widget_latest_post ul li .te-latest-post-desc .te-latest-post-title a {
         font-size: 18px;
         line-height: 29px;
-        color: #ffffff;
+        color: #335371;
         font-weight: 400;
         position: relative;
         text-transform: capitalize;
@@ -9022,7 +9023,7 @@ ul.children {
               align-items: center;
       font-weight: 400;
       gap: 8px;
-      color: #ffffff; }
+      color: #335371; }
 
 .te-footer-bottom-menu ul {
   list-style: none;
@@ -9048,7 +9049,7 @@ ul.children {
   .te-footer-bottom-menu ul li a {
     font-size: 18px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: #335371;
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
     .te-footer-bottom-menu ul li a:hover {
@@ -9075,15 +9076,15 @@ ul.children {
         flex-wrap: wrap-reverse;
     gap: 10px 40px; }
   .footer-bottom-area .te-copyright-text p {
-    color: #ffffff;
+    color: #335371;
     margin-bottom: 0; }
     .footer-bottom-area .te-copyright-text p a {
-      color: #ffffff;
+      color: #335371;
       font-weight: 500; }
       .footer-bottom-area .te-copyright-text p a:hover {
         color: #0E2BC5; }
   .footer-bottom-area .credit-text p {
-    color: #ffffff;
+    color: #335371;
     margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9123,7 +9124,7 @@ ul.children {
     .subscribe-area .te-content-wrapper .short-title {
       font-size: 21px;
       font-weight: 500;
-      color: #ffffff;
+      color: #335371;
       margin-bottom: 0; }
     .subscribe-area .te-content-wrapper .te-subscribe-title {
       color: #ffffff;
@@ -9146,7 +9147,7 @@ ul.children {
           line-height: 42px; } }
     .subscribe-area .te-content-wrapper .text {
       font-size: 18px;
-      color: #ffffff;
+      color: #335371;
       margin-bottom: 0;
       padding-right: 100px; }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -9201,7 +9202,7 @@ ul.children {
                 flex-grow: 1; }
 
 .te-footer-widget .te-subscribe-form-wrapper {
-  color: #ffffff; }
+  color: #335371; }
 
 .te-subscribe-form-widget {
   position: relative; }
@@ -9209,8 +9210,7 @@ ul.children {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #ffffff;
-    border-radius: 5px;
+    background-color: #335371;
     overflow: hidden; }
   .te-subscribe-form-widget .single-field {
     -webkit-box-flex: 1;
@@ -9221,7 +9221,6 @@ ul.children {
       height: 55px;
       padding: 0 30px;
       font-size: 18px;
-      border-radius: 5px;
       width: 100%; }
     .te-subscribe-form-widget .single-field *::-webkit-input-placeholder {
       color: #778196; }
@@ -9248,7 +9247,8 @@ ul.children {
     font-weight: 600;
     letter-spacing: 0.6px; }
     .te-subscribe-form-widget .submit-btn:hover {
-      background-color: #ffffff; }
+      background-color: #14203A;
+      color: #ffffff; }
   .te-subscribe-form-widget .mc4wp-response {
     position: relative;
     top: 15px; }
@@ -9328,14 +9328,13 @@ ul.children {
   margin-bottom: -12px; }
 
 .footer.style-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#E0F0FE), to(#F8FCFF));
-  background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%); }
+  background-color: #0E2BC5; }
   .footer.style-2 .te-footer-sec {
-    border-bottom: 1px solid rgba(20, 32, 58, 0.1);
+    border-bottom: 1px solid rgba(225, 225, 225, 0.3);
     padding-top: 80px;
-    padding-bottom: 60px; }
+    padding-bottom: 70px; }
   .footer.style-2 .te-footer-widget-title {
-    color: #14203A;
+    color: #ffffff;
     font-size: 24px; }
   .footer.style-2 .footer-bottom-area .te-copyright-text p,
   .footer.style-2 .te-footer-widget.te_widget_nav_menu li a,
@@ -9345,6 +9344,5 @@ ul.children {
   .footer.style-2 .te-footer-widget .te-subscribe-form-wrapper,
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
-    color: #335371; }
-
+    color: #ffffff; }
 /*# sourceMappingURL=style.css.map */

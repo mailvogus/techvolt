@@ -4,11 +4,12 @@
   overflow: hidden;
 
   &.style-1 {
-    background-color: $primary-color;
+   
+    background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%);
     .te-footer-sec {
-      border-bottom: 1px solid rgba(225, 225, 225, 0.3);
+      border-bottom: 1px solid rgba(20, 32, 58, 0.1);
       padding-top: 80px;
-      padding-bottom: 70px;
+      padding-bottom: 60px;
     }
   }
   //footer Background
@@ -34,9 +35,9 @@
 }
 .te-footer-widget-title {
   font-family: $heading-font;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 39px;
-  color: $white;
+  color: $gray-900;
   position: relative;
   margin-bottom: 10px;
   font-weight: 500;
@@ -138,7 +139,7 @@
       }
 
       a {
-        color: $white;
+        color: $gray-800;
         text-transform: capitalize;
         font-size: 18px;
         @include transition;
@@ -163,7 +164,7 @@
   // Footer Contact Widget
   .te-footer-widget-contact {
     p {
-      color: $white;
+      color: $gray-800;
     }
     .footer-contact ul {
       list-style: none;
@@ -185,7 +186,7 @@
           margin-bottom: 0;
         }
         .contact-icon {
-          color: $white;
+          color: $gray-800;
           border-radius: 50px;
           float: left;
           display: flex;
@@ -193,7 +194,7 @@
           flex-shrink: 0;
         }
         .contact-text {
-          color: $white;
+          color: $gray-800;
           font-size: 18px;
           line-height: 24px;
           overflow: hidden;
@@ -209,7 +210,7 @@
           span,
           p,
           a {
-            color: $white;
+            color: $gray-800;
             font-size: 18px;
             line-height: 24px;
             display: inline-block;
@@ -240,13 +241,13 @@
             margin-bottom: 0;
             font-size: 18px;
             line-height: 29px;
-            color: $white;
+            color: $gray-800;
             font-weight: 400;
 
             a {
               font-size: 18px;
               line-height: 29px;
-              color: $white;
+              color: $gray-800;
               font-weight: 400;
               position: relative;
               text-transform: capitalize;
@@ -264,7 +265,7 @@
             align-items: center;
             font-weight: 400;
             gap: 8px;
-            color: $white;
+            color: $gray-800;
           }
         }
       }
@@ -293,7 +294,7 @@
       a {
         font-size: 18px;
         text-transform: capitalize;
-        color: $white;
+        color: $gray-800;
         @include transition;
 
         &:hover {
@@ -321,11 +322,11 @@
   }
   .te-copyright-text {
     p {
-      color: $white;
+      color: $gray-800;
       margin-bottom: 0;
 
       a {
-        color: $white;
+        color: $gray-800;
         font-weight: 500;
 
         &:hover {
@@ -336,7 +337,7 @@
   }
   .credit-text {
     p {
-      color: $white;
+      color: $gray-800;
       margin-bottom: 0;
       display: flex;
       align-items: center;
@@ -372,7 +373,7 @@
     .short-title {
       font-size: 21px;
       font-weight: 500;
-      color: $white;
+      color: $gray-800;
       margin-bottom: 0;
     }
     .te-subscribe-title {
@@ -398,7 +399,7 @@
     }
     .text {
       font-size: 18px;
-      color: $white;
+      color: $gray-800;
       margin-bottom: 0;
       padding-right: 100px;
 
@@ -449,13 +450,14 @@
         padding: 10px 30px;
         justify-content: center;
         flex-grow: 1;
+
       }
     }
   }
 }
 .te-footer-widget {
   .te-subscribe-form-wrapper {
-    color: $white;
+    color: $gray-800;
   }
 }
 .te-subscribe-form-widget {
@@ -463,8 +465,7 @@
 
   .mc4wp-form-fields {
     display: flex;
-    background-color: $white;
-    border-radius: 5px;
+    background-color: $gray-800;
     overflow: hidden;
 
   }
@@ -477,7 +478,6 @@
       height: 55px;
       padding: 0 30px;
       font-size: 18px;
-      border-radius: 5px;
       width: 100%;
     }
     *::-webkit-input-placeholder {
@@ -515,7 +515,8 @@
     letter-spacing: 0.6px;
 
     &:hover {
-      background-color: $white;
+      background-color: $gray-900;
+      color: $white;
     }
   }
   // Form Submit Message
