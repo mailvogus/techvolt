@@ -22,6 +22,14 @@
     position: relative;
     text-align: center;
 
+    &:hover {
+      .icon {
+          img {
+            transform: rotateY(360deg);
+            @include transition;
+          }
+      }
+    }
     .icon {
       width: 100px;
       height: 100px;
@@ -31,6 +39,9 @@
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
+      img {
+        @include transition;
+      }
     }
     .te-counter-title {
       display: flex;

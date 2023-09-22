@@ -4398,6 +4398,11 @@ body.admin-bar .header-menu-area.sticky_menu {
             flex-direction: column;
     position: relative;
     text-align: center; }
+    .te-counter-card .te-counter-item:hover .icon img {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; }
     .te-counter-card .te-counter-item .icon {
       width: 100px;
       height: 100px;
@@ -4414,6 +4419,9 @@ body.admin-bar .header-menu-area.sticky_menu {
               justify-content: center;
       -ms-flex-negative: 0;
           flex-shrink: 0; }
+      .te-counter-card .te-counter-item .icon img {
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out; }
     .te-counter-card .te-counter-item .te-counter-title {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -5337,6 +5345,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   position: relative;
   gap: 23px;
   margin-bottom: 24px; }
+  .te-post-card:hover .image img {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
   .te-post-card .image {
     overflow: hidden;
     border-radius: 5px;
