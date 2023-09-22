@@ -179,6 +179,19 @@
   }
 }
 
+// Marquee
+@keyframes Scroll {
+  0% {
+    transform: translateX(-50vw);
+    transform: translateX(-50vw);
+  }
+  100% {
+    transform: translateX(50vw);
+    transform: translateX(50vw);
+  }
+
+}
+
 // Rotate Animate
 @keyframes spin{
   100%{

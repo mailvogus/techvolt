@@ -2339,6 +2339,24 @@ body.admin-bar .header-menu-area.sticky_menu {
     transform: translateY(-100%); }
   51% {
     opacity: 1; } }
+@-webkit-keyframes Scroll {
+  0% {
+    -webkit-transform: translateX(-50vw);
+            transform: translateX(-50vw);
+    transform: translateX(-50vw); }
+  100% {
+    -webkit-transform: translateX(50vw);
+            transform: translateX(50vw);
+    transform: translateX(50vw); } }
+@keyframes Scroll {
+  0% {
+    -webkit-transform: translateX(-50vw);
+            transform: translateX(-50vw);
+    transform: translateX(-50vw); }
+  100% {
+    -webkit-transform: translateX(50vw);
+            transform: translateX(50vw);
+    transform: translateX(50vw); } }
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
@@ -7957,6 +7975,85 @@ ul.children {
 .team-slider-area.style-1 {
   overflow: hidden; }
 
+.brand-marquee-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  gap: 66px;
+  background-color: #0E2BC5; }
+  @media (max-width: 767px) {
+    .brand-marquee-area {
+      gap: 20px; } }
+  .brand-marquee-area .brand-marquee-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 44px; }
+    .brand-marquee-area .brand-marquee-wrapper.first-brand-marquee {
+      -webkit-animation: Scroll 32s linear infinite;
+              animation: Scroll 32s linear infinite; }
+    .brand-marquee-area .brand-marquee-wrapper.second-brand-marquee {
+      -webkit-animation: Scroll 32s linear infinite;
+              animation: Scroll 32s linear infinite;
+      -webkit-animation-direction: reverse;
+              animation-direction: reverse; }
+  .brand-marquee-area .single-brand-marquee {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 44px; }
+    .brand-marquee-area .single-brand-marquee:nth-child(even) .brand-marquee-title {
+      color: #F9D414; }
+    .brand-marquee-area .single-brand-marquee:last-child .brand-marquee-star {
+      display: none; }
+    .brand-marquee-area .single-brand-marquee .brand-marquee-title {
+      font-size: 32px;
+      color: #ffffff;
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: initial;
+      white-space: nowrap; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .brand-marquee-area .single-brand-marquee .brand-marquee-title {
+          font-size: 62px;
+          line-height: 62px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .brand-marquee-area .single-brand-marquee .brand-marquee-title {
+          font-size: 80px;
+          line-height: 80px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .brand-marquee-area .single-brand-marquee .brand-marquee-title {
+          font-size: 95px;
+          line-height: 75px; } }
+      @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+        .brand-marquee-area .single-brand-marquee .brand-marquee-title {
+          font-size: 100px;
+          line-height: 80px; } }
+    .brand-marquee-area .single-brand-marquee .brand-marquee-star {
+      font-size: 90px;
+      font-weight: 500;
+      color: #F9D414;
+      white-space: nowrap;
+      margin-top: 20px;
+      line-height: 0; }
+
 .about-us-area.style-2 {
   padding: 120px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#E0F0FE), to(#F8FCFF));
@@ -9150,6 +9247,8 @@ ul.children {
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 0.6px; }
+    .te-subscribe-form-widget .submit-btn:hover {
+      background-color: #ffffff; }
   .te-subscribe-form-widget .mc4wp-response {
     position: relative;
     top: 15px; }
@@ -9247,4 +9346,5 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #335371; }
+
 /*# sourceMappingURL=style.css.map */

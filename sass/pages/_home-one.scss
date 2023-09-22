@@ -147,3 +147,79 @@
         overflow: hidden;
     }
 }
+
+// Brand Marquee Area
+.brand-marquee-area {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 66px;
+    background-color: $primary-color;
+    @include rmaxwd(767) {
+      gap: 20px;
+    }
+    .brand-marquee-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 44px;
+  
+      &.first-brand-marquee{
+        animation: Scroll 32s linear infinite;
+      }
+      &.second-brand-marquee{
+        animation: Scroll 32s linear infinite;
+        animation-direction: reverse;
+      }
+    }
+    .single-brand-marquee {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 44px;
+  
+      &:nth-child(even) {
+        .brand-marquee-title {
+          color: $orange-color;
+        }
+      }
+      &:last-child {
+        .brand-marquee-star {
+          display: none;
+        }
+      }
+      .brand-marquee-title {
+        font-size: 32px;
+        color: $white;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: initial;
+        white-space: nowrap;
+  
+        @include sm {
+          font-size: 62px;
+          line-height: 62px;
+        }
+        @include md {
+          font-size: 80px;
+          line-height: 80px;
+        }
+        @include lg {
+          font-size: 95px;
+          line-height: 75px;
+        }
+        @include xl {
+          font-size: 100px;
+          line-height: 80px;
+        }
+      }
+      .brand-marquee-star {
+        font-size: 90px;
+        font-weight: 500;
+        color: $orange-color;
+        white-space: nowrap;
+        margin-top: 20px;
+        line-height: 0;
+      }
+    }
+  }

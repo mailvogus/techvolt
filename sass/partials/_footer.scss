@@ -513,6 +513,10 @@
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 0.6px;
+
+    &:hover {
+      background-color: $white;
+    }
   }
   // Form Submit Message
   .mc4wp-response {
