@@ -25,6 +25,9 @@
                     border-radius: 5px;
                     padding: 25px 40px;
 
+                    @include sm {
+                        padding: 15px 30px;
+                    }
                     .image {
                         width: 80px;
                         height: 80px;
@@ -62,6 +65,10 @@
                     top: -5px;
                     margin-top: 0;
                     right: 0;
+
+                    @include rmaxwd(575) {
+                        font-size: 34px;
+                    }
                 }
             }
         }

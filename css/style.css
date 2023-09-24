@@ -258,7 +258,7 @@ input.te-theme-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 11px 40px;
+  padding: 10px 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -4592,7 +4592,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #F7FBFE;
   padding: 50px 40px 65px 40px;
   position: relative;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  border-radius: 5px; }
   @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .te-process-step {
       padding: 45px 35px 60px 35px; } }
@@ -4610,6 +4611,10 @@ body.admin-bar .header-menu-area.sticky_menu {
             transform: scale(0);
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
+  .te-process-step:hover .content .te-read-more .te-theme-btn {
+    background-color: #0E2BC5;
+    border-color: #0E2BC5;
+    color: #ffffff; }
   .te-process-step .icon {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4705,10 +4710,7 @@ body.admin-bar .header-menu-area.sticky_menu {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    gap: 30px; }
     .te-process-step .content .desc {
       -webkit-transition: all 0.6s ease;
       transition: all 0.6s ease;
@@ -4717,6 +4719,12 @@ body.admin-bar .header-menu-area.sticky_menu {
       font-weight: 400;
       margin: 0;
       color: #335371; }
+    .te-process-step .content .te-read-more {
+      margin-top: -10px; }
+      .te-process-step .content .te-read-more .te-theme-btn {
+        border: 1px solid #E1E1E1;
+        color: #0E2BC5;
+        background-color: transparent; }
 
 .te-testimonial-card {
   padding: 40px 40px 0 40px;
@@ -4907,6 +4915,9 @@ body.admin-bar .header-menu-area.sticky_menu {
       border: 1px solid #0E2BC5;
       border-radius: 5px;
       padding: 25px 40px; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .te-testimonial-card.style-3 .te-content-wrapper .te-user-meta .te-user-info {
+          padding: 15px 30px; } }
       .te-testimonial-card.style-3 .te-content-wrapper .te-user-meta .te-user-info .image {
         width: 80px;
         height: 80px;
@@ -4936,6 +4947,9 @@ body.admin-bar .header-menu-area.sticky_menu {
       top: -5px;
       margin-top: 0;
       right: 0; }
+      @media (max-width: 575px) {
+        .te-testimonial-card.style-3 .te-content-wrapper .te-user-meta .icon {
+          font-size: 34px; } }
 
 .te-testimonial-slider-wrapper {
   position: relative; }
@@ -8486,8 +8500,33 @@ ul.children {
 
 .testimonial-slider-area.style-3 {
   padding: 120px 0; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .testimonial-slider-area.style-3 {
+      padding: 80px 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .testimonial-slider-area.style-3 {
+      padding: 100px 0; } }
   .testimonial-slider-area.style-3 .slick-list .slick-slide.slick-current .te-testimonial-card.style-3 .te-content-wrapper .te-user-meta .icon {
     color: #0E2BC5; }
+
+.te-process-step-area.style-2 {
+  padding-top: 120px;
+  padding-bottom: 96px; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .te-process-step-area.style-2 {
+      padding-top: 80px;
+      padding-bottom: 56px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .te-process-step-area.style-2 {
+      padding-top: 100px;
+      padding-bottom: 76px; } }
+  .te-process-step-area.style-2 .te-process-step {
+    padding: 30px 40px 40px 40px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05); }
+    .te-process-step-area.style-2 .te-process-step .te-counter-wrapper {
+      padding-bottom: 20px; }
 
 .contact-form-area {
   padding-top: 110px;
