@@ -51,6 +51,7 @@
         opacity: 1;
         @include transition;
         transform: scale(1);
+        
         .content {
             .content-inner {
               margin-bottom: 0;
@@ -58,6 +59,10 @@
             }
           .btn-wrapper {
             @include transition;
+          }
+          .content-inner {
+            @include transition;
+            transform: scaleY(1);
           }
         }
       }
@@ -87,7 +92,7 @@
     visibility: hidden;
     opacity: 0;
     @include transition;
-    transform: scale(1.5);
+    // transform: scale(1.5);
 
     .content {
       display: flex;
@@ -107,8 +112,9 @@
         align-items: center;
         border-radius: 5px;
         padding: 18px 10px;
-        margin-bottom: -100%;
+        // margin-bottom: -100%;
         @include transition;
+        transform: scaleY(0.3);
       }
       .sub-title {
         color: $white;

@@ -6,7 +6,7 @@
        Jquery Mobile Menu
        ============================*/
         $('#main-menu').meanmenu({
-            meanMenuContainer: '.mobile-nav-menu',
+            meanMenuContainer: '.te-mobile-nav-menu',
             meanScreenWidth: "991",
             meanExpand: ['<i class="fal fa-plus"></i>'],
         });

@@ -7833,6 +7833,11 @@ ul.children {
     .te-portfolio-card:hover .image .te-content-wrapper .content .btn-wrapper {
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }
+    .te-portfolio-card:hover .image .te-content-wrapper .content .content-inner {
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1); }
   .te-portfolio-card:hover .image img {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
@@ -7857,9 +7862,7 @@ ul.children {
     visibility: hidden;
     opacity: 0;
     -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5); }
+    transition: all 0.5s ease-out; }
     .te-portfolio-card .te-content-wrapper .content {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -7895,9 +7898,10 @@ ul.children {
                 align-items: center;
         border-radius: 5px;
         padding: 18px 10px;
-        margin-bottom: -100%;
         -webkit-transition: all 0.5s ease-out;
-        transition: all 0.5s ease-out; }
+        transition: all 0.5s ease-out;
+        -webkit-transform: scaleY(0.3);
+                transform: scaleY(0.3); }
       .te-portfolio-card .te-content-wrapper .content .sub-title {
         color: #ffffff;
         font-size: 18px;
@@ -7953,6 +7957,13 @@ ul.children {
       background-color: transparent;
       color: #ffffff; }
 
+.te-portfolio-card.style-3:hover .te-content-wrapper .content .btn-wrapper {
+  top: 30px;
+  right: 0;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
 .te-portfolio-card.style-3 .te-content-wrapper {
   padding: 0; }
   .te-portfolio-card.style-3 .te-content-wrapper .content .content-inner {
@@ -7962,10 +7973,12 @@ ul.children {
             align-items: flex-start;
     padding: 48px 30px 43px 30px; }
   .te-portfolio-card.style-3 .te-content-wrapper .content .btn-wrapper {
-    top: 30px;
+    top: -50px;
     right: 0;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%); }
+    -webkit-transform: translate(50%);
+            transform: translate(50%);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
 
 .about-us-area.style-1 {
   padding-top: 120px; }
@@ -9359,5 +9372,4 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #ffffff; }
-
 /*# sourceMappingURL=style.css.map */
