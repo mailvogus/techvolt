@@ -44,7 +44,15 @@
         display: flex;
         gap: 5px;
         flex-direction: column;
-
+        
+        &:hover {
+          .icon {
+            img {
+              transform: rotateY(360deg);
+              @include transition;
+            }
+          }
+        }
         .icon {
           margin-bottom: 10px;
           position: relative;
@@ -58,6 +66,10 @@
             border-color: transparent transparent rgba(116, 94, 255, 0.1) transparent;
             transform: rotate(60deg);
             top: -16px;
+          }
+          img {
+            transform: rotateY(0deg);
+            @include transition;
           }
         }
         .title {
