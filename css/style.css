@@ -6387,6 +6387,18 @@ body.admin-bar .header-menu-area.sticky_menu {
         line-height: 30px;
         letter-spacing: 0.5px; }
 
+.project-page-wrapper {
+  padding-top: 120px;
+  padding-bottom: 80px; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .project-page-wrapper {
+      padding-top: 80px;
+      padding-bottom: 40px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .project-page-wrapper {
+      padding-top: 100px;
+      padding-bottom: 60px; } }
+
 .project-details-page {
   padding-top: 120px;
   padding-bottom: 110px; }
@@ -9347,4 +9359,5 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #ffffff; }
+
 /*# sourceMappingURL=style.css.map */
