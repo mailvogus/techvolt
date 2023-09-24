@@ -63,7 +63,8 @@
 }
 .header-top {
   padding: 6px 0;
-  background-color: $gray-100;
+  // background-color: $gray-100;
+  background-color: $primary-color;
 
   @include rmaxwd(991) {
     display: none;
@@ -95,7 +96,8 @@
       font-weight: 400;
       font-family: $dmsans-font;
       i {
-        color: $black;
+        // color: $black;
+        color: $orange-color;
       }
       &.te-contact-info-item {
         gap:0 10px !important;
@@ -104,7 +106,8 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        color: $black;
+        // color: $black;
+        color: $white;
         font-size: 16px;
         font-weight: 400;
         font-family: $dmsans-font;
@@ -164,11 +167,13 @@
 
     a {
       font-size: 16px;
-      color: $black;
+      // color: $black;
+      color: $white;
       @include transition;
       width: 36px;
       height: 36px;
-      background-color: #1f242c1a;
+      // background-color: #1f242c1a;
+      background-color: #0f34fb;
       border-radius: 50px;
       display: flex;
       align-items: center;

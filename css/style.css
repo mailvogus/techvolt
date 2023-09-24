@@ -2523,7 +2523,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .header-top {
   padding: 6px 0;
-  background-color: #F7FBFE; }
+  background-color: #0E2BC5; }
   @media (max-width: 991px) {
     .header-top {
       display: none; } }
@@ -2568,7 +2568,7 @@ body.admin-bar .header-menu-area.sticky_menu {
       font-weight: 400;
       font-family: "DM Sans", sans-serif; }
       .header-top .te-header-contact-info span i {
-        color: #14203A; }
+        color: #F9D414; }
       .header-top .te-header-contact-info span.te-contact-info-item {
         gap: 0 10px !important; }
       .header-top .te-header-contact-info span a {
@@ -2579,7 +2579,7 @@ body.admin-bar .header-menu-area.sticky_menu {
             -ms-flex-align: center;
                 align-items: center;
         gap: 10px;
-        color: #14203A;
+        color: #ffffff;
         font-size: 16px;
         font-weight: 400;
         font-family: "DM Sans", sans-serif; }
@@ -2632,12 +2632,12 @@ body.admin-bar .header-menu-area.sticky_menu {
       margin-right: 14px; }
     .header-top .te-social-profile a {
       font-size: 16px;
-      color: #14203A;
+      color: #ffffff;
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out;
       width: 36px;
       height: 36px;
-      background-color: #1f242c1a;
+      background-color: #0f34fb;
       border-radius: 50px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -9372,4 +9372,5 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #ffffff; }
+
 /*# sourceMappingURL=style.css.map */
