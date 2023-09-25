@@ -335,10 +335,9 @@
 
     li {
       display: block;
-      padding: 15px 20px;
-      border: 1px solid $gray-200;
-      margin-bottom: 15px;
-      border-radius: 5px;
+      padding: 8px 0;
+      border-bottom: 1px solid $gray-200;
+      margin-bottom: 0;
 
       &:last-child {
         margin-bottom: 0;
@@ -369,6 +368,11 @@
         font-size: 18px;
         @include transition;
 
+        &::before {
+          content: "\f105";
+          font-family: $font-awesome;
+          margin-right: 10px;
+        }
         &:hover {
           color: $primary-color;
           @include transition;

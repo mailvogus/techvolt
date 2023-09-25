@@ -6906,10 +6906,9 @@ body.admin-bar .header-menu-area.sticky_menu {
     .widget ul li,
     .widget ol li {
       display: block;
-      padding: 15px 20px;
-      border: 1px solid #E1E1E1;
-      margin-bottom: 15px;
-      border-radius: 5px;
+      padding: 8px 0;
+      border-bottom: 1px solid #E1E1E1;
+      margin-bottom: 0;
       /* Recent Comment Widget */ }
       .widget ul li:last-child,
       .widget ol li:last-child {
@@ -6934,6 +6933,11 @@ body.admin-bar .header-menu-area.sticky_menu {
         -webkit-transition: all 0.5s ease-out;
         transition: all 0.5s ease-out;
         /* RSS Widget */ }
+        .widget ul li a::before,
+        .widget ol li a::before {
+          content: "\f105";
+          font-family: "Font Awesome 6 Pro";
+          margin-right: 10px; }
         .widget ul li a:hover,
         .widget ol li a:hover {
           color: #0E2BC5;
@@ -8711,7 +8715,9 @@ ul.children {
               justify-content: center;
       -ms-flex-negative: 0;
           flex-shrink: 0;
-      background-color: #ddd; }
+      background-color: #1834c61f;
+      font-size: 24px;
+      color: #0E2BC5; }
     .service-details-overview .list-wrapper ul {
       display: -webkit-box;
       display: -ms-flexbox;
