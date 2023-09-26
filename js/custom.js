@@ -322,6 +322,7 @@
             nextArrow:
                 "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
         });
+
         /*
        Client Logo Slider
        ============================*/
@@ -411,35 +412,6 @@
             perspective: 1500,
         })
 
-        /*
-        Scroll To Top Js
-        ============================*/
-        $(function () {
-            $("#scrollTop").hide();
-            var position = $(window).scrollTop();
-            var timer;
-            $(window).on('scroll', function () {
-                var scrollTop = $(window).scrollTop();
-                clearTimeout(timer);
-                if (scrollTop > 100) {
-                    if (scrollTop > position) {
-                        $('#scrollTop').fadeOut();
-                    } else {
-                        $('#scrollTop').fadeIn();
-                        timer = window.setTimeout(function() {
-                            $("#scrollTop").fadeOut();
-                        }, 3000);
-                    }
-                    position = scrollTop;
-                } else {
-                    $('#scrollTop').fadeOut();
-                }
-            });
-            $(".te-scrollup-btn").click(function() {
-                $("html, body").animate({ scrollTop: 0 }, "slow");
-                return false;
-            });
-        });
 
         /*
 		Portfolio Isotope Js
