@@ -227,25 +227,9 @@ input.te-theme-btn {
   @include transition;
   overflow: hidden;
 
-  // i {
-  //   display: inline-flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   width: 44px;
-  //   height: 44px;
-  //   border-radius: 6px;
-  //   background-color: $primary-color;
-  //   color: #fff;
-  //   font-size: 16px;
-  // }
   &:hover {
-    color: #fff;
-
-    &:before {
-      height: 350%;
-      transition: all 500ms linear;
-      background-color: transparent;
-    }
+    color: $gray-900;
+    background-color: $orange-color;
   }
   &:focus {
     color: $white;
