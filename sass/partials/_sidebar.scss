@@ -18,9 +18,9 @@
   &:last-child {
     margin-bottom: 40px;
   }
-  @include sm {
-    padding: 30px;
-  }
+  // @include sm {
+  //   padding: 30px;
+  // }
   ol,
   ul {
     margin-bottom: 0;
@@ -416,9 +416,11 @@
     ul {
       li {
         text-align: right;
-        display: inline-block;
+        // display: inline-block;
+        display: inline-flex;
         width: 100%;
-
+        justify-content: space-between;
+        
         &.cat-item {
           text-align: right;
           display: inline-block;

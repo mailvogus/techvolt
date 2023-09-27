@@ -1645,7 +1645,7 @@ body {
 
 dl, ol, ul {
   margin-top: 0;
-  margin-bottom: 25px; }
+  margin-bottom: 20px; }
 
 ol {
   padding-left: 20px; }
@@ -6652,9 +6652,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   /* Default Widget */ }
   .widget:last-child {
     margin-bottom: 40px; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .widget {
-      padding: 30px; } }
   .widget ol,
   .widget ul {
     margin-bottom: 0; }
@@ -6994,8 +6991,13 @@ body.admin-bar .header-menu-area.sticky_menu {
         display: none; }
   .widget.te_widget_categories ul li, .widget.widget_archive ul li {
     text-align: right;
-    display: inline-block;
-    width: 100%; }
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .widget.te_widget_categories ul li.cat-item, .widget.widget_archive ul li.cat-item {
       text-align: right;
       display: inline-block;
@@ -8676,8 +8678,24 @@ ul.children {
         .feature-area.style-3 .te-info-card .te-content-wrapper {
           padding: 40px 30px 30px 30px; } }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .te-service-details-wrapper {
+    margin-top: 40px; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .te-service-details-wrapper {
+    margin-top: 40px; } }
+
 .service-details-page {
-  padding: 120px 0; }
+  padding-top: 120px;
+  padding-bottom: 96px; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .service-details-page {
+      padding-top: 80px;
+      padding-bottom: 56px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .service-details-page {
+      padding-top: 100px;
+      padding-bottom: 76px; } }
 
 .service-details {
   display: -webkit-box;
@@ -8689,7 +8707,8 @@ ul.children {
           flex-direction: column;
   gap: 30px; }
   .service-details .image {
-    border-radius: 5px; }
+    border-radius: 5px;
+    overflow: hidden; }
   .service-details .content .te-title-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8728,7 +8747,7 @@ ul.children {
         width: 60px;
         height: 60px;
         border-radius: 5px;
-        font-size: 18px;
+        font-size: 24px;
         color: #ffffff; }
       .service-details .content .te-title-wrapper .title-inner .title {
         font-size: 24px;

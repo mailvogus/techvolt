@@ -42,8 +42,27 @@
 
 
 // Service Details Page
+.te-service-details-wrapper {
+    @include sm {
+        margin-top: 40px;
+    }
+    @include md {
+        margin-top: 40px;
+    }
+}
 .service-details-page {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 96px;
+
+    @include sm {
+        padding-top: 80px;
+        padding-bottom: 56px;
+    }
+
+    @include md {
+        padding-top: 100px;
+        padding-bottom: 76px;
+    }
 }
 .service-details {
     display: flex;
@@ -52,6 +71,7 @@
 
     .image {
         border-radius: 5px;
+        overflow: hidden;
     }
     .content {
         .te-title-wrapper {
@@ -75,7 +95,7 @@
                     width: 60px;
                     height: 60px;
                     border-radius: 5px;
-                    font-size: 18px;
+                    font-size: 24px;
                     color: $white;
                 }
                 .title {
