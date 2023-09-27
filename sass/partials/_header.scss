@@ -130,12 +130,12 @@
       z-index: 2;
 
       &:hover {
-        &:before {
+        &:after {
           @include transition;
           background-color: $sky-color;
         }
       }
-      &:before {
+      &:after {
         position: absolute;
         content: "";
         border-radius: 0 0 10px 10px;
@@ -214,7 +214,7 @@
     .te-logo {
       height: 84px;
 
-      &:before {
+      &:after {
         display: none;
       }
       .te-standard-logo {
@@ -240,8 +240,12 @@
             }
           }
           a {
-            padding: 24px 17px;
+            padding: 33px 17px;
             @include transition;
+
+            @include lg {
+              padding: 33px 14px;
+            }
           }
           ul {
             li {
@@ -281,7 +285,7 @@
       height: 80px;
     }
 
-    // &:before {
+    // &:after {
     //   position: absolute;
     //   content: "";
     //   width: 350px;
@@ -352,8 +356,10 @@
         > a {
           color: $blue-color;
 
-          &:before {
-           border-color: $blue-color;
+          &:after {
+           color: $blue-color;
+           font-size: 13px;
+           margin-left: 5px;
           }
           // &:after {
           //   position: absolute;
@@ -368,18 +374,19 @@
       }
       &.te-dropdown {
         > a {
-          padding-right: 30px !important;
+          // padding-right: 30px !important;
 
-          &:before {
+          &:after {
            visibility: visible;
+           font-size: 13px;
+           margin-left: 5px;
           }
         }
         .te-dropdown {
           > a {
-            &:before {
+            &:after {
              visibility: visible;
-             right: 15px;
-             transform: rotate(-45deg);
+             font-size: 13px;
             }
           }
         }
@@ -394,17 +401,11 @@
                 z-index: 2;
                 color: $white;
 
-                &:before {
-                 border-color: $white;
+                &:after {
+                 color: $white;
+                 font-size: 13px;
+                 
                 }
-                // &:after {
-                //   height: 100%;
-                //   top: 0;
-                //   left: 0;
-                //   width: 100%;
-                //   border-radius: 0;
-                //   z-index: -1;
-                // }
               }
             }
           }
@@ -412,7 +413,7 @@
       }
       a {
         display: block;
-        padding: 32px 17px;
+        padding: 40px 17px;
         text-decoration: none;
         text-transform: capitalize;
         @include transition;
@@ -421,28 +422,24 @@
         font-family: $spline-font;
         font-size: 16px;
         font-weight: 600;
+        line-height: initial;
 
         @include lg {
           padding: 32px 14px;
         }
-        &:before {
-         position: absolute;
-         content: "";
-         transform: rotate(45deg);
-         border: solid $gray-900;
-         border-width: 0 1px 1px 0;
+        &:after {
+         content: "\f107";
+         font-family: $font-awesome;
          display: inline-block;
-         padding: 3px;
          margin-top: -5px;
-         top: 50%;
-         right: 15px;
          visibility: hidden;
+         font-size: 0;
         } 
         &:hover {
           color: $blue-color;
 
-          &:before {
-           border-color: $blue-color;
+          &:after {
+            color: $blue-color;
           }
         }
       }
@@ -492,7 +489,7 @@
         }
 
         a {
-          line-height: 120%;
+          line-height: initial;
           padding: 10px 20px;
           color: $secondary-color;
           border-bottom: 1px solid $gray-200;
@@ -503,8 +500,8 @@
             background-color: $blue-color;
             color: $white;
 
-            &:before {
-             border-color: $white;
+            &:after {
+             color: $white;
             }
           }
         }
@@ -554,7 +551,7 @@
       width: 20px;
       position: relative;
 
-      &::before {
+      &::after {
         position: absolute;
         content: "";
         background-color: $white;
@@ -606,7 +603,7 @@
     border-radius: 5px;
     padding: 19px 27px;
     @include transition;
-    margin-left: 50px;
+    margin-left: 40px;
     flex-shrink: 0;
 
     &:hover {
