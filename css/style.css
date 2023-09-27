@@ -8648,6 +8648,34 @@ ul.children {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.feature-area.style-3 {
+  padding-top: 120px;
+  padding-bottom: 96px; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .feature-area.style-3 {
+      padding-top: 80px;
+      padding-bottom: 56px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .feature-area.style-3 {
+      padding-top: 100px;
+      padding-bottom: 76px; } }
+  .feature-area.style-3 .te-info-card {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid #E1E1E1;
+    padding: 0;
+    border-radius: 5px;
+    overflow: hidden; }
+    .feature-area.style-3 .te-info-card .te-info-card-inner {
+      gap: 0; }
+    .feature-area.style-3 .te-info-card .image {
+      border-radius: 0; }
+    .feature-area.style-3 .te-info-card .te-content-wrapper {
+      padding: 40px 40px 30px 40px; }
+      @media (max-width: 1399px) {
+        .feature-area.style-3 .te-info-card .te-content-wrapper {
+          padding: 40px 30px 30px 30px; } }
+
 .service-details-page {
   padding: 120px 0; }
 

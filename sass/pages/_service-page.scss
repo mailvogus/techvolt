@@ -1,3 +1,46 @@
+// Service 
+.feature-area {
+    &.style-3 {
+        padding-top: 120px;
+        padding-bottom: 96px;
+
+        @include sm {
+            padding-top: 80px;
+            padding-bottom: 56px;
+        }
+
+        @include md {
+            padding-top: 100px;
+            padding-bottom: 76px;
+        }
+
+        .te-info-card  {
+            box-shadow: none;
+            border: 1px solid $gray-200;
+            padding: 0;
+            border-radius: 5px;
+            overflow: hidden;
+
+
+            .te-info-card-inner {
+                gap: 0;
+            }
+            .image {
+                border-radius: 0;
+            }
+
+            .te-content-wrapper {
+                padding: 40px 40px 30px 40px;
+
+                @include rmaxwd(1399) {
+                    padding: 40px 30px 30px 30px;
+                }
+            }
+        }
+    }
+}
+
+
 // Service Details Page
 .service-details-page {
     padding: 120px 0;
