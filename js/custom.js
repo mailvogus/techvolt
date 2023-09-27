@@ -34,26 +34,28 @@
         Stikey Js
         ============================*/
 
-        // const body = document.body;
-        // const html = document.documentElement;
-        // const height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-
-        // if( height  > 1400 ) {
-        //     const nav = $(".te-header-menu-area.te-sticky-header");
-        //     let scrolled = false;
-        //     $(window).scroll(function () {
-        //         if (160 < $(window).scrollTop() && !scrolled) {
-        //             nav
-        //                 .addClass("te-sticky_menu animated fadeIn")
-        //                 .animate({"margin-top": "0px"});
-        //             scrolled = true;
-        //         }
-        //         if (160 > $(window).scrollTop() && scrolled) {
-        //             nav.removeClass("te-sticky_menu animated fadeIn").css("margin-top", "0px");
-        //             scrolled = false;
-        //         }
-        //     });
-        // }
+        const body = document.body;
+        const html = document.documentElement;
+        const height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (100 < $(window).scrollTop()) {
+            $(".te-header-menu-area.te-sticky-header").addClass("te-sticky_menu");
+        }
+        if( height  > 1400 ) {
+            const nav = $(".te-header-menu-area.te-sticky-header");
+            let scrolled = false;
+            $(window).scroll(function () {
+                if (100 < $(window).scrollTop() && !scrolled) {
+                    nav
+                        .addClass("te-sticky_menu animated fadeIn")
+                        .animate({"margin-top": "0px"});
+                    scrolled = true;
+                }
+                if (100 > $(window).scrollTop() && scrolled) {
+                    nav.removeClass("te-sticky_menu animated fadeIn").css("margin-top", "0px");
+                    scrolled = false;
+                }
+            });
+        }
 
         /*
         Jquery Empty Post Content Hide
