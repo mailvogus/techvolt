@@ -15,34 +15,28 @@
 6.Icon Card
 7. About Image Card
 8. About Info Card
-9. Promotional Card
-10. Video Popup Card
-11. Counter Card
-12. Process Step Card
-13. Testimonial Card
-14. Accordion Card
-15. Client Logo Card
-16. Post Card
-17. Skill Progress Card
-18. Price Card
-19. Call To Action Card
-20. Title Card
-21. Breadcrumb
-22. Paginations
-23. Timeline Card
-24. Project Details Page
-25. sidebar
-26. Comment List
-27. Comment Form
-28. Team member
-29. Portfolio
-30. About Page
-31. Contact Page
-32. Pricing Page
-33. Service Page
-34. Team Page
-35. Blog Page
-36. Footer
+09. Counter Card
+10. Process Step Card
+11. Testimonial Card
+12. Accordion Card
+13. Post Card
+14. Skill Progress Card
+15. Call To Action Card
+16. Title Card
+17. Breadcrumb
+18. Paginations
+19. Project Details Page
+20. sidebar
+21. Comment List
+22. Comment Form
+23. Team member
+24. Portfolio25. About Page
+25. About Page
+26. Contact Page
+27. Service Page
+28. Team Page
+29. Blog Page
+Footer
 
 ===========================*/
 /* Theme Default CSS */
@@ -87,68 +81,67 @@
 @import "modules/about-info-card/about-info-card-three";
 
 
-// 11. Counter Card
+// 09. Counter Card
 @import "modules/counter/counter-card";
 @import "modules/counter/counter-card-two";
 @import "modules/counter/counter-card-three";
 
-// 12. Process Step Card
+// 10. Process Step Card
 @import "modules/process-step/process-step";
 
 
-// 13. Testimonial Card
+// 11. Testimonial Card
 @import "modules/testimonial/testimonial-card";
 @import "modules/testimonial/testimonial-card-two";
 @import "modules/testimonial/testimonial-card-three";
 @import "modules/testimonial/testimonial-slider-controls";
 
-// 14. Accordion Card
+// 12. Accordion Card
 @import "modules/accordion/accordion";
 
 
-// 16. Post Card
+// 13. Post Card
 @import "modules/post-card/post-card";
 @import "modules/post-card/post-card-one";
 @import "modules/post-card/post-card-two";
 @import "modules/post-card/post-details";
 
-// 17. Skill Progress Card
+// 14. Skill Progress Card
 @import "modules/skill-progress";
 
 
-// 19. Call To Action Card
+// 15. Call To Action Card
 @import "modules/call-to-action-card";
 
 
-// 20. Title Card
+// 16. Title Card
 @import "modules/title-section";
 
-// 21. Breadcrumb
+// 17. Breadcrumb
 @import "modules/breadcrumb/breadcrumb";
 
-// 22. Paginations
+// 18. Paginations
 @import "modules/paginations";
-// @import "modules/nav-tabs";
 
-// 24. Project Details Page
+// 19. Project Details Page
 @import "pages/project-details";
 @import "modules/list-item";
 
-// 25. sidebar
+// 20. sidebar
 @import "partials/sidebar";
 
-// 26. Comment List
+// 21. Comment List
 @import "modules/comment-list";
 
-// 27. Comment Form
+// 22. Comment Form
 @import "modules/comment-form";
 
-// 28. Team member
+// 23. Team member
 @import "modules/team/team-member";
 @import "modules/team/team-member-two";
 @import "modules/team/team-slider-controls";
 
-// 29. Portfolio
+// 24. Portfolio
 @import "modules/portfolio/portfolio";
 @import "modules/portfolio/portfolio-two";
 @import "modules/portfolio/portfolio-three";
@@ -157,22 +150,22 @@
 // Pages
 @import "pages/pages";
 
-// 30. About Page
+// 25. About Page
 @import "pages/about-page";
 
-// 31. Contact Page
+// 26. Contact Page
 @import "pages/contact-page";
 
 
-// 33. Service Page
+// 27. Service Page
 @import "pages/service-page";
 
-// 34. Team Page
+// 28. Team Page
 @import "pages/team-member";
 
-// 35. Blog Page
+// 29. Blog Page
 @import "pages/blog-page";
 
-// 36. Footer
+// Footer
 @import "partials/footer";
 @import "partials/footer-two";
