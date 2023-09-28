@@ -2880,27 +2880,16 @@ body.admin-bar .header-menu-area.sticky_menu {
         -ms-flex-pack: center;
             justify-content: center;
     -ms-flex-negative: 0;
-        flex-shrink: 0; }
-    .te-header-btn .te-icon .te-bar {
-      height: 10px;
-      width: 20px;
-      position: relative; }
-      .te-header-btn .te-icon .te-bar::after {
-        position: absolute;
-        content: "";
-        background-color: #ffffff;
-        width: 10px;
-        height: 2px;
-        top: 0;
-        right: 0; }
-      .te-header-btn .te-icon .te-bar::after {
-        position: absolute;
-        content: "";
-        background-color: #ffffff;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        right: 0; }
+        flex-shrink: 0;
+    color: #ffffff;
+    font-size: 18px;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+    .te-header-btn .te-icon:hover {
+      background-color: #F9D414;
+      color: #14203A;
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; }
   @media only screen and (max-width: 1399px) {
     .te-header-btn {
       display: none; } }
@@ -2922,6 +2911,9 @@ body.admin-bar .header-menu-area.sticky_menu {
     gap: 10px;
     -ms-flex-negative: 0;
         flex-shrink: 0; }
+    .te-header-btn .te-cta-btn:hover {
+      background-color: #0E2BC5;
+      color: #ffffff; }
   .te-header-btn .te-quote-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2952,6 +2944,73 @@ body.admin-bar .header-menu-area.sticky_menu {
       color: #ffffff;
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }
+
+.te-search-form-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  z-index: 999;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+  .te-search-form-wrapper.te-active {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+  .te-search-form-wrapper .te-search-form-inner {
+    width: 768px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    left: 50%; }
+    .te-search-form-wrapper .te-search-form-inner .te-search-content-filed {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      gap: 30px; }
+      .te-search-form-wrapper .te-search-form-inner .te-search-content-filed .te-search-close {
+        cursor: pointer;
+        font-size: 30px;
+        color: #ffffff; }
+    .te-search-form-wrapper .te-search-form-inner .te-search-form {
+      background: #FFFFFF;
+      -webkit-box-shadow: 0px 30px 70px rgba(208, 225, 242, 0.3);
+              box-shadow: 0px 30px 70px rgba(208, 225, 242, 0.3);
+      border-radius: 5px;
+      padding: 15px 30px;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+      .te-search-form-wrapper .te-search-form-inner .te-search-form .te-search-form-input {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .te-search-form-wrapper .te-search-form-inner .te-search-form .te-search-form-input .te-search-icon {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+        .te-search-form-wrapper .te-search-form-inner .te-search-form .te-search-form-input button.te-submit-search-btn {
+          padding: 15px 24px !important; }
+      .te-search-form-wrapper .te-search-form-inner .te-search-form input[type="search"] {
+        margin-top: 0 !important;
+        background: transparent !important;
+        border: 0 !important;
+        padding: 0 12px !important;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1; }
 
 .mean-container a.meanmenu-reveal {
   display: none; }
@@ -9592,5 +9651,4 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #ffffff; }
-
 /*# sourceMappingURL=style.css.map */

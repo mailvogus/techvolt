@@ -12,6 +12,26 @@
         });
 
         /*
+       Jquery Header Search 
+       ============================*/
+       $('.te-search-btn').on('click', function (e) {
+        e.preventDefault();
+        $('body').css('overflow', 'hidden');
+
+        $('.te-search-form-wrapper').addClass('te-active');
+        });
+        $('.te-search-close').on('click', function (e) {
+            e.preventDefault();
+            $('body').css('overflow', 'auto');
+            $('.te-search-form-wrapper').removeClass('te-active');
+        });
+
+        window.onclick = function(e){
+            if( e.target.matches(".te-search-form-wrapper") ){
+                $('.te-search-form-wrapper').removeClass('te-active');
+            }
+        }
+        /*
        Jquery sidebar Toggle
        ============================*/
         $(".te-mobile-menu-toggle-btn").on("click", function () {
