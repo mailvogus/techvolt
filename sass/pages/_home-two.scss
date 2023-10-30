@@ -17,10 +17,17 @@
               margin-bottom: 50px;
           }
 
-          .te-main-img-wrapper .te-main-img-inner {
+          .te-main-img-wrapper {
+            text-align: right;
+
+            @include rmaxwd(991) {
+              text-align: unset;
+            }
+            .te-main-img-inner {
               @include rmaxwd(991) {
                   width: 100%;
               }
+          }
           }
           .te-company-foundation {
               @include rmaxwd(1199) {
