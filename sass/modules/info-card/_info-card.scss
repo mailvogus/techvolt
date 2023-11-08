@@ -6,11 +6,19 @@
     padding: 40px;
     position: relative;
     margin-bottom: 24px;
-    
+    @include transition;
+    border-radius: 5px;
+    top: 0;
+    position: relative;
     @include lg {
         padding: 40px 25px;
     }
     &:hover {
+        background-color: $white;
+        box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+        top: -5px;
+        @include transition;
+
         .te-image-wrapper {
             .overlay {
                 @include transition;
@@ -25,6 +33,16 @@
             img {
                 transform: rotateY(360deg);
                 @include transition;
+            }
+        }
+        .content {
+            .te-read-more {
+                .te-theme-btn {               
+                    background-color: $blue-color;
+                    border-color: $blue-color;
+                    color: $white;
+                    @include transition;
+                }
             }
         }
     }
