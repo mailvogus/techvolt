@@ -330,11 +330,8 @@
   flex-grow: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
 
-  @include rmaxwd (1399) {
-    justify-content: end;
-  }
 }
 .te-main-menu {
   ul {
@@ -531,6 +528,8 @@
   display: flex;
   align-items: center;
   gap: 1px;
+  margin-left: auto;
+  
 
   .te-icon {
     width: 72px;
