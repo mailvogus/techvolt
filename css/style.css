@@ -2448,8 +2448,7 @@ body.admin-bar .header-menu-area.sticky_menu {
       padding: 0 24px; } }
 .header-area.style-2 .header-top {
   padding: 9px 0;
-  background-color: #F7FBFE;
-  border-bottom: 1px solid rgba(20, 32, 58, 0.2); }
+  background-color: #F7FBFE; }
   .header-area.style-2 .header-top .te-header-contact-info span {
     color: #677471; }
     .header-area.style-2 .header-top .te-header-contact-info span i {
@@ -2467,9 +2466,9 @@ body.admin-bar .header-menu-area.sticky_menu {
       color: #ffffff;
       background-color: #0E2BC5; }
 .header-area.style-2 .te-header-menu-area {
-  background-color: #F7FBFE; }
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0; }
   .header-area.style-2 .te-header-menu-area .te-logo {
-    border-right: 1px solid rgba(20, 32, 58, 0.2);
     width: 355px;
     -ms-flex-negative: 0;
         flex-shrink: 0; }
@@ -9897,5 +9896,4 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #ffffff; }
-
 /*# sourceMappingURL=style.css.map */

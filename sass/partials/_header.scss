@@ -9,8 +9,11 @@
   &.style-2 {
     .header-top {
       padding: 9px 0;
+      // background-color: $white;
+      // border-bottom: 1px solid #f0f0f0;
+
       background-color: $gray-100;
-      border-bottom: 1px solid  rgba(20, 32, 58, 0.2);
+      // border-bottom: 1px solid  rgba(20, 32, 58, 0.2);
 
       .te-header-contact-info {
   
@@ -40,10 +43,13 @@
       }
     }
     .te-header-menu-area {
-      background-color: $gray-100;
+      background-color: $white;
+      border-bottom: 1px solid #f0f0f0;
+      // background-color: $gray-100;
 
-      .te-logo {                                                                                                                                                                                                                                                                                    
-        border-right: 1px solid  rgba(20, 32, 58, 0.2);
+      .te-logo {                                          
+        // border-right: 1px solid #f0f0f0;                                                                                                                                                                                                                                          
+        // border-right: 1px solid  rgba(20, 32, 58, 0.2);
         width: 355px;
         flex-shrink: 0;
 
