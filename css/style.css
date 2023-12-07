@@ -7576,21 +7576,28 @@ ul.children {
     font-family: "Inter", sans-serif;
     color: #0E2BC5; }
 
-.te-comment-respond {
+.te-comment-respond,
+.comment-respond {
   position: relative; }
-  .te-comment-respond p {
+  .te-comment-respond p,
+  .comment-respond p {
     margin: 0; }
   .te-comment-respond .te-contacts-email,
   .te-comment-respond .te-contacts-name,
-  .te-comment-respond .single-input-field {
+  .te-comment-respond .single-input-field,
+  .comment-respond .te-contacts-email,
+  .comment-respond .te-contacts-name,
+  .comment-respond .single-input-field {
     margin-bottom: 30px; }
-  .te-comment-respond label {
+  .te-comment-respond label,
+  .comment-respond label {
     display: block;
     font-size: 18px;
     font-weight: 600;
     color: #778196;
     margin-bottom: 30px; }
-  .te-comment-respond .checkbox-field-wrapper {
+  .te-comment-respond .checkbox-field-wrapper,
+  .comment-respond .checkbox-field-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7602,9 +7609,11 @@ ul.children {
         flex-wrap: wrap;
     margin-bottom: 30px;
     padding: 15px 0; }
-    .te-comment-respond .checkbox-field-wrapper p {
+    .te-comment-respond .checkbox-field-wrapper p,
+    .comment-respond .checkbox-field-wrapper p {
       margin: 0; }
-    .te-comment-respond .checkbox-field-wrapper .single-checkbox-field {
+    .te-comment-respond .checkbox-field-wrapper .single-checkbox-field,
+    .comment-respond .checkbox-field-wrapper .single-checkbox-field {
       margin-bottom: 0;
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
@@ -7616,14 +7625,18 @@ ul.children {
       font-size: 18px;
       font-weight: 400;
       font-family: "Inter", sans-serif; }
-  .te-comment-respond .te-comment-form-cookies-consent {
+  .te-comment-respond .te-comment-form-cookies-consent,
+  .comment-respond .te-comment-form-cookies-consent {
     display: none; }
-  .te-comment-respond input[type="number"] {
+  .te-comment-respond input[type="number"],
+  .comment-respond input[type="number"] {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     appearance: textfield; }
   .te-comment-respond input,
-  .te-comment-respond select {
+  .te-comment-respond select,
+  .comment-respond input,
+  .comment-respond select {
     padding: 0 20px;
     height: 60px;
     width: 100%;
@@ -7635,15 +7648,20 @@ ul.children {
     font-weight: 400;
     background-color: transparent;
     font-family: "Inter", sans-serif !important; }
-  .te-comment-respond *::-webkit-input-placeholder {
+  .te-comment-respond *::-webkit-input-placeholder,
+  .comment-respond *::-webkit-input-placeholder {
     color: #778196; }
-  .te-comment-respond *:-ms-input-placeholder {
+  .te-comment-respond *:-ms-input-placeholder,
+  .comment-respond *:-ms-input-placeholder {
     color: #778196; }
-  .te-comment-respond *::-ms-input-placeholder {
+  .te-comment-respond *::-ms-input-placeholder,
+  .comment-respond *::-ms-input-placeholder {
     color: #778196; }
-  .te-comment-respond *::placeholder {
+  .te-comment-respond *::placeholder,
+  .comment-respond *::placeholder {
     color: #778196; }
-  .te-comment-respond textarea {
+  .te-comment-respond textarea,
+  .comment-respond textarea {
     resize: vertical;
     padding: 20px;
     width: 100%;
@@ -7658,7 +7676,10 @@ ul.children {
     margin-bottom: 30px; }
   .te-comment-respond input:focus,
   .te-comment-respond textarea:focus,
-  .te-comment-respond .form-select:focus {
+  .te-comment-respond .form-select:focus,
+  .comment-respond input:focus,
+  .comment-respond textarea:focus,
+  .comment-respond .form-select:focus {
     outline: none !important;
     -webkit-box-shadow: none;
             box-shadow: none;
