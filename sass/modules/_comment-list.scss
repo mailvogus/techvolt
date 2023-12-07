@@ -90,8 +90,11 @@
 
 /* Block Comment End */
 .te-latest-comments {
-  .te-comment-respond {
-    margin-top: 80px;
+  .te-comment-respond,
+  .comment-respond
+   {
+    margin-top: 60px;
+    margin-bottom: 40px;
   }
   li {
 

@@ -19,7 +19,7 @@
     line-height: 28px;
     font-weight: 500;
     color: $secondary-color;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
 
@@ -31,6 +31,7 @@
       font-size: 18px;
       font-family: $body-font;
       color: $primary-color;
+      text-transform: capitalize;
     }
   }
 }
@@ -40,7 +41,7 @@
   line-height: 28px;
   font-weight: 500;
   color: $secondary-color;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
 
@@ -52,6 +53,7 @@
     font-size: 18px;
     font-family: $body-font;
     color: $primary-color;
+    text-transform: capitalize;
   }
 }
 

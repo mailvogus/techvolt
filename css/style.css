@@ -7443,8 +7443,10 @@ body.admin-bar .header-menu-area.sticky_menu {
         transition: all 0.5s ease-out; }
 
 /* Block Comment End */
-.te-latest-comments .te-comment-respond {
-  margin-top: 80px; }
+.te-latest-comments .te-comment-respond,
+.te-latest-comments .comment-respond {
+  margin-top: 60px;
+  margin-bottom: 40px; }
 .te-latest-comments li .children .te-comments-item {
   margin-left: 50px; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -7560,7 +7562,7 @@ ul.children {
   line-height: 28px;
   font-weight: 500;
   color: #14203A;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7574,14 +7576,15 @@ ul.children {
   .te-post-comments-title h2 small {
     font-size: 18px;
     font-family: "Inter", sans-serif;
-    color: #0E2BC5; }
+    color: #0E2BC5;
+    text-transform: capitalize; }
 
 .comment-reply-title {
   font-size: 36px;
   line-height: 28px;
   font-weight: 500;
   color: #14203A;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7595,7 +7598,8 @@ ul.children {
   .comment-reply-title small {
     font-size: 18px;
     font-family: "Inter", sans-serif;
-    color: #0E2BC5; }
+    color: #0E2BC5;
+    text-transform: capitalize; }
 
 .te-comment-respond,
 .comment-respond {
@@ -9749,5 +9753,4 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #ffffff; }
-
 /*# sourceMappingURL=style.css.map */
