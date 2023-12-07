@@ -34,12 +34,36 @@
     }
   }
 }
+
+.comment-reply-title {
+  font-size: 36px;
+  line-height: 28px;
+  font-weight: 500;
+  color: $secondary-color;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  @include sm {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  small {
+    font-size: 18px;
+    font-family: $body-font;
+    color: $primary-color;
+  }
+}
+
 .te-comment-respond,
 .comment-respond {
   position: relative;
 
   .comment-form-cookies-consent {
     display: none;
+  }
+  .comment-notes {
+    margin-bottom: 30px;
   }
   p {
     margin: 0;
@@ -65,6 +89,7 @@
     margin-bottom: 20px;
     padding: 15px 0;
 
+    
     p {
       margin: 0;
     }
