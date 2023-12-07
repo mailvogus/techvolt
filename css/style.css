@@ -7579,6 +7579,9 @@ ul.children {
 .te-comment-respond,
 .comment-respond {
   position: relative; }
+  .te-comment-respond .comment-form-cookies-consent,
+  .comment-respond .comment-form-cookies-consent {
+    display: none; }
   .te-comment-respond p,
   .comment-respond p {
     margin: 0; }
@@ -9722,5 +9725,4 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #ffffff; }
-
 /*# sourceMappingURL=style.css.map */

@@ -38,6 +38,9 @@
 .comment-respond {
   position: relative;
 
+  .comment-form-cookies-consent {
+    display: none;
+  }
   p {
     margin: 0;
   }
