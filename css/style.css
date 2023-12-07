@@ -6083,7 +6083,34 @@ body.admin-bar .header-menu-area.sticky_menu {
       padding: 0; } }
 
 .te-breadcrumb-list {
-  text-align: center; }
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #14203A;
+  text-transform: capitalize;
+  line-height: 39px;
+  font-weight: 500;
+  margin-bottom: 0;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+  .te-breadcrumb-list span.current-item {
+    color: #0E2BC5; }
+  .te-breadcrumb-list a {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #14203A;
+    text-transform: capitalize;
+    line-height: 39px;
+    font-weight: 500;
+    margin-bottom: 0;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+    .te-breadcrumb-list a:hover {
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+      color: #0E2BC5; }
   .te-breadcrumb-list ul {
     margin-bottom: 0;
     padding-left: 0;

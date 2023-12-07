@@ -62,6 +62,40 @@
 .te-breadcrumb-list {
   text-align: center;
 
+  font-family: $body-font;
+  font-size: 20px;
+  text-align: center;
+  color: $secondary-color;
+  text-transform: capitalize;
+  line-height: 39px;
+  font-weight: 500;
+  margin-bottom: 0;
+  @include transition;
+
+  span {
+    &.current-item {
+      color: $primary-color;
+    }
+  }
+  a {
+    font-family: $body-font;
+    font-size: 20px;
+    text-align: center;
+    color: $secondary-color;
+    text-transform: capitalize;
+    line-height: 39px;
+    font-weight: 500;
+    margin-bottom: 0;
+    @include transition;
+
+
+    &:hover {
+      @include transition;
+       color: $blue-color;
+    }
+  }
+
+
   ul {
     margin-bottom: 0;
     padding-left: 0;
