@@ -6056,7 +6056,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-size: 57px;
   text-align: center;
   color: #14203A;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   text-transform: capitalize;
   line-height: 77px;
   font-weight: 500; }
@@ -6084,6 +6084,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .te-breadcrumb-list {
   text-align: center;
+  margin-top: 20px;
   font-family: "Inter", sans-serif;
   font-size: 20px;
   text-align: center;
@@ -9896,4 +9897,5 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #ffffff; }
+
 /*# sourceMappingURL=style.css.map */
