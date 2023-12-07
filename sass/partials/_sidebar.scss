@@ -12,7 +12,8 @@
 }
 
 /* Widget */
-.widget {
+.widget,
+.sidebar__widget  {
   margin-bottom: 48px;
 
   &:last-child {
