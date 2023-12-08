@@ -2469,6 +2469,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #ffffff;
   border-bottom: 1px solid #f0f0f0; }
   .header-area.style-2 .te-header-menu-area .te-logo {
+    border-right: 1px solid #F7FBFE;
     width: 355px;
     -ms-flex-negative: 0;
         flex-shrink: 0; }
@@ -7035,23 +7036,29 @@ body.admin-bar .header-menu-area.sticky_menu {
     margin-bottom: -2px; }
   .widget .wp-block-search,
   .widget .search-form,
+  .widget .sidebar__search,
   .sidebar__widget .wp-block-search,
-  .sidebar__widget .search-form {
+  .sidebar__widget .search-form,
+  .sidebar__widget .sidebar__search {
     display: inline-block;
     width: 100%;
     overflow: hidden; }
     .widget .wp-block-search .wp-block-search__inside-wrapper,
     .widget .search-form .wp-block-search__inside-wrapper,
+    .widget .sidebar__search .wp-block-search__inside-wrapper,
     .sidebar__widget .wp-block-search .wp-block-search__inside-wrapper,
-    .sidebar__widget .search-form .wp-block-search__inside-wrapper {
+    .sidebar__widget .search-form .wp-block-search__inside-wrapper,
+    .sidebar__widget .sidebar__search .wp-block-search__inside-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       padding: 0 !important; }
     .widget .wp-block-search label,
     .widget .search-form label,
+    .widget .sidebar__search label,
     .sidebar__widget .wp-block-search label,
-    .sidebar__widget .search-form label {
+    .sidebar__widget .search-form label,
+    .sidebar__widget .sidebar__search label {
       font-size: 24px;
       display: block;
       line-height: 28px;
@@ -7061,8 +7068,10 @@ body.admin-bar .header-menu-area.sticky_menu {
       font-family: "Inter", sans-serif; }
     .widget .wp-block-search input,
     .widget .search-form input,
+    .widget .sidebar__search input,
     .sidebar__widget .wp-block-search input,
-    .sidebar__widget .search-form input {
+    .sidebar__widget .search-form input,
+    .sidebar__widget .sidebar__search input {
       background-color: #ffffff;
       border: 1px solid #E1E1E1 !important;
       padding: 0 25px;
@@ -7073,8 +7082,10 @@ body.admin-bar .header-menu-area.sticky_menu {
       border-radius: 6px 0 0 6px; }
     .widget .wp-block-search button,
     .widget .search-form button,
+    .widget .sidebar__search button,
     .sidebar__widget .wp-block-search button,
-    .sidebar__widget .search-form button {
+    .sidebar__widget .search-form button,
+    .sidebar__widget .sidebar__search button {
       color: #ffffff;
       padding: 0 20px;
       position: relative;
