@@ -440,7 +440,52 @@ nav.wp-calendar-nav {
   }
 }
 
-
+.blog-search-content {
+  .wp-block-search,
+  .search-form,
+  .sidebar__search {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+  
+    .wp-block-search__inside-wrapper {
+      display: flex;
+      padding: 0 !important;
+    }
+    label {
+      font-size: 24px;
+      display: block;
+      line-height: 28px;
+      font-weight: 500;
+      margin-bottom: 30px;
+      color: $secondary-color;
+      font-family: $heading-font;
+    }
+    input {
+      background-color: $white;
+      border: 1px solid $gray-200 !important;
+      padding: 0 25px;
+      height: 60px;
+      width: 100%;
+      color: $text-color;
+      font-size: 15px;
+      border-radius: 6px 0 0 6px;
+    }
+    button {
+      color: $white;
+      padding: 0 20px;
+      position: relative;
+      right: 0;
+      background-color: $primary-color;
+      top: 0;
+      height: auto;
+      border-radius: 0 6px 6px 0;
+      line-height: 0;
+      border: 0;
+      margin-left: 0 !important;
+    }
+  }
+}
 
   /*
    Media
