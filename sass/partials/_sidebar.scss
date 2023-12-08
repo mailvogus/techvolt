@@ -13,8 +13,7 @@
 
 /* Widget */
 .widget,
-.sidebar__widget,
-.widget_search  {
+.sidebar__widget  {
   margin-bottom: 48px;
 
   &:last-child {
@@ -241,6 +240,16 @@
     button {
       width: 62px;
       flex-shrink: 0;
+    }
+  }
+  &.widget_search {
+    .sidebar__search  {
+      display: flex !important;
+  
+      button {
+        width: 62px;
+        flex-shrink: 0;
+      }
     }
   }
   .wp-block-search__no-button {
