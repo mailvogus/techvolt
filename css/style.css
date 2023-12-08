@@ -1936,9 +1936,14 @@ nav.wp-calendar-nav {
 .blog-search-content .wp-block-search,
 .blog-search-content .search-form,
 .blog-search-content .sidebar__search {
-  display: inline-block;
-  width: 100%;
+  display: flex;
+  width: 50%;
   overflow: hidden; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .blog-search-content .wp-block-search,
+    .blog-search-content .search-form,
+    .blog-search-content .sidebar__search {
+      width: 100%; } }
   .blog-search-content .wp-block-search .wp-block-search__inside-wrapper,
   .blog-search-content .search-form .wp-block-search__inside-wrapper,
   .blog-search-content .sidebar__search .wp-block-search__inside-wrapper {
@@ -4481,8 +4486,8 @@ body.admin-bar .header-menu-area.sticky_menu {
       padding-left: 30px; } }
   .page-header .te-page-title,
   .page-header .page-title {
-    font-size: 48px;
-    line-height: 60px; }
+    font-size: 42px;
+    line-height: 48px; }
     @media (max-width: 991px) {
       .page-header .te-page-title,
       .page-header .page-title {

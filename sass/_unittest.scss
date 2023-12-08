@@ -444,9 +444,13 @@ nav.wp-calendar-nav {
   .wp-block-search,
   .search-form,
   .sidebar__search {
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    width: 50%;
     overflow: hidden;
+
+    @include sm {
+      width: 100%;
+    }
   
     .wp-block-search__inside-wrapper {
       display: flex;
