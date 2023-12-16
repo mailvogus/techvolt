@@ -1851,10 +1851,10 @@ img.emoji {
 
 blockquote {
   overflow: hidden;
+  padding: 30px 30px 30px 30px !important;
   margin: 30px 0;
   position: relative;
   z-index: 1;
-  padding-left: 83px;
   background-color: #F7FBFE; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     blockquote {
@@ -1865,7 +1865,8 @@ blockquote {
     color: #14203A;
     line-height: 32px;
     font-weight: 500;
-    letter-spacing: 0.5px; }
+    letter-spacing: 0.5px;
+    margin-bottom: 0; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       blockquote p {
         font-size: 18px;
@@ -9977,5 +9978,4 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #ffffff; }
-
 /*# sourceMappingURL=style.css.map */

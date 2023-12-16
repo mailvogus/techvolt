@@ -278,11 +278,11 @@ img {
 }
 blockquote {
   overflow:hidden;
-  //padding: 30px 30px 30px 30px !important;
+  padding: 30px 30px 30px 30px !important;
   margin: 30px 0;
   position: relative;
   z-index: 1;
-  padding-left: 83px;
+  // padding-left: 83px;
   @include sm {
     padding-left: 30px;
   }
@@ -309,7 +309,7 @@ blockquote {
     font-weight: 500;
     //margin-top: 10px;
     letter-spacing: 0.5px;
-
+    margin-bottom: 0;
 
     @include sm {
       font-size: 18px;
