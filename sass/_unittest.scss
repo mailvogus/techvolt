@@ -718,6 +718,9 @@ body {
     }
   }
 }
+.single-post-item.post-24 .wp-block-button a {
+  color: #ffffff;
+}
 .post-template-default {
   &.postid-163 {
     .te-blog-details-wrapper .te-post-item .te-post-content {
@@ -758,8 +761,7 @@ body {
       }
     }
   }
-  &.postid-1785,
-  &.postid-180 {
+  &.postid-1785 {
     .te-blog-details-wrapper {
       .te-post-item .te-post-content {
         .wp-block-button__link {
