@@ -5251,7 +5251,7 @@ body.admin-bar .header-menu-area.sticky_menu {
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .te-post-item iframe {
         height: 350px; } }
-  .te-post-item .post-gallery {
+  .te-post-item .post-gallery .slick-list .slick-track {
     height: 392px;
     overflow: hidden; }
   .te-post-item .te-post-content-wrapper {
