@@ -77,7 +77,7 @@ table {
   }
 }
 // Page Content Unit Test
-.page-content {
+.tp-page-content {
   .size-full.alignright {
     margin-bottom: 15px;
     margin-top: 20px;
@@ -496,7 +496,7 @@ nav.wp-calendar-nav {
   /*
    Media
   ============================*/
-.page-content .wp-smiley,
+.tp-page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
   border: none;
@@ -694,7 +694,7 @@ body {
 
 .page-template-default {
   &.page-id-146 {
-    .page-content {
+    .tp-page-content {
       p {
         &:last-child {
           margin-bottom: 10px;
@@ -704,7 +704,7 @@ body {
   }
 
   &.page-id-1133 {
-    .page-content {
+    .tp-page-content {
       .te-comment-respond {
         margin-top: 78px;
         display: inline-block;
@@ -747,6 +747,7 @@ body {
       }
     }
   }
+
   &.postid-1163,
   &.postid-568 {
     .te-blog-details-wrapper {
