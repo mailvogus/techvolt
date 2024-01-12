@@ -53,29 +53,38 @@
         /*
         Stikey Js
         ============================*/
+        const handleScroll = () => {
+            const $this = $(window);
+            const $wpAdminbar = $("#wpadminbar");
+            const $topBar = $(".header-top");
+            const $menuBar = $(".te-sticky-header");
+            const topBarHeight = $topBar.outerHeight();
+            const menuBarHeight = $menuBar.outerHeight();
+            const wpBarHeight = $wpAdminbar.outerHeight();
 
-        const body = document.body;
-        const html = document.documentElement;
-        const height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-        if (100 < $(window).scrollTop()) {
-            $(".te-header-menu-area.te-sticky-header").addClass("te-sticky_menu");
-        }
-        if( height  > 1400 ) {
-            const nav = $(".te-header-menu-area.te-sticky-header");
-            let scrolled = false;
-            $(window).scroll(function () {
-                if (100 < $(window).scrollTop() && !scrolled) {
-                    nav
-                        .addClass("te-sticky_menu animated fadeIn")
-                        .animate({"margin-top": "0px"});
-                    scrolled = true;
+            if ($("header").hasClass("login")) {
+                if ($this.scrollTop() > topBarHeight) {
+                    $topBar.add($menuBar).addClass("te-sticky_menu");
+                    $topBar.css({ "margin-top": menuBarHeight });
+                    $menuBar.css({ top: wpBarHeight });
+                } else {
+                    $topBar.add($menuBar).removeClass("te-sticky_menu");
+                    $topBar.css({ "margin-top": "auto" });
+                    $menuBar.css({ top: "auto" });
                 }
-                if (100 > $(window).scrollTop() && scrolled) {
-                    nav.removeClass("te-sticky_menu animated fadeIn").css("margin-top", "0px");
-                    scrolled = false;
+            } else {
+                if ($this.scrollTop() > topBarHeight) {
+                    $topBar.add($menuBar).addClass("te-sticky_menu");
+                    $topBar.css({ "margin-top": menuBarHeight });
+                } else {
+                    $topBar.add($menuBar).removeClass("te-sticky_menu");
+                    $topBar.css({ "margin-top": "auto" });
                 }
-            });
-        }
+            }
+        };
+
+        $(window).on("scroll", handleScroll);
+
 
         /*
         Jquery Empty Post Content Hide
