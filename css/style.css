@@ -9127,6 +9127,10 @@ ul.children {
     .service-details-page {
       padding-top: 100px;
       padding-bottom: 76px; } }
+  .service-details-page .sidebar .te_widget_categories ul li a .my-icon {
+    font-size: 24px; }
+  .service-details-page .sidebar .te_widget_categories ul li a:before {
+    display: none; }
 
 .service-details {
   display: -webkit-box;

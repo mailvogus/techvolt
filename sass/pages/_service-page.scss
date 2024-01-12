@@ -63,6 +63,23 @@
         padding-top: 100px;
         padding-bottom: 76px;
     }
+
+    .sidebar {
+        .te_widget_categories {
+            ul {
+                li {
+                    a {
+                        .my-icon {
+                            font-size: 24px;
+                        }
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .service-details {
     display: flex;
