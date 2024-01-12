@@ -3373,17 +3373,14 @@ body.admin-bar .header-menu-area.sticky_menu {
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .slider-area .te-single-slider .te-slider-overlay {
           left: 0; } }
-      .slider-area .te-single-slider .te-slider-overlay::before {
+      .slider-area .te-single-slider .te-slider-overlay .te-slider-overlay-shape {
         position: absolute;
-        content: "";
         top: 0;
         height: 100%;
         left: -340px;
-        width: 100%;
-        background-image: url("../images/shape/slider-shape.png");
-        background-repeat: no-repeat; }
+        width: 100%; }
         @media only screen and (min-width: 0px) and (max-width: 767px) {
-          .slider-area .te-single-slider .te-slider-overlay::before {
+          .slider-area .te-single-slider .te-slider-overlay .te-slider-overlay-shape {
             display: none; } }
     .slider-area .te-single-slider .te-slider-content-wrapper {
       position: relative;

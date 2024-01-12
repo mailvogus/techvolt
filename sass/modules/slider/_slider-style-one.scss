@@ -137,15 +137,12 @@
         @include sm {
           left: 0;
         }
-        &::before {
+        .te-slider-overlay-shape {
           position: absolute;
-          content: "";
           top: 0;
           height: 100%;
           left: -340px;
           width: 100%;
-          background-image: url('../images/shape/slider-shape.png');
-          background-repeat: no-repeat;
 
           @include sm {
             display: none;
