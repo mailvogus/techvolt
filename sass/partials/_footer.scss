@@ -3,6 +3,8 @@
   z-index: 2;
   overflow: hidden;
 
+
+
   &.style-1 {
 
     background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%);
@@ -12,7 +14,68 @@
       padding-top: 80px;
       padding-bottom: 60px;
     }
+
   }
+
+  &.style-2 {
+    .widget .wp-block-heading,
+    .widget .widget-title,
+    .widget .wp-block-search__label,
+    .sidebar__widget .wp-block-heading,
+    .sidebar__widget .widget-title,
+    .sidebar__widget .wp-block-search__label,
+    .widget ul li a,
+    .widget ol li a,
+    .sidebar__widget ul li a,
+    .sidebar__widget ol li a,
+    .widget ul li,
+    .wp-calendar-table,
+    .wp-block-calendar caption,
+    nav.wp-calendar-nav a,
+    .wp-block-latest-comments__comment-excerpt,
+    .wp-calendar-table caption,
+    .widget_text,
+    .widget .tagcloud a,
+    .widget .wp-block-tag-cloud a,
+    .sidebar__widget .tagcloud a,
+    .sidebar__widget .wp-block-tag-cloud a,
+    .wp-block-latest-comments__comment-date,
+    .wp-block-latest-comments__comment,
+    .wp-block-archives-dropdown label
+
+    {
+      color: $white;
+    }
+    .te-theme-btn,
+    .wp-block-loginout a,
+    input.te-theme-btn,
+    .widget .wp-block-search button,
+    .widget .search-form button,
+    .widget .sidebar__search button,
+    .sidebar__widget .wp-block-search button,
+    .sidebar__widget .search-form button,
+    .sidebar__widget .sidebar__search button
+    {
+      background-color: $orange-color;
+      color: $black;
+    }
+  }
+
+  .te-footer-widget.te_widget_nav_menu li.wp-block-social-link {
+    display: inline-block;
+    width: unset !important;
+  }
+  .te_widget_nav_menu {
+
+    li.cat-item {
+      text-align: right;
+
+      a {
+        float: left;
+      }
+    }
+  }
+
   //footer Background
   .te-footer-bg {
     position: absolute;

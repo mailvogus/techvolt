@@ -249,16 +249,16 @@ input.te-theme-btn {
 .wp-block-loginout {
   a {
     position: relative;
-
-    &:after {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      content: "\f105";
-      font-family: $font-awesome;
-      color: #fff;
-      font-size: 16px;
-    }
+    //
+    //&:after {
+    //  display: flex;
+    //  align-items: center;
+    //  justify-content: center;
+    //  content: "\f105";
+    //  font-family: $font-awesome;
+    //  color: #fff;
+    //  font-size: 16px;
+    //}
   }
 }
 .contact-form-btn {
