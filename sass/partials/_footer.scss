@@ -41,8 +41,16 @@
     .sidebar__widget .wp-block-tag-cloud a,
     .wp-block-latest-comments__comment-date,
     .wp-block-latest-comments__comment,
-    .wp-block-archives-dropdown label
-
+    .wp-block-archives-dropdown label,
+    .widget_categories li a,
+    .widget_archive li a,
+    .widget_nav_menu li a,
+    .widget_tag_cloud a,
+    .widget_rss li a,
+    .widget_rss li,
+    .footer__widget a,
+    .footer__widget li,
+    li.recentcomments
     {
       color: $white;
     }
@@ -61,6 +69,9 @@
     }
   }
 
+  .footer__widget li {
+    list-style: none;
+  }
   .te-footer-widget.te_widget_nav_menu li.wp-block-social-link {
     display: inline-block;
     width: unset !important;
