@@ -18,7 +18,7 @@
             box-shadow: none;
             border: 1px solid $gray-200;
             padding: 0;
-            border-radius: 5px;
+            border-radius: 50px;
             overflow: hidden;
 
 
@@ -87,7 +87,7 @@
     gap: 30px;
 
     .image {
-        border-radius: 5px;
+        border-radius: 50px;
         overflow: hidden;
     }
     .content {
@@ -111,7 +111,7 @@
                     background-color: $blue-color;
                     width: 60px;
                     height: 60px;
-                    border-radius: 5px;
+                    border-radius: 50px;
                     font-size: 24px;
                     color: $white;
                 }
@@ -143,7 +143,7 @@
        .icon {
         width: 60px;
         height: 60px;
-        border-radius: 5px;
+        border-radius: 50px;
         display: flex;
         align-items: center;
         justify-content: center;

@@ -30,7 +30,7 @@
 
 
     .image {
-        border-radius: 5px;
+        border-radius: 50px;
         overflow: hidden;
     }
     .content {
@@ -74,7 +74,7 @@
         .project-info-wrapper {
             width: 431px;
             background-color: $blue-color;
-            border-radius: 5px;
+            border-radius: 50px;
             padding: 50px 40px;
             flex-shrink: 0;
             margin-top: -120px;
@@ -145,11 +145,11 @@
         .image {
             width: 410px;
             flex-shrink: 0;
-            border-radius: 5px;
+            border-radius: 50px;
             overflow: hidden;
 
             img {
-                border-radius: 5px;
+                border-radius: 50px;
             }
         } 
        ul {
@@ -200,7 +200,7 @@
         gap: 30px;
         padding: 40px 30px 40px 40px;
         border: 1px solid $gray-200;
-        border-radius: 5px;
+        border-radius: 50px;
         margin-top: 50px;
         
         @include rmaxwd(575) {

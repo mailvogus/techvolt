@@ -128,7 +128,7 @@
       flex-shrink: 0;
       width: 120px;
       height: 120px;
-      border-radius: 5px;
+      border-radius: 50px;
       overflow: hidden;
   
       img {
@@ -169,7 +169,7 @@
         align-items: center;
         justify-content: center;
         background-color: $primary-color;
-        border-radius: 5px;
+        border-radius: 50px;
         &:hover {
           @include transition;
           background-color: $white;

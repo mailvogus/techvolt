@@ -1,8 +1,9 @@
 // About Us Area
 .about-us-area {
   &.style-2 {
-      padding: 120px 0;
-      @include gradient-color;
+      padding-top: 120px;
+      padding-bottom: 330px;
+      background-color: $gray-100;
 
       @include sm {
           padding: 80px 0;

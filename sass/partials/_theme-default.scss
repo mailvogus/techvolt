@@ -142,7 +142,15 @@ textarea:focus,
 input:focus {
   outline: none;
 }
-
+.red-100 {
+  background-color: #FFF3F3;
+}
+.skye-100 {
+  background-color: #E8FBFF;
+}
+.orange-100 {
+  background-color: #F9F8DA;
+}
 .background-black {
   background-color: rgb(57, 61, 72);
 }
@@ -223,7 +231,7 @@ input.te-theme-btn {
   background-color: $primary-color;
   position: relative;
   z-index: 1;
-  border-radius: 5px;
+  border-radius: 50px;
   @include transition;
   overflow: hidden;
 

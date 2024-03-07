@@ -425,8 +425,16 @@
 
 // Footer Subscribe
 .subscribe-area {
-  background-color: $blue-color;
   overflow: hidden;
+
+  &.style-1 {
+    .te-subscribe-inner-area .te-content-wrapper {
+      background-color: $primary-color;
+      border-radius: 20px;
+      padding: 63px 50px 68px 74px;
+      gap: 14px;
+    }
+  }
   
   .te-content-wrapper {
     display: flex;
@@ -454,7 +462,7 @@
       font-size: 57px;
       font-style: normal;
       font-weight: 500;
-      line-height: 40px;
+      line-height: 60px;
       letter-spacing: -1px;
       text-transform: capitalize;
 
@@ -491,7 +499,7 @@
   }
   .te-subscribe-inner-area {
     display: flex;
-    gap: 80px;
+    gap: 32px;
 
 
     @include sm {
@@ -503,6 +511,7 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
+      border-radius: 20px;
 
       &.te-image-bg-collumn {
         @include rmaxwd(991) {
@@ -513,13 +522,13 @@
 
     .mc4wp-form-fields {
       background-color: transparent;
-      gap: 28px;
+      gap: 10px;
       
       @include rmaxwd(575) {
         flex-direction: column;
       }
       .submit-btn {
-        border-radius: 5px;
+        border-radius: 50px;
         padding: 10px 30px;
         justify-content: center;
         flex-grow: 1;
@@ -552,7 +561,7 @@
       padding: 0 30px;
       font-size: 18px;
       width: 100%;
-      border-radius: 5px;
+      border-radius: 50px;
     }
     *::-webkit-input-placeholder {
       color: $black-300;
@@ -587,6 +596,7 @@
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 0.6px;
+    border-radius: 50px;
 
     &:hover {
       background-color: $gray-900;

@@ -4,7 +4,7 @@
 
     &.style-2 {
       .te-single-slider {
-        height: 800px;
+        height: 920px;
 
         @include sm {
           height: unset;
@@ -201,6 +201,7 @@
             font-size: 18px;
             font-weight: 400;
             line-height: 36px;
+            color: $gray-900;
 
             @include lg {
               font-size: 18px;
@@ -227,8 +228,9 @@
 
             .te-theme-btn {
               padding: 11px 30px;
-              color: $black;
-              background-color: $orange-color;
+              color: $white;
+              border-radius: 50px;
+              background-color: $primary-color;
               flex-shrink: 0;
             }
             .te-call-btn {
@@ -239,12 +241,13 @@
               .te-icon {
                 width: 55px;
                 height: 55px;
+                background-color: $white;
                 border-radius: 50px;
                 flex-shrink: 0;
                 border: 5px solid $orange-color;
                 font-size: 20px;
                 font-weight: 900;
-                color: $black;
+                color: $primary-color;
                 display: flex;
                 align-items: center;
                 justify-content: center;

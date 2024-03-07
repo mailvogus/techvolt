@@ -15,7 +15,7 @@
   }
   .image {
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 50px;
     position: relative;
 
     img {
@@ -29,7 +29,7 @@
       right: 25px;
       top: 23px;
       background-color: $blue-color;
-      border-radius: 5px;
+      border-radius: 50px;
       padding: 13px 18px;
       display: flex;
       flex-direction: column;
