@@ -114,8 +114,8 @@
   line-height: 39px;
   color: $gray-900;
   position: relative;
-  margin-bottom: 10px;
-  font-weight: 500;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 .te-footer-widget {
   margin-bottom: 30px;
@@ -127,9 +127,17 @@
     padding-left: 0;
   }
   .te-subscribe-form-widget{
+
+    .mc4wp-form-fields {
+      border: 1px solid $white;
+      border-radius: 50px;
+      padding: 5px;
+    }
     .single-field {
       input {
         border-radius: 0;
+        background-color: transparent;
+        color: $white;
       }
     }
   }
@@ -306,7 +314,7 @@
         .te-latest-post-thumb {
           width: 80px;
           height: 80px;
-          border-radius: 5px;
+          border-radius: 20px;
           overflow: hidden;
         }
         .te-latest-post-desc {
@@ -663,7 +671,7 @@
     width: 30px;
     height: 30px;
     background-color: rgba(255, 255, 255, 0.10);
-    border-radius: 5px;
+    border-radius: 50px;
     @include transition;
 
     &:hover {

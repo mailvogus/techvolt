@@ -1,10 +1,11 @@
 .te-process-step {
-    background-color: $gray-100;
+    background-color: $gray-900;
     padding: 50px 40px 65px 40px;
     position: relative;
     margin-bottom: 24px;
-    border-radius: 50px;
+    border-radius: 20px;
     position: relative;
+    overflow: hidden;
     top: 0;
     @include transition;
 
@@ -13,10 +14,11 @@
         content: "";
         width: 0;
         left: 50%;
-        transform: translateX(-50%);
-        height: 6px;
+        transform: translateX(-50%) scale(0);
+        height: 0%;
         background-color: $blue-color;
         bottom: 0;
+        border-radius: 50px;
         @include transition;
     }
     @include xl {
@@ -27,6 +29,9 @@
 
         &::before {
             width: 100%;
+            height: 100%;
+            border-radius: 0;
+            transform: translateX(-50%) scale(1);
         }
         .icon {
             img {
@@ -34,8 +39,7 @@
                 @include transition;
             }
         }
-        .counter-number { 
-            color: $primary-color;
+        .counter-number {
             @include transition;
         }
       .te-counter-wrapper {
@@ -85,7 +89,7 @@
                 top: 0;
                 left: 0;
                 content: "";
-                background-color: #F7FBFE;
+                background-color: $gray-900;
                 opacity: 0.6;
                 transform: scale(1);
                 @include transition;
@@ -98,7 +102,7 @@
         line-height: 77.72px;
         letter-spacing: -1px;
         text-transform: capitalize;
-        color: rgba(1, 13, 76, 0.20);
+        color: $white;
         @include transition;
     }
     .te-title-wrapper {
@@ -121,7 +125,7 @@
             line-height: 32px;
             font-weight: 500;
             margin: 0;
-            color: $secondary-color;
+            color: $white;
             transition: all 0.6s ease;
         }
     }
@@ -136,7 +140,7 @@
             line-height: 36px;
             font-weight: 400;
             margin: 0;
-            color: $text-color;
+            color: $white;
         }
         .te-read-more {
             margin-top: -10px;
