@@ -59,7 +59,7 @@
     .image {
         width: 520px;
         flex-shrink: 0;
-        border-radius: 50px;
+        border-radius: 20px;
         overflow: hidden;
 
         @include rmaxwd(991) {

@@ -1,10 +1,24 @@
 .slider-area {
   &.style-1 {
     position: relative;
+    overflow: visible;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 500px;
+      opacity: 0.3;
+      background: $primary-color;
+      filter: blur(681.9541625976562px);
+    }
 
     .te-single-slider {
       position: relative;
-
+      @include gradient-color;
 
       .te-slider-overlay {
         left: 0;
@@ -16,7 +30,17 @@
       }
       .slider-shape {
         position: absolute;
+        border-radius: 20px;
+        overflow: hidden;
 
+        img {
+          object-fit: cover;
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          top: 0;
+        }
         @include sm {
           display: none;
         }
@@ -25,30 +49,26 @@
         }
       }
       .shape-one {
-        top: 143px;
-        left: -140px;
-        animation: zoom-in-zoom-out 5s ease infinite;
+        top: 50px;
+        left: 0;
+
+        width: 300px;
+        height: 290px;
       }
       .shape-two {
-        top: 65px;
-        right: -100px;
-        animation: spin 6s linear infinite;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 310px;
       }
       .shape-three {
-        bottom: 64px;
-        left: -50px;
-        animation: MoveLeftRight 2s linear infinite alternate;
+        bottom: 30px;
+        left: 50%;
+        width: 330px;
+        height: 170px;
+        transform: translateX(-50%);
       }
-      .shape-four {
-        bottom: 65px;
-        left: -90px;
-        animation: MoveUpDown 2s linear infinite alternate;
-      }
-      .shape-five {
-        top: 120px;
-        right: -150px;
-        z-index: -2;
-      }
+
       .te-slider-container {
         display: flex;
         padding: 120px 0;
@@ -104,7 +124,6 @@
               line-height: 42px;
             }
 
-
             @include md {
               font-size: 32px;
               line-height: 52px;
@@ -123,56 +142,24 @@
       }
       .slider-shape-bg {
         position: relative;
-        position: absolute;
+        width: 100%;
         height: 100%;
-        top: 0;
-        width: 500px;
-        z-index: 1;
-        right: 0;
-
-        @include sm {
-          display: none;
-        }
-        @include md {
-          display: none;
-        }
-        @include lg {
-          width: 410px;
-        }
+        margin-left: 100px;
 
         &:before {
           position: absolute;
           content: "";
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(180deg, #F1F8FF 0%, #C9E4FF 100%);
-          border-radius: 0;
-          transform: skewX(-10deg);
+          width: 400px;
+          height: 400px;
+          background: $orange-color;
+          border-radius: 500px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
           z-index: -1;
           right: 0;
         }
       }
-      .te-slider-image {
-        position: relative;
-        z-index: 2;
-        margin-top: inherit;
-        animation: MoveLeftRight 2s linear infinite alternate;
-        text-align: right;
-        margin-right: -70px;
-
-        @include sm {
-          width: 350px;
-          margin: 0 auto;
-        }
-        @include md {
-          margin-right: 0;
-        }
-        .te-slider-image-inner {
-          display: inline-block;
-          text-align: right;
-        }
-      }
     }
-
   }
 }

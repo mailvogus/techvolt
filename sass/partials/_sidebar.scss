@@ -624,6 +624,8 @@
         overflow: hidden;
         width: 90px;
         height: 90px;
+        border-radius: 20px;
+
         img {
           transform: scale(1);
           @include transition;
@@ -680,7 +682,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .single-instagram-feed {
-    border-radius: 50px;
+    border-radius: 20px;
     width: 72px;
     height: 72px;
     overflow: hidden;
