@@ -9886,17 +9886,7 @@ ul.children {
     .subscribe-area .te-content-wrapper .text {
       font-size: 18px;
       color: #ffffff;
-      margin-bottom: 0;
-      padding-right: 100px; }
-      @media only screen and (min-width: 0px) and (max-width: 767px) {
-        .subscribe-area .te-content-wrapper .text {
-          padding-right: 0; } }
-  .subscribe-area .te-subscribe-form-wrapper {
-    padding-right: 224px;
-    margin-top: 10px; }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .subscribe-area .te-subscribe-form-wrapper {
-        padding-right: 0; } }
+      margin-bottom: 0; }
   .subscribe-area .te-subscribe-inner-area {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10082,5 +10072,4 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #ffffff; }
-
 /*# sourceMappingURL=style.css.map */

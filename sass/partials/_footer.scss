@@ -492,19 +492,6 @@
       font-size: 18px;
       color: $white;
       margin-bottom: 0;
-      padding-right: 100px;
-
-      @include sm {
-        padding-right: 0;
-      }
-    }
-  }
-  .te-subscribe-form-wrapper {
-    padding-right: 224px;
-    margin-top: 10px;
-
-    @include sm {
-      padding-right: 0;
     }
   }
   .te-subscribe-inner-area {
