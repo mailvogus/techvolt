@@ -60,20 +60,22 @@
     }
   }
 }
+
+// CTA And Portfolio Area
+.cta-and-portfolio-area {
+  background: linear-gradient(180deg, #EAF4FE 0%, #C9E4FF 100%);
+  padding-bottom: 610px;
+}
 // Portfolio Area
 .portfolio-area {
   &.style-2 {
-      background: linear-gradient(180deg, #EAF4FE 0%, #C9E4FF 100%);
       padding-top: 120px;
-      padding-bottom: 96px;
-  
+      margin-top: -600px;
       @include sm {
         padding-top: 80px;
-        padding-bottom: 56px;
       }
       @include md {
         padding-top: 100px;
-        padding-bottom: 76px;
       }
   }
 }
@@ -222,22 +224,19 @@
   }
 }
 
+.testimonial-bg-area {
+  height: 490px;
+  background-color: $gray-100;
+  margin-top: -280px;
+  margin-bottom: -120px;
+}
 
 // Testimonial Slider Area
 .testimonial-slider-area {
   overflow: hidden;
+  padding-bottom: 10px;
 
   &.style-2 {
-    padding: 120px 0;
-    background-color: $gray-100;
-
-    @include sm {
-      padding: 80px 0;
-    }
-
-    @include md {
-      padding: 100px 0;
-    }
     .slick-list {
       margin: 0 -100px;
       overflow: visible;

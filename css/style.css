@@ -4183,7 +4183,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image {
     position: absolute;
     top: 55%;
-    right: -66px; }
+    right: -45px; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .te-about-image-card.style-2 .te-main-img-wrapper .te-main-img-inner .te-another-image {
         position: relative;
@@ -8670,19 +8670,20 @@ ul.children {
       padding-top: 100px;
       padding-bottom: 76px; } }
 
-.portfolio-area.style-2 {
+.cta-and-portfolio-area {
   background: -webkit-gradient(linear, left top, left bottom, from(#EAF4FE), to(#C9E4FF));
   background: linear-gradient(180deg, #EAF4FE 0%, #C9E4FF 100%);
+  padding-bottom: 610px; }
+
+.portfolio-area.style-2 {
   padding-top: 120px;
-  padding-bottom: 96px; }
+  margin-top: -600px; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .portfolio-area.style-2 {
-      padding-top: 80px;
-      padding-bottom: 56px; } }
+      padding-top: 80px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .portfolio-area.style-2 {
-      padding-top: 100px;
-      padding-bottom: 76px; } }
+      padding-top: 100px; } }
 
 .team-slider-area.style-2 {
   overflow: hidden;
@@ -8808,23 +8809,21 @@ ul.children {
           .faq-area.style-1 .te-faq-image .te-image-wrapper .bottom-content .bottom-content-inner .number {
             color: #14203A; }
 
+.testimonial-bg-area {
+  height: 490px;
+  background-color: #F9F4F1;
+  margin-top: -280px;
+  margin-bottom: -120px; }
+
 .testimonial-slider-area {
-  overflow: hidden; }
-  .testimonial-slider-area.style-2 {
-    padding: 120px 0;
-    background-color: #F9F4F1; }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .testimonial-slider-area.style-2 {
-        padding: 80px 0; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .testimonial-slider-area.style-2 {
-        padding: 100px 0; } }
-    .testimonial-slider-area.style-2 .slick-list {
-      margin: 0 -100px;
-      overflow: visible; }
-      .testimonial-slider-area.style-2 .slick-list .te-slick-item {
-        width: 520px;
-        margin: 0 15px; }
+  overflow: hidden;
+  padding-bottom: 10px; }
+  .testimonial-slider-area.style-2 .slick-list {
+    margin: 0 -100px;
+    overflow: visible; }
+    .testimonial-slider-area.style-2 .slick-list .te-slick-item {
+      width: 520px;
+      margin: 0 15px; }
 
 .counter-up-area.style-2 .te-counter-card {
   padding: 80px 55px;
@@ -10072,4 +10071,5 @@ ul.children {
   .footer.style-2 .te-footer-bottom-menu ul li a,
   .footer.style-2 .footer-bottom-area .te-copyright-text p a {
     color: #ffffff; }
+
 /*# sourceMappingURL=style.css.map */
