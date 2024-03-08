@@ -4993,7 +4993,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .te-testimonial-card.style-3 {
   padding: 30px 0 0 0;
-  background-color: transparent; }
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
   .te-testimonial-card.style-3::before {
     display: none; }
   .te-testimonial-card.style-3 .te-content-wrapper {
@@ -5010,7 +5012,7 @@ body.admin-bar .header-menu-area.sticky_menu {
           -ms-flex-align: center;
               align-items: center;
       border: 1px solid #317EFE;
-      border-radius: 50px;
+      border-radius: 20px;
       padding: 25px 40px; }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .te-testimonial-card.style-3 .te-content-wrapper .te-user-meta .te-user-info {
@@ -8827,7 +8829,7 @@ ul.children {
 
 .counter-up-area.style-2 .te-counter-card {
   padding: 80px 55px;
-  background-color: #31373f;
+  background-color: #131A2A;
   border-radius: 20px; }
   .counter-up-area.style-2 .te-counter-card .te-counter-item .icon {
     width: unset;
@@ -8949,7 +8951,7 @@ ul.children {
           width: 90px;
           height: 90px;
           background-color: #E7F914;
-          border-radius: 5px;
+          border-radius: 20px;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -9006,6 +9008,15 @@ ul.children {
             box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05); }
     .te-process-step-area.style-2 .te-process-step .te-counter-wrapper {
       padding-bottom: 20px; }
+
+.contact-map-area {
+  padding-bottom: 120px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-map-area {
+      padding-bottom: 100px; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .contact-map-area {
+      padding-bottom: 80px; } }
 
 .contact-form-area {
   padding-top: 110px;
