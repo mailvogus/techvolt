@@ -65,12 +65,26 @@
 .cta-and-portfolio-area {
   background: linear-gradient(180deg, #EAF4FE 0%, #C9E4FF 100%);
   padding-bottom: 610px;
+  @include lg {
+    padding-bottom: 100px;
+  }
+  @include rmaxwd(991) {
+    padding-bottom: 80px;
+  }
 }
 // Portfolio Area
 .portfolio-area {
   &.style-2 {
       padding-top: 120px;
       margin-top: -600px;
+
+    @include rmaxwd(991) {
+      margin-top: 0;
+    }
+    @include lg {
+      margin-top: 0;
+      padding-top: 100px;
+    }
       @include sm {
         padding-top: 80px;
       }
@@ -338,6 +352,9 @@
         z-index: 2;
         left: -50px;
 
+        @include rmaxwd(991) {
+          left: unset;
+        }
         @include sm {
         align-items: flex-start;
         flex-direction: column;
