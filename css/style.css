@@ -2531,6 +2531,10 @@ body.admin-bar .header-menu-area.sticky_menu {
     border-radius: 50px;
     padding-left: 20px;
     padding-right: 20px; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .header-area.style-2 .te-header-menu-area .menu-wrapper {
+        padding-left: 10px;
+        padding-right: 6px; } }
   .header-area.style-2 .te-header-menu-area .te-header-btn .te-quote-btn {
     background-color: #E7F914;
     border-color: #E7F914; }
@@ -3261,7 +3265,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .slider-area {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A0D7FE), to(#F6FBFF));
+  background: linear-gradient(180deg, #A0D7FE 0%, #F6FBFF 100%); }
   .slider-area.style-2 .te-single-slider {
     height: 920px; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -4096,6 +4102,9 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .te-about-image-card .te-main-img-wrapper {
   text-align: right; }
+  @media (max-width: 991px) {
+    .te-about-image-card .te-main-img-wrapper {
+      text-align: left; } }
   .te-about-image-card .te-main-img-wrapper .te-main-img-inner {
     position: relative;
     display: inline-block;
@@ -8418,8 +8427,9 @@ ul.children {
             color: #ffffff; }
 
 .te-portfolio-card.style-2 .te-content-wrapper .content {
-  background-color: rgba(14, 43, 197, 0.8);
-  padding: 20px; }
+  background-color: #317efeb8;
+  padding: 20px;
+  border-radius: 20px; }
   .te-portfolio-card.style-2 .te-content-wrapper .content .btn-wrapper {
     top: 50%;
     left: 50%;
@@ -8454,6 +8464,10 @@ ul.children {
 
 .newsletter-area.style-1 {
   margin-top: -210px; }
+  @media (max-width: 991px) {
+    .newsletter-area.style-1 {
+      margin-top: 0;
+      padding-top: 100px; } }
 
 .about-us-area.style-1 {
   padding-top: 120px; }
@@ -9851,6 +9865,18 @@ ul.children {
     border-radius: 20px;
     padding: 63px 50px 68px 74px;
     gap: 14px; }
+  .subscribe-area.style-1 .te-image-bg-collumn {
+    width: 520px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: unset !important;
+        flex-basis: unset !important;
+    -webkit-box-flex: unset !important;
+        -ms-flex-positive: unset !important;
+            flex-grow: unset !important; }
+    @media (max-width: 1199px) {
+      .subscribe-area.style-1 .te-image-bg-collumn {
+        display: none; } }
   .subscribe-area .te-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;

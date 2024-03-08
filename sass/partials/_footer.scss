@@ -445,6 +445,16 @@
       padding: 63px 50px 68px 74px;
       gap: 14px;
     }
+    .te-image-bg-collumn {
+      width: 520px;
+      flex-shrink: 0;
+      flex-basis: unset !important;
+      flex-grow: unset !important;
+
+      @include rmaxwd(1199) {
+        display: none;
+      }
+    }
   }
   
   .te-content-wrapper {

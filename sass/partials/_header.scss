@@ -53,6 +53,11 @@
         border-radius: 50px;
         padding-left: 20px;
         padding-right: 20px;
+
+        @include lg {
+          padding-left: 10px;
+          padding-right: 6px;
+        }
       }
 
       .te-header-btn {

@@ -1,7 +1,10 @@
 .te-about-image-card {
   .te-main-img-wrapper {
     text-align: right;
-  
+    @include rmaxwd(991) {
+      text-align: left;
+    }
+
     .te-main-img-inner {
       position: relative;
       display: inline-block;

@@ -1,6 +1,10 @@
 .newsletter-area {
   &.style-1 {
     margin-top: -210px;
+    @include rmaxwd(991) {
+      margin-top: 0;
+      padding-top: 100px;
+    }
   }
 }
 // About Us Area
