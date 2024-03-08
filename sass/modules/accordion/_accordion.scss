@@ -6,7 +6,7 @@
 .accordion-wrapper {
   .te-accordion-list-item {
     border: 1px solid $gray-200;
-    border-radius: 50px;
+    border-radius: 20px;
 
     .te-accordion-head {
       display: flex;
@@ -25,7 +25,7 @@
         font-weight: 500;
         background-color: $blue-color;
         font-size: 12px;
-        border-radius: 50px;
+        border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -40,7 +40,7 @@
           font-family: $font-awesome;
           font-weight: 500;
           background-color: transparent;
-          border-radius: 50px;
+          border-radius: 20px;
           color: $blue-color;
           font-size: 12px;
           display: flex;

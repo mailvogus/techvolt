@@ -103,29 +103,30 @@
       align-items: flex-end;
       justify-content: space-between;
       position: relative;
+      padding: 10px;
 
       .content-inner {
         width: 100%;
-        background-color: $blue-color;
+        background-color: $white;
+        border-radius: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 5px;
         padding: 18px 10px;
         // margin-bottom: -100%;
         @include transition;
         transform: scaleY(0.3);
       }
       .sub-title {
-        color: $white;
+        color: $gray-900;
         font-size: 18px;
         line-height: 36px;
         font-weight: 400;
       }
       .title {
         margin-bottom: 0;
-        color: $white;
+        color: $gray-900;
         font-size: 24px;
         line-height: 39px;
         font-weight: 500;

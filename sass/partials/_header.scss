@@ -73,7 +73,8 @@
 }
 .header-top {
   padding: 6px 0;
-  background-color: $gray-100;
+  background-color: $primary-color;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
 
   @include rmaxwd(991) {
     display: none;
@@ -100,13 +101,11 @@
       display: flex;
       align-items: center;
       gap: 24px;
-      color: $black;
+      color: $white;
       font-size: 16px;
       font-weight: 400;
       font-family: $dmsans-font;
-      i {
-        color: $black;
-      }
+
       &.te-contact-info-item {
         gap:0 10px !important;
       }
@@ -114,7 +113,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        color: $black;
+        color: $white;
         font-size: 16px;
         font-weight: 400;
         font-family: $dmsans-font;
@@ -174,11 +173,11 @@
 
     a {
       font-size: 16px;
-      color: $black;
+      color: $white;
       @include transition;
       width: 36px;
       height: 36px;
-      background-color: #1f242c1a;
+      background-color: rgba(255, 255, 255, 0.1);
       border-radius: 50px;
       display: flex;
       align-items: center;
@@ -187,8 +186,8 @@
 
       &:hover {
         @include transition;
-        color: $white;
-        background-color: $blue-color;
+        color: $black;
+        background-color: $orange-color;
       }
     }
   }

@@ -16,23 +16,23 @@
       }
       .te-about-info-card {
         &.style-2 {
-          padding-right: 30px;
+          padding-left: 30px;
         }
       }
       .te-about-image-card {
         &.style-2 {
-          padding-left: 30px;
+          padding-right: 30px;
           @include sm {
-            padding-left: 0;
+            padding-right: 0;
             margin-bottom: 50px;
           }
           @include md {
             margin-bottom: 200px;
-            padding-left: 0;
+            padding-right: 0;
           }
           @include lg {
             margin-bottom: 200px;
-            padding-left: 0;
+            padding-right: 0;
           }
         }
       }
