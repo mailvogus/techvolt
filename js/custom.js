@@ -182,7 +182,7 @@
        Team Slider
        ============================*/
         $("#team_slider_wrapper").slick({
-            slidesToShow: 3,
+            slidesToShow: 4,
             infinite: true,
             autoplay: true,
             draggable: true,

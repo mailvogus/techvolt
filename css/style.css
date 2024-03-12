@@ -2530,7 +2530,7 @@ body.admin-bar .header-menu-area.sticky_menu {
     background-color: #ffffff;
     border-radius: 50px;
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 8px; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .header-area.style-2 .te-header-menu-area .menu-wrapper {
         padding-left: 10px;
@@ -6142,24 +6142,27 @@ body.admin-bar .header-menu-area.sticky_menu {
         transition: all 0.5s ease-out; }
 
 .page-breadcrumb-area {
-  padding: 127px 0;
+  padding-top: 230px;
+  padding-bottom: 120px;
   position: relative;
   background-size: cover;
-  background: -webkit-gradient(linear, left top, left bottom, from(#E0F0FE), to(#F8FCFF));
-  background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#A0D7FE), to(#F6FBFF));
+  background: linear-gradient(180deg, #A0D7FE 0%, #F6FBFF 100%);
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain; }
   @media (max-width: 991px) {
     .page-breadcrumb-area {
-      padding: 100px 0; } }
+      padding-top: 180px;
+      padding-bottom: 100px; } }
   @media (max-width: 767px) {
     .page-breadcrumb-area {
-      padding: 80px 0; } }
+      padding-top: 150px;
+      padding-bottom: 80px; } }
 
 .page-overlay {
-  background: -webkit-gradient(linear, left top, left bottom, from(#E0F0FE), to(#F8FCFF));
-  background: linear-gradient(180deg, #E0F0FE 0%, #F8FCFF 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#A0D7FE), to(#F6FBFF));
+  background: linear-gradient(180deg, #A0D7FE 0%, #F6FBFF 100%);
   height: 100%;
   left: 0;
   position: absolute;
@@ -9086,15 +9089,6 @@ ul.children {
             box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05); }
     .te-process-step-area.style-2 .te-process-step .te-counter-wrapper {
       padding-bottom: 20px; }
-
-.contact-map-area {
-  padding-bottom: 120px; }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .contact-map-area {
-      padding-bottom: 100px; } }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .contact-map-area {
-      padding-bottom: 80px; } }
 
 .contact-form-area {
   padding-top: 110px;
